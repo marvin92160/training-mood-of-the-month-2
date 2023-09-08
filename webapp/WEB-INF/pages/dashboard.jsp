@@ -33,7 +33,7 @@
         <div class="details">
             <div class="mood">
                 <div class="img-container">
-                    <img src="../../resources/img/1.png" alt="super"/>
+                    <img src="resources/img/1.png" alt="super"/>
                 </div>
                 <div class="progress-bar-container">
                     <span class="desc">Vote count: 10</span>
@@ -47,7 +47,7 @@
             </div>
             <div class="mood">
                 <div class="img-container">
-                    <img src="../../resources/img/2.png" alt="super"/>
+                    <img src="resources/img/2.png" alt="super"/>
                 </div>
                 <div class="progress-bar-container">
                     <span class="desc">Vote count: 5</span>
@@ -61,7 +61,7 @@
             </div>
             <div class="mood">
                 <div class="img-container">
-                    <img src="../../resources/img/3.png" alt="super"/>
+                    <img src="resources/img/3.png" alt="super"/>
                 </div>
                 <div class="progress-bar-container">
                     <span class="desc">Vote count: 15</span>
@@ -75,7 +75,7 @@
             </div>
             <div class="mood">
                 <div class="img-container">
-                    <img src="../../resources/img/4.png" alt="super"/>
+                    <img src="resources/img/4.png" alt="super"/>
                 </div>
                 <div class="progress-bar-container">
                     <span class="desc">Vote count: 45</span>
@@ -89,7 +89,7 @@
             </div>
             <div class="mood">
                 <div class="img-container">
-                    <img src="../../resources/img/5.png" alt="super"/>
+                    <img src="resources/img/5.png" alt="super"/>
                 </div>
                 <div class="progress-bar-container">
                     <span class="desc">Vote count: 25</span>
@@ -110,7 +110,7 @@
         <div class="global">
             <div class="global-mood">
               <div class="img-container">
-                <img class="mood" src="../../resources/img/4.png" alt=""/>
+                <img class="mood" src="resources/img/4.png" alt=""/>
               </div>
               <div class="notation">
                   <p class="title">GLOBAL MOOD</p>
@@ -124,7 +124,7 @@
             <h2 class="title">Comments</h2>
             <div class="comment-container">
                 <div class="note">
-                    <img class="mood" src="../../resources/img/3.png" alt=""/>
+                    <img class="mood" src="resources/img/3.png" alt=""/>
                 </div>
                 <div class="comment">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec nulla quam. Integer nisi ligula,
@@ -133,7 +133,7 @@
             </div>
             <div class="comment-container">
                 <div class="note">
-                    <img class="mood" src="../../resources/img/4.png" alt=""/>
+                    <img class="mood" src="resources/img/4.png" alt=""/>
                 </div>
                 <div class="comment">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec nulla quam. Integer nisi ligula,
@@ -142,7 +142,7 @@
             </div>
             <div class="comment-container">
                 <div class="note">
-                    <img class="mood" src="../../resources/img/3.png" alt=""/>
+                    <img class="mood" src="resources/img/3.png" alt=""/>
                 </div>
                 <div class="comment">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec nulla quam. Integer nisi ligula,
@@ -151,7 +151,7 @@
             </div>
             <div class="comment-container">
                 <div class="note">
-                    <img class="mood" src="../../resources/img/5.png" alt=""/>
+                    <img class="mood" src="resources/img/5.png" alt=""/>
                 </div>
                 <div class="comment">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec nulla quam. Integer nisi ligula,

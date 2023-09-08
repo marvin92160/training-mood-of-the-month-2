@@ -10,10 +10,10 @@
     <title>Mood of the month</title>
 
     <!-- Bootstrap CSS -->
-    <link href="../resources/css/bootstrap.min.css" rel="stylesheet">
+    <link href="resources/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="../resources/css/style.css" rel="stylesheet">
+    <link href="resources/css/style.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -42,9 +42,9 @@
                         <i class="fa fa-gear fa-fw"></i> Manage MOTMs <i class="fa fa-caret-down"></i>
                     </a>
                     <ul class="dropdown-menu dropdown-user">
-                        <li><a href="add_member.jsp"><i class="fa fa-user fa-fw"></i> Add member</a>
+                        <li><a href="WEB-INF/pages/add_member.jsp"><i class="fa fa-user fa-fw"></i> Add member</a>
                         </li>
-                        <li><a href="edit_motm.jsp"><i class="fa fa-calendar fa-fw"></i> Change MOTM Template</a>
+                        <li><a href="WEB-INF/pages/edit_motm.jsp"><i class="fa fa-calendar fa-fw"></i> Change MOTM Template</a>
                         </li>
                     </ul>
                 </li>
@@ -68,7 +68,7 @@
                                     <i class="fa fa-user fa-5x"></i>
                                 </div>
                                 <div class="col-xs-9 text-right">
-                                    <div class="huge">46</div>
+                                    <div class="huge">${nbrMembre}</div>
                                     <div class="huge-label">Registered members</div>
                                 </div>
                             </div>
@@ -90,7 +90,7 @@
                                     <i class="fa fa-smile-o fa-5x"></i>
                                 </div>
                                 <div class="col-xs-9 text-right">
-                                    <div class="huge">3</div>
+                                    <div class="huge">${nbrMood}</div>
                                     <div class="huge-label">Moods Closed</div>
                                 </div>
                             </div>
@@ -275,7 +275,7 @@
                             <div class="details">
                                 <div class="mood">
                                     <div class="img-container">
-                                        <img src="../../resources/img/1.png" alt="super"/>
+                                        <img src="resources/img/1.png" alt="super"/>
                                     </div>
                                     <div class="progress-bar-container">
                                         <span class="desc">Vote count: 10</span>
@@ -289,7 +289,7 @@
                                 </div>
                                 <div class="mood">
                                     <div class="img-container">
-                                        <img src="../../resources/img/2.png" alt="super"/>
+                                        <img src="resources/img/2.png" alt="super"/>
                                     </div>
                                     <div class="progress-bar-container">
                                         <span class="desc">Vote count: 5</span>
@@ -303,7 +303,7 @@
                                 </div>
                                 <div class="mood">
                                     <div class="img-container">
-                                        <img src="../../resources/img/3.png" alt="super"/>
+                                        <img src="resources/img/3.png" alt="super"/>
                                     </div>
                                     <div class="progress-bar-container">
                                         <span class="desc">Vote count: 15</span>
@@ -317,7 +317,7 @@
                                 </div>
                                 <div class="mood">
                                     <div class="img-container">
-                                        <img src="../../resources/img/4.png" alt="super"/>
+                                        <img src="resources/img/4.png" alt="super"/>
                                     </div>
                                     <div class="progress-bar-container">
                                         <span class="desc">Vote count: 45</span>
@@ -331,7 +331,7 @@
                                 </div>
                                 <div class="mood">
                                     <div class="img-container">
-                                        <img src="../../resources/img/5.png" alt="super"/>
+                                        <img src="resources/img/5.png" alt="super"/>
                                     </div>
                                     <div class="progress-bar-container">
                                         <span class="desc">Vote count: 25</span>
@@ -414,13 +414,13 @@
     </footer>
 
     <!-- jQuery -->
-    <script src="../../resources/js/jquery-3.1.1.min.js"></script>
+    <script src="resources/js/jquery-3.1.1.min.js"></script>
 
     <!-- togggle.js -->
-    <script src="../../resources/js/toggle.js"></script>
+    <script src="resources/js/toggle.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="../../resources/js/bootstrap.min.js"></script>
+    <script src="resources/js/bootstrap.min.js"></script>
 
 </body>
 

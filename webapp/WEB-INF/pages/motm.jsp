@@ -59,23 +59,23 @@
                                             <div class="notation">
                                                 <label for="n1">
                                                     <input id="n1" name="note" type="radio" value="1"/>
-                                                    <img src="../../resources/img/1.png" alt="Sad" width="100" height="100"/>
+                                                    <img src="resources/img/1.png" alt="Sad" width="100" height="100"/>
                                                 </label>
                                                 <label for="n2">
                                                     <input id="n2" name="note" type="radio" value="2"/>
-                                                    <img src="../../resources/img/2.png" alt="Not Happy" width="100" height="100"/>
+                                                    <img src="resources/img/2.png" alt="Not Happy" width="100" height="100"/>
                                                 </label>
                                                 <label for="n3">
                                                     <input id="n3" name="note" type="radio" value="3"/>
-                                                    <img src="../../resources/img/3.png" alt="Average" width="100" height="100"/>
+                                                    <img src="resources/img/3.png" alt="Average" width="100" height="100"/>
                                                 </label>
                                                 <label for="n4">
                                                     <input id="n4" name="note" type="radio" value="4"/>
-                                                    <img src="../../resources/img/4.png" alt="Happy" width="100" height="100"/>
+                                                    <img src="resources/img/4.png" alt="Happy" width="100" height="100"/>
                                                 </label>
                                                 <label for="n5">
                                                     <input id="n5" name="note" type="radio" value="5"/>
-                                                    <img src="../../resources/img/5.png" alt="Super Happy" width="100" height="100"/>
+                                                    <img src="resources/img/5.png" alt="Super Happy" width="100" height="100"/>
                                                 </label>
                                             </div>
                                         </div>
