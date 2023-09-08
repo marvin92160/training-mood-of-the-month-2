@@ -10,10 +10,10 @@
     <title>Mood of the month</title>
 
     <!-- Bootstrap CSS -->
-    <link href="resources/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../webapp/resources/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="resources/css/style.css" rel="stylesheet">
+    <link href="../../webapp/resources/css/style.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -42,7 +42,7 @@
                         <i class="fa fa-gear fa-fw"></i> Manage MOTMs <i class="fa fa-caret-down"></i>
                     </a>
                     <ul class="dropdown-menu dropdown-user">
-                        <li><a href="WEB-INF/pages/add_member.jsp"><i class="fa fa-user fa-fw"></i> Add member</a>
+                        <li><a href="${pageContext.request.contextPath}/add_member"><i class="fa fa-user fa-fw"></i> Add member</a>
                         </li>
                         <li><a href="WEB-INF/pages/edit_motm.jsp"><i class="fa fa-calendar fa-fw"></i> Change MOTM Template</a>
                         </li>
@@ -414,13 +414,13 @@
     </footer>
 
     <!-- jQuery -->
-    <script src="resources/js/jquery-3.1.1.min.js"></script>
+    <script src="../../webapp/resources/js/jquery-3.1.1.min.js"></script>
 
     <!-- togggle.js -->
-    <script src="resources/js/toggle.js"></script>
+    <script src="../../webapp/resources/js/toggle.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="resources/js/bootstrap.min.js"></script>
+    <script src="../../webapp/resources/js/bootstrap.min.js"></script>
 
 </body>
 
