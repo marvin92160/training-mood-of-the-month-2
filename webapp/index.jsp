@@ -10,10 +10,10 @@
     <title>Mood of the month</title>
 
     <!-- Bootstrap CSS -->
-    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../resources/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="../css/style.css" rel="stylesheet">
+    <link href="../resources/css/style.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -42,9 +42,9 @@
                         <i class="fa fa-gear fa-fw"></i> Manage MOTMs <i class="fa fa-caret-down"></i>
                     </a>
                     <ul class="dropdown-menu dropdown-user">
-                        <li><a href="add_member.html"><i class="fa fa-user fa-fw"></i> Add member</a>
+                        <li><a href="add_member.jsp"><i class="fa fa-user fa-fw"></i> Add member</a>
                         </li>
-                        <li><a href="edit_motm.html"><i class="fa fa-calendar fa-fw"></i> Change MOTM Template</a>
+                        <li><a href="edit_motm.jsp"><i class="fa fa-calendar fa-fw"></i> Change MOTM Template</a>
                         </li>
                     </ul>
                 </li>
@@ -73,7 +73,7 @@
                                 </div>
                             </div>
                         </div>
-                        <a href="add_member.html">
+                        <a href="add_member.jsp">
                             <div class="panel-footer">
                                 <span class="pull-left">Add member</span>
                                 <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
@@ -95,7 +95,7 @@
                                 </div>
                             </div>
                         </div>
-                        <a href="edit_motm.html">
+                        <a href="edit_motm.jsp">
                             <div class="panel-footer">
                                 <span class="pull-left">Edit MOTM content</span>
                                 <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
@@ -117,7 +117,7 @@
                                 </div>
                             </div>
                         </div>
-                        <a href="dashboard.html">
+                        <a href="dashboard.jsp">
                             <div class="panel-footer">
                                 <span class="pull-left">Show dashboard</span>
                                 <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
@@ -275,7 +275,7 @@
                             <div class="details">
                                 <div class="mood">
                                     <div class="img-container">
-                                        <img src="../img/1.png" alt="super"/>
+                                        <img src="../../resources/img/1.png" alt="super"/>
                                     </div>
                                     <div class="progress-bar-container">
                                         <span class="desc">Vote count: 10</span>
@@ -289,7 +289,7 @@
                                 </div>
                                 <div class="mood">
                                     <div class="img-container">
-                                        <img src="../img/2.png" alt="super"/>
+                                        <img src="../../resources/img/2.png" alt="super"/>
                                     </div>
                                     <div class="progress-bar-container">
                                         <span class="desc">Vote count: 5</span>
@@ -303,7 +303,7 @@
                                 </div>
                                 <div class="mood">
                                     <div class="img-container">
-                                        <img src="../img/3.png" alt="super"/>
+                                        <img src="../../resources/img/3.png" alt="super"/>
                                     </div>
                                     <div class="progress-bar-container">
                                         <span class="desc">Vote count: 15</span>
@@ -317,7 +317,7 @@
                                 </div>
                                 <div class="mood">
                                     <div class="img-container">
-                                        <img src="../img/4.png" alt="super"/>
+                                        <img src="../../resources/img/4.png" alt="super"/>
                                     </div>
                                     <div class="progress-bar-container">
                                         <span class="desc">Vote count: 45</span>
@@ -331,7 +331,7 @@
                                 </div>
                                 <div class="mood">
                                     <div class="img-container">
-                                        <img src="../img/5.png" alt="super"/>
+                                        <img src="../../resources/img/5.png" alt="super"/>
                                     </div>
                                     <div class="progress-bar-container">
                                         <span class="desc">Vote count: 25</span>
@@ -414,13 +414,13 @@
     </footer>
 
     <!-- jQuery -->
-    <script src="../js/jquery-3.1.1.min.js"></script>
+    <script src="../../resources/js/jquery-3.1.1.min.js"></script>
 
     <!-- togggle.js -->
-    <script src="../js/toggle.js"></script>
+    <script src="../../resources/js/toggle.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="../js/bootstrap.min.js"></script>
+    <script src="../../resources/js/bootstrap.min.js"></script>
 
 </body>
 
