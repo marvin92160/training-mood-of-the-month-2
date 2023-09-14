@@ -600,3 +600,20 @@
 2023-09-14 15:20:28,440 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-7) WFLYJCA0018: Started Driver service with driver-name = projet.war_org.postgresql.Driver_42_6
 2023-09-14 15:20:28,444 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 12) WFLYUT0021: Registered web context: '/projet' for server 'default-server'
 2023-09-14 15:20:28,471 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0016: Replaced deployment "projet.war" with deployment "projet.war"
+2023-09-14 15:41:19,444 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-2) WFLYJCA0019: Stopped Driver service with driver-name = projet.war_org.postgresql.Driver_42_6
+2023-09-14 15:41:19,444 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 12) WFLYUT0022: Unregistered web context: '/projet' from server 'default-server'
+2023-09-14 15:41:19,462 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0028: Stopped deployment projet.war (runtime-name: projet.war) in 18ms
+2023-09-14 15:41:19,468 INFO  [org.jboss.as.server] (management-handler-thread - 2) WFLYSRV0009: Undeployed "projet.war" (runtime-name: "projet.war")
+2023-09-14 15:54:37,152 INFO  [org.jboss.as.server] (Thread-1) WFLYSRV0272: Suspending server
+2023-09-14 15:54:37,154 INFO  [org.jboss.as.ejb3] (Thread-1) WFLYEJB0493: Jakarta Enterprise Beans subsystem suspension complete
+2023-09-14 15:54:37,155 INFO  [org.jboss.as.server] (Thread-1) WFLYSRV0220: Server shutdown has been requested via an OS signal
+2023-09-14 15:54:37,164 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0019: Host default-host stopping
+2023-09-14 15:54:37,164 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-1) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2023-09-14 15:54:37,164 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-3) WFLYMAIL0002: Unbound mail session [java:jboss/mail/Default]
+2023-09-14 15:54:37,167 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0008: Undertow HTTPS listener https suspending
+2023-09-14 15:54:37,168 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0007: Undertow HTTPS listener https stopped, was bound to 127.0.0.1:8443
+2023-09-14 15:54:37,169 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-2) WFLYJCA0019: Stopped Driver service with driver-name = h2
+2023-09-14 15:54:37,171 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0008: Undertow HTTP listener default suspending
+2023-09-14 15:54:37,173 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0007: Undertow HTTP listener default stopped, was bound to 127.0.0.1:8080
+2023-09-14 15:54:37,175 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0004: Undertow 2.3.7.Final stopping
+2023-09-14 15:54:37,189 INFO  [org.jboss.as] (MSC service thread 1-1) WFLYSRV0050: WildFly Full 29.0.1.Final (WildFly Core 21.1.1.Final) stopped in 30ms

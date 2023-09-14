@@ -1,0 +1,6 @@
+modele/Member.class
+dao/MoodDao.class
+dao/MembreDao.class
+servlet/NewsletterTemplateServlet.class
+servlet/StatsServlet.class
+modele/Mood.class

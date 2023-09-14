@@ -518,9 +518,4 @@
             <remote-destination host="${jboss.mail.server.host:localhost}" port="${jboss.mail.server.port:25}"/>
         </outbound-socket-binding>
     </socket-binding-group>
-    <deployments>
-        <deployment name="projet.war" runtime-name="projet.war">
-            <fs-exploded path="/home/takima/Documents/wellcomePool/training-mood-of-the-month-2/target/projet"/>
-        </deployment>
-    </deployments>
 </server>
