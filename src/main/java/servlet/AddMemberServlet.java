@@ -23,7 +23,7 @@ public class AddMemberServlet extends HttpServlet{
 //        request.setAttribute("nbrMembre", 20);
 //        request.setAttribute("nbrMood", 15);
 
-        this.getServletContext().getRequestDispatcher("add_member.jsp").forward(request, response);
+        this.getServletContext().getRequestDispatcher("/WEB-INF/pages/add_member.jsp").forward(request, response);
     }
 
 }
