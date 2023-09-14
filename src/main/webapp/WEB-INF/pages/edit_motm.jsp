@@ -10,10 +10,10 @@
     <title>Mood of the month</title>
 
     <!-- Bootstrap CSS -->
-    <link href="../../resources/css/bootstrap.min.css" rel="stylesheet">
+    <link href="resources/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="../../resources/css/style.css" rel="stylesheet">
+    <link href="resources/css/style.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -32,7 +32,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">Mood of the month</a>
+                <a class="navbar-brand" href="${pageContext.request.contextPath}/home">Mood of the month</a>
             </div>
             <!-- /.navbar-header -->
 
@@ -42,9 +42,9 @@
                         <i class="fa fa-gear fa-fw"></i> Manage MOTMs <i class="fa fa-caret-down"></i>
                     </a>
                     <ul class="dropdown-menu dropdown-user">
-                        <li><a href="add_member.jsp"><i class="fa fa-user fa-fw"></i> Add member</a>
+                        <li><a href="${pageContext.request.contextPath}/add_member"><i class="fa fa-user fa-fw"></i> Add member</a>
                         </li>
-                        <li><a href="edit_motm.html"><i class="fa fa-calendar fa-fw"></i> Change MOTM Template</a>
+                        <li><a href="${pageContext.request.contextPath}/edit_motm"><i class="fa fa-calendar fa-fw"></i> Change MOTM Template</a>
                         </li>
                     </ul>
                 </li>
@@ -92,7 +92,7 @@
                                             <input type="text" class="input-lg form-control" id="name" value="Hey ${name}, let's hear it for your mood of the month!">
                                         </div>
                                         <div class="form-group">
-                                            <label for="email-template">Email template (<a href="newsletter.template.html" target="_blank">check the email template</a>)</label>
+                                            <label for="email-template">Email template (<a href="${pageContext.request.contextPath}/newsletter.template" target="_blank">check the email template</a>)</label>
                                             <textarea id="email-template" class="content"></textarea>
                                         </div>
                                         <div class="form-group">
@@ -128,10 +128,10 @@
     </footer>
 
     <!-- jQuery -->
-    <script src="../../resources/js/jquery-3.1.1.min.js"></script>
+    <script src="resources/js/jquery-3.1.1.min.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="../../resources/js/bootstrap.min.js"></script>
+    <script src="resources/js/bootstrap.min.js"></script>
 
     <!-- CKEditor -->
     <script src="https://cdn.ckeditor.com/4.6.2/full/ckeditor.js"></script>
