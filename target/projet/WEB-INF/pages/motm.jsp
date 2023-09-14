@@ -10,10 +10,10 @@
     <title>Mood of the month</title>
 
     <!-- Bootstrap CSS -->
-    <link href="../../resources/css/bootstrap.min.css" rel="stylesheet">
+    <link href="resources/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="../../resources/css/style.css" rel="stylesheet">
+    <link href="resources/css/style.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -32,7 +32,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.jsp">Mood of the month</a>
+                <a class="navbar-brand" href="${pageContext.request.contextPath}/home">Mood of the month</a>
             </div>
             <!-- /.navbar-header -->
         </nav>
@@ -120,10 +120,10 @@
     </footer>
 
     <!-- jQuery -->
-    <script src="../../resources/js/jquery-3.1.1.min.js"></script>
+    <script src="resources/js/jquery-3.1.1.min.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="../../resources/js/bootstrap.min.js"></script>
+    <script src="resources/js/bootstrap.min.js"></script>
 
     <!-- CKEditor -->
     <script src="https://cdn.ckeditor.com/4.6.2/basic/ckeditor.js"></script>

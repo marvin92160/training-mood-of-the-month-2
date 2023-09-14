@@ -20,8 +20,8 @@ public class HomeServlet extends HttpServlet{
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
-            request.setAttribute("nbrMembre", 20);
-            request.setAttribute("nbrMood", 15);
+            request.setAttribute("nbrMembre", 23);
+            request.setAttribute("nbrMood", 35);
 
         this.getServletContext().getRequestDispatcher("/WEB-INF/pages/home.jsp").forward(request, response);
     }

@@ -1,2 +1,6 @@
-servlet/HomeServlet.class
+servlet/MotmServlet.class
 servlet/AddMemberServlet.class
+servlet/HomeServlet.class
+servlet/DashboardServlet.class
+servlet/editMotmServlet.class
+persistence/ConnectionManager.class

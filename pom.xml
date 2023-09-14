@@ -17,6 +17,27 @@
 
     <build>
         <finalName>projet</finalName>
+        <plugins>
+            <plugin>
+                <groupId>org.wildfly.plugins</groupId>
+                <artifactId>wildfly-maven-plugin</artifactId>
+                <version>4.2.0.Final</version>
+                <executions>
+                    <execution>
+                        <phase>install</phase>
+                        <goals>
+                            <goal>deploy</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <hostname>localhost</hostname> <!-- Change this to your WildFly server hostname -->
+                    <port>9990</port> <!-- Change this to your WildFly management port -->
+                    <username>marion</username> <!-- Change this to your WildFly admin username -->
+                    <password>M@081108*</password> <!-- Change this to your WildFly admin password -->
+                </configuration>
+            </plugin>
+        </plugins>
     </build>
 
     <dependencies>
@@ -48,6 +69,6 @@
             <scope>provided</scope>
         </dependency>
     </dependencies>
-    
+
 </project>
 
