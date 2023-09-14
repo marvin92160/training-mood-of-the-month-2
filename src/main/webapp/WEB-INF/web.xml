@@ -15,8 +15,4 @@
         <servlet-name>AddMemberServlet</servlet-name>
         <url-pattern>/add_member</url-pattern>
     </servlet-mapping>
-
-<!--    <welcome-file-list>-->
-<!--        <welcome-file>index.jsp</welcome-file>-->
-<!--    </welcome-file-list>-->
 </web-app>

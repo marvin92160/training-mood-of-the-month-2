@@ -10,10 +10,10 @@
     <title>Mood of the month</title>
 
     <!-- Bootstrap CSS -->
-    <link href="../../webapp/resources/css/bootstrap.min.css" rel="stylesheet">
+    <link href="${pageContext.request.contextPath}/webapp/resources/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="../../webapp/resources/css/style.css" rel="stylesheet">
+    <link href="${pageContext.request.contextPath}/webapp/resources/css/style.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -32,7 +32,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">Mood of the month</a>
+                <a class="navbar-brand" href="${pageContext.request.contextPath}/">Mood of the month</a>
             </div>
             <!-- /.navbar-header -->
 
@@ -414,13 +414,13 @@
     </footer>
 
     <!-- jQuery -->
-    <script src="../../webapp/resources/js/jquery-3.1.1.min.js"></script>
+    <script src="${pageContext.request.contextPath}/webapp/resources/js/jquery-3.1.1.min.js"></script>
 
     <!-- togggle.js -->
-    <script src="../../webapp/resources/js/toggle.js"></script>
+    <script src="${pageContext.request.contextPath}/webapp/resources/js/toggle.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="../../webapp/resources/js/bootstrap.min.js"></script>
+    <script src="${pageContext.request.contextPath}/webapp/resources/js/bootstrap.min.js"></script>
 
 </body>
 
