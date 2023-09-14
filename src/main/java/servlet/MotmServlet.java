@@ -1,5 +1,4 @@
 package servlet;
-
 import java.io.IOException;
 
 import jakarta.servlet.ServletException;
@@ -8,8 +7,8 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
-@WebServlet("/")
-public class HomeServlet extends HttpServlet{
+@WebServlet("/motm")
+public class MotmServlet extends HttpServlet {
     private static final long serialVersionUID = 1L;
 
     @Override
@@ -19,11 +18,10 @@ public class HomeServlet extends HttpServlet{
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+//
+//        request.setAttribute("nbrMembre", 20);
+//        request.setAttribute("nbrMood", 15);
 
-            request.setAttribute("nbrMembre", 20);
-            request.setAttribute("nbrMood", 15);
-
-        this.getServletContext().getRequestDispatcher("/WEB-INF/pages/home.jsp").forward(request, response);
+        this.getServletContext().getRequestDispatcher("/WEB-INF/pages/motm.jsp").forward(request, response);
     }
-
 }
