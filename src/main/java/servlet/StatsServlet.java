@@ -8,8 +8,8 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
-@WebServlet("/home")
-public class HomeServlet extends HttpServlet{
+@WebServlet("/stats")
+public class StatsServlet extends HttpServlet {
     private static final long serialVersionUID = 1L;
 
     @Override
@@ -19,11 +19,10 @@ public class HomeServlet extends HttpServlet{
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+//
+//        request.setAttribute("nbrMembre", 20);
+//        request.setAttribute("nbrMood", 15);
 
-            request.setAttribute("nbrMembre", 80);
-            request.setAttribute("nbrMood", 15);
-
-        this.getServletContext().getRequestDispatcher("/WEB-INF/pages/home.jsp").forward(request, response);
+        this.getServletContext().getRequestDispatcher("/WEB-INF/pages/stats.jsp").forward(request, response);
     }
-
 }

@@ -18,8 +18,8 @@ public class ConnectionManager {
     private static void init() {
         if (dataSource == null) {
             PGSimpleDataSource pgDataSource = new PGSimpleDataSource();
-            pgDataSource.setServerName(DB_HOST);
-            pgDataSource.setPortNumber(DB_PORT);
+            pgDataSource.setServerNames(new String[]{DB_HOST});
+            pgDataSource.setPortNumbers(new int[]{DB_PORT});
             pgDataSource.setDatabaseName(DB_NAME);
             pgDataSource.setUser(DB_USER);
             pgDataSource.setPassword(DB_PASSWORD);
