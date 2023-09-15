@@ -18,7 +18,7 @@ public class MemberDao {
     public MemberDao(){}
 
     private static final String CREATE_MEMBER_QUERY = "INSERT INTO member(firstname, lastname, email, birthdate) VALUES(?, ?, ?, ?);";
-
+    private static final String UPDATE_MEMBER_QUERY = "UPDATE member SET firstname = ?, lastname = ?, email = ?, birthdate = ? WHERE id = ?;";
     private static final String FIND_MEMBER_QUERY = "SELECT firstname, lastname, email, birthdate FROM member WHERE id=?;";
     private static final String FIND_MEMBERS_QUERY = "SELECT id, firstname, lastname, email, birthdate FROM member;";
     private static final Logger logger = LoggerFactory.getLogger(MemberDao.class);
@@ -65,6 +65,26 @@ public class MemberDao {
             e.printStackTrace();
             throw new DaoException();
         }
+    }
+
+    public long update(Member member) throws DaoException {
+        try {
+            Connection connection = ConnectionManager.getConnection();
+            PreparedStatement ps = connection.prepareStatement(UPDATE_MEMBER_QUERY);
+            ps.setString(1, member.getFirstName());
+            ps.setString(2, member.getLastName());
+            ps.setString(3, member.getEmail());
+            ps.setDate(4, Date.valueOf(member.getBirthdate()));
+            ps.setLong(5, member.getId());
+            ps.execute();
+            ps.close();
+            connection.close();
+            logger.error("dans le dao"+member);
+            logger.error("dans le dao depuis bdd"+ findById((int)member.getId()));
+        } catch (SQLException e) {
+            throw new DaoException();
+        }
+        return member.getId();
     }
 
     public List<Member> findAll() throws DaoException {

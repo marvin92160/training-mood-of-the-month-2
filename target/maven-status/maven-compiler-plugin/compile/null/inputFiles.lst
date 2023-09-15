@@ -15,3 +15,4 @@
 /home/takima/Documents/wellcomePool/training-mood-of-the-month-2/src/main/java/dao/MoodDao.java
 /home/takima/Documents/wellcomePool/training-mood-of-the-month-2/src/main/java/modele/Member.java
 /home/takima/Documents/wellcomePool/training-mood-of-the-month-2/src/main/java/persistence/ConnectionManager.java
+/home/takima/Documents/wellcomePool/training-mood-of-the-month-2/src/main/java/servlet/UpdateMemberServlet.java
