@@ -1,15 +1,17 @@
 package services;
 
 import dao.MoodDao;
-import modele.Mood;
 import Exception.ServiceException;
 import Exception.DaoException;
+import modele.Mood;
+
 import java.util.List;
+
 
 public class MoodService {
     private final MoodDao moodDao;
 
-    private MoodService(MoodDao moodDao){
+    public MoodService(MoodDao moodDao){
         this.moodDao = moodDao;
     }
 
