@@ -160,7 +160,7 @@
                                                        <td>${member.birthdate}</td>
                                                        <td  class="text-right">
                                                            <a href="${pageContext.request.contextPath}/update_member?id=${member.id}" class="btn btn-sm btn-warning"><i class="fa fa-pencil"></i> Edit</a>
-                                                           <a href="#" class="btn btn-sm btn-danger"><i class="fa fa-trash"></i> Remove</a>
+                                                           <a href="/projet/delete_member?id=${member.id}" class="btn btn-sm btn-danger"><i class="fa fa-trash"></i> Remove</a>
                                                        </td>
                                                     </tr>
                                                </c:forEach>

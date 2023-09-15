@@ -1,3 +1,4 @@
+servlet/DeleteMemberServlet.class
 servlet/UpdateMemberServlet.class
 services/MemberService.class
 dao/MoodDao.class

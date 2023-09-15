@@ -27,6 +27,15 @@ public class MemberService {
             throw new ServiceException();
         }
     }
+
+    public long delete(int Id_member) throws ServiceException {
+        try{
+            return this.memberDao.delete(Id_member);
+        }catch(DaoException e){
+            e.printStackTrace();
+            throw new ServiceException();
+        }
+    }
     public List<Member> findAll() throws ServiceException {
         try{
             return this.memberDao.findAll();

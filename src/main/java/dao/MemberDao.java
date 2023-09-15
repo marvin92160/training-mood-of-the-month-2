@@ -19,6 +19,7 @@ public class MemberDao {
 
     private static final String CREATE_MEMBER_QUERY = "INSERT INTO member(firstname, lastname, email, birthdate) VALUES(?, ?, ?, ?);";
     private static final String UPDATE_MEMBER_QUERY = "UPDATE member SET firstname = ?, lastname = ?, email = ?, birthdate = ? WHERE id = ?;";
+    private static final String DELETE_MEMBER_QUERY = "DELETE FROM member WHERE id=?;";
     private static final String FIND_MEMBER_QUERY = "SELECT firstname, lastname, email, birthdate FROM member WHERE id=?;";
     private static final String FIND_MEMBERS_QUERY = "SELECT id, firstname, lastname, email, birthdate FROM member;";
     private static final Logger logger = LoggerFactory.getLogger(MemberDao.class);
@@ -41,6 +42,21 @@ public class MemberDao {
 
         } catch (SQLException e) {
            throw new DaoException();
+        }
+    }
+    public long delete(int Id_member) throws DaoException {
+        try(Connection connection = ConnectionManager.getConnection()){
+            PreparedStatement ps = connection.prepareStatement(DELETE_MEMBER_QUERY);
+            ps.setInt(1, Id_member);
+            if(ps.executeUpdate()!=0){
+                return 1;
+            }
+            else{
+                return 0;
+            }
+        }
+        catch(SQLException e){
+            throw new DaoException();
         }
     }
 
@@ -109,6 +125,7 @@ public class MemberDao {
         return members;
 
     }
+
 
 
 }
