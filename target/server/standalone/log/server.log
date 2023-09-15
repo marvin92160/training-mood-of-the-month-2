@@ -617,3 +617,207 @@
 2023-09-14 15:54:37,173 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0007: Undertow HTTP listener default stopped, was bound to 127.0.0.1:8080
 2023-09-14 15:54:37,175 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0004: Undertow 2.3.7.Final stopping
 2023-09-14 15:54:37,189 INFO  [org.jboss.as] (MSC service thread 1-1) WFLYSRV0050: WildFly Full 29.0.1.Final (WildFly Core 21.1.1.Final) stopped in 30ms
+2023-09-14 16:45:26,811 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-4) WFLYDS0013: Started FileSystemDeploymentService for directory /home/takima/Documents/MOTM/training-mood-of-the-month-2/target/server/standalone/deployments
+2023-09-14 16:45:26,824 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2023-09-14 16:45:26,868 INFO  [org.jboss.ws.common.management] (MSC service thread 1-8) JBWS022052: Starting JBossWS 6.2.0.Final (Apache CXF 4.0.0) 
+2023-09-14 16:45:26,961 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2023-09-14 16:45:26,965 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
+2023-09-14 16:45:26,965 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:9990
+2023-09-14 16:45:26,966 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Full 29.0.1.Final (WildFly Core 21.1.1.Final) started in 1782ms - Started 280 of 522 services (317 services are lazy, passive or on-demand) - Server configuration file in use: standalone.xml
+2023-09-14 16:45:27,633 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0027: Starting deployment of "projet.war" (runtime-name: "projet.war")
+2023-09-14 16:45:28,105 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-1) WFLYJCA0005: Deploying non-JDBC-compliant driver class org.postgresql.Driver (version 42.6)
+2023-09-14 16:45:28,130 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-1) WFLYJCA0018: Started Driver service with driver-name = projet.war_org.postgresql.Driver_42_6
+2023-09-14 16:45:28,183 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 11) WFLYUT0021: Registered web context: '/projet' for server 'default-server'
+2023-09-14 16:45:28,227 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0010: Deployed "projet.war" (runtime-name : "projet.war")
+2023-09-14 17:41:22,982 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 11) WFLYUT0022: Unregistered web context: '/projet' from server 'default-server'
+2023-09-14 17:41:22,982 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-5) WFLYJCA0019: Stopped Driver service with driver-name = projet.war_org.postgresql.Driver_42_6
+2023-09-14 17:41:23,026 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0028: Stopped deployment projet.war (runtime-name: projet.war) in 46ms
+2023-09-14 17:41:23,027 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0027: Starting deployment of "projet.war" (runtime-name: "projet.war")
+2023-09-14 17:41:23,234 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-8) WFLYJCA0005: Deploying non-JDBC-compliant driver class org.postgresql.Driver (version 42.6)
+2023-09-14 17:41:23,245 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-6) WFLYJCA0018: Started Driver service with driver-name = projet.war_org.postgresql.Driver_42_6
+2023-09-14 17:41:23,252 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 84) WFLYUT0021: Registered web context: '/projet' for server 'default-server'
+2023-09-14 17:41:23,266 INFO  [org.jboss.as.server] (management-handler-thread - 2) WFLYSRV0013: Redeployed "projet.war"
+2023-09-14 17:41:23,365 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-2) WFLYJCA0019: Stopped Driver service with driver-name = projet.war_org.postgresql.Driver_42_6
+2023-09-14 17:41:23,365 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 84) WFLYUT0022: Unregistered web context: '/projet' from server 'default-server'
+2023-09-14 17:41:23,370 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0028: Stopped deployment projet.war (runtime-name: projet.war) in 6ms
+2023-09-14 17:41:23,371 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0027: Starting deployment of "projet.war" (runtime-name: "projet.war")
+2023-09-14 17:41:23,532 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-4) WFLYJCA0005: Deploying non-JDBC-compliant driver class org.postgresql.Driver (version 42.6)
+2023-09-14 17:41:23,542 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-3) WFLYJCA0018: Started Driver service with driver-name = projet.war_org.postgresql.Driver_42_6
+2023-09-14 17:41:23,552 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 86) WFLYUT0021: Registered web context: '/projet' for server 'default-server'
+2023-09-14 17:41:23,564 INFO  [org.jboss.as.server] (management-handler-thread - 2) WFLYSRV0013: Redeployed "projet.war"
+2023-09-14 17:41:24,998 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-1) WFLYJCA0019: Stopped Driver service with driver-name = projet.war_org.postgresql.Driver_42_6
+2023-09-14 17:41:24,998 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 86) WFLYUT0022: Unregistered web context: '/projet' from server 'default-server'
+2023-09-14 17:41:25,003 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0028: Stopped deployment projet.war (runtime-name: projet.war) in 5ms
+2023-09-14 17:41:25,004 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0027: Starting deployment of "projet.war" (runtime-name: "projet.war")
+2023-09-14 17:41:25,121 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-2) WFLYJCA0005: Deploying non-JDBC-compliant driver class org.postgresql.Driver (version 42.6)
+2023-09-14 17:41:25,125 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-4) WFLYJCA0018: Started Driver service with driver-name = projet.war_org.postgresql.Driver_42_6
+2023-09-14 17:41:25,130 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 83) WFLYUT0021: Registered web context: '/projet' for server 'default-server'
+2023-09-14 17:41:25,137 INFO  [org.jboss.as.server] (management-handler-thread - 2) WFLYSRV0013: Redeployed "projet.war"
+2023-09-14 17:41:25,205 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-2) WFLYJCA0019: Stopped Driver service with driver-name = projet.war_org.postgresql.Driver_42_6
+2023-09-14 17:41:25,205 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 83) WFLYUT0022: Unregistered web context: '/projet' from server 'default-server'
+2023-09-14 17:41:25,211 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0028: Stopped deployment projet.war (runtime-name: projet.war) in 6ms
+2023-09-14 17:41:25,212 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0027: Starting deployment of "projet.war" (runtime-name: "projet.war")
+2023-09-14 17:41:25,347 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-7) WFLYJCA0005: Deploying non-JDBC-compliant driver class org.postgresql.Driver (version 42.6)
+2023-09-14 17:41:25,355 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-1) WFLYJCA0018: Started Driver service with driver-name = projet.war_org.postgresql.Driver_42_6
+2023-09-14 17:41:25,361 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 86) WFLYUT0021: Registered web context: '/projet' for server 'default-server'
+2023-09-14 17:41:25,371 INFO  [org.jboss.as.server] (management-handler-thread - 2) WFLYSRV0013: Redeployed "projet.war"
+2023-09-14 17:43:04,470 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-5) WFLYJCA0019: Stopped Driver service with driver-name = projet.war_org.postgresql.Driver_42_6
+2023-09-14 17:43:04,470 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 86) WFLYUT0022: Unregistered web context: '/projet' from server 'default-server'
+2023-09-14 17:43:04,490 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0028: Stopped deployment projet.war (runtime-name: projet.war) in 20ms
+2023-09-14 17:43:04,491 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0027: Starting deployment of "projet.war" (runtime-name: "projet.war")
+2023-09-14 17:43:04,578 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-5) WFLYJCA0005: Deploying non-JDBC-compliant driver class org.postgresql.Driver (version 42.6)
+2023-09-14 17:43:04,581 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-3) WFLYJCA0018: Started Driver service with driver-name = projet.war_org.postgresql.Driver_42_6
+2023-09-14 17:43:04,586 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 89) WFLYUT0021: Registered web context: '/projet' for server 'default-server'
+2023-09-14 17:43:04,592 INFO  [org.jboss.as.server] (management-handler-thread - 2) WFLYSRV0013: Redeployed "projet.war"
+2023-09-14 17:43:04,688 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-1) WFLYJCA0019: Stopped Driver service with driver-name = projet.war_org.postgresql.Driver_42_6
+2023-09-14 17:43:04,688 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 89) WFLYUT0022: Unregistered web context: '/projet' from server 'default-server'
+2023-09-14 17:43:04,693 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0028: Stopped deployment projet.war (runtime-name: projet.war) in 5ms
+2023-09-14 17:43:04,693 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0027: Starting deployment of "projet.war" (runtime-name: "projet.war")
+2023-09-14 17:43:04,786 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-7) WFLYJCA0005: Deploying non-JDBC-compliant driver class org.postgresql.Driver (version 42.6)
+2023-09-14 17:43:04,790 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-1) WFLYJCA0018: Started Driver service with driver-name = projet.war_org.postgresql.Driver_42_6
+2023-09-14 17:43:04,796 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 94) WFLYUT0021: Registered web context: '/projet' for server 'default-server'
+2023-09-14 17:43:04,816 INFO  [org.jboss.as.server] (management-handler-thread - 2) WFLYSRV0013: Redeployed "projet.war"
+2023-09-14 17:44:21,840 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-1) WFLYJCA0019: Stopped Driver service with driver-name = projet.war_org.postgresql.Driver_42_6
+2023-09-14 17:44:21,841 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 94) WFLYUT0022: Unregistered web context: '/projet' from server 'default-server'
+2023-09-14 17:44:21,846 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0028: Stopped deployment projet.war (runtime-name: projet.war) in 6ms
+2023-09-14 17:44:21,847 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0027: Starting deployment of "projet.war" (runtime-name: "projet.war")
+2023-09-14 17:44:21,979 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-8) WFLYJCA0005: Deploying non-JDBC-compliant driver class org.postgresql.Driver (version 42.6)
+2023-09-14 17:44:21,984 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-2) WFLYJCA0018: Started Driver service with driver-name = projet.war_org.postgresql.Driver_42_6
+2023-09-14 17:44:21,989 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 94) WFLYUT0021: Registered web context: '/projet' for server 'default-server'
+2023-09-14 17:44:21,998 INFO  [org.jboss.as.server] (management-handler-thread - 2) WFLYSRV0013: Redeployed "projet.war"
+2023-09-14 17:44:22,060 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-3) WFLYJCA0019: Stopped Driver service with driver-name = projet.war_org.postgresql.Driver_42_6
+2023-09-14 17:44:22,060 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 94) WFLYUT0022: Unregistered web context: '/projet' from server 'default-server'
+2023-09-14 17:44:22,068 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0028: Stopped deployment projet.war (runtime-name: projet.war) in 8ms
+2023-09-14 17:44:22,069 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0027: Starting deployment of "projet.war" (runtime-name: "projet.war")
+2023-09-14 17:44:22,184 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-5) WFLYJCA0005: Deploying non-JDBC-compliant driver class org.postgresql.Driver (version 42.6)
+2023-09-14 17:44:22,188 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-5) WFLYJCA0018: Started Driver service with driver-name = projet.war_org.postgresql.Driver_42_6
+2023-09-14 17:44:22,193 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 98) WFLYUT0021: Registered web context: '/projet' for server 'default-server'
+2023-09-14 17:44:22,203 INFO  [org.jboss.as.server] (management-handler-thread - 2) WFLYSRV0013: Redeployed "projet.war"
+2023-09-14 17:47:00,125 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-3) WFLYJCA0019: Stopped Driver service with driver-name = projet.war_org.postgresql.Driver_42_6
+2023-09-14 17:47:00,126 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 98) WFLYUT0022: Unregistered web context: '/projet' from server 'default-server'
+2023-09-14 17:47:00,131 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0028: Stopped deployment projet.war (runtime-name: projet.war) in 5ms
+2023-09-14 17:47:00,131 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0027: Starting deployment of "projet.war" (runtime-name: "projet.war")
+2023-09-14 17:47:00,212 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-5) WFLYJCA0005: Deploying non-JDBC-compliant driver class org.postgresql.Driver (version 42.6)
+2023-09-14 17:47:00,222 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-7) WFLYJCA0018: Started Driver service with driver-name = projet.war_org.postgresql.Driver_42_6
+2023-09-14 17:47:00,227 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 107) WFLYUT0021: Registered web context: '/projet' for server 'default-server'
+2023-09-14 17:47:00,236 INFO  [org.jboss.as.server] (management-handler-thread - 2) WFLYSRV0013: Redeployed "projet.war"
+2023-09-14 17:47:00,284 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-8) WFLYJCA0019: Stopped Driver service with driver-name = projet.war_org.postgresql.Driver_42_6
+2023-09-14 17:47:00,284 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 102) WFLYUT0022: Unregistered web context: '/projet' from server 'default-server'
+2023-09-14 17:47:00,290 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0028: Stopped deployment projet.war (runtime-name: projet.war) in 6ms
+2023-09-14 17:47:00,291 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0027: Starting deployment of "projet.war" (runtime-name: "projet.war")
+2023-09-14 17:47:00,409 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-4) WFLYJCA0005: Deploying non-JDBC-compliant driver class org.postgresql.Driver (version 42.6)
+2023-09-14 17:47:00,415 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-8) WFLYJCA0018: Started Driver service with driver-name = projet.war_org.postgresql.Driver_42_6
+2023-09-14 17:47:00,419 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 107) WFLYUT0021: Registered web context: '/projet' for server 'default-server'
+2023-09-14 17:47:00,425 INFO  [org.jboss.as.server] (management-handler-thread - 2) WFLYSRV0013: Redeployed "projet.war"
+2023-09-14 17:47:54,583 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-2) WFLYJCA0019: Stopped Driver service with driver-name = projet.war_org.postgresql.Driver_42_6
+2023-09-14 17:47:54,583 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 107) WFLYUT0022: Unregistered web context: '/projet' from server 'default-server'
+2023-09-14 17:47:54,588 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0028: Stopped deployment projet.war (runtime-name: projet.war) in 4ms
+2023-09-14 17:47:54,588 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0027: Starting deployment of "projet.war" (runtime-name: "projet.war")
+2023-09-14 17:47:54,675 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-8) WFLYJCA0005: Deploying non-JDBC-compliant driver class org.postgresql.Driver (version 42.6)
+2023-09-14 17:47:54,680 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-3) WFLYJCA0018: Started Driver service with driver-name = projet.war_org.postgresql.Driver_42_6
+2023-09-14 17:47:54,684 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 117) WFLYUT0021: Registered web context: '/projet' for server 'default-server'
+2023-09-14 17:47:54,692 INFO  [org.jboss.as.server] (management-handler-thread - 2) WFLYSRV0013: Redeployed "projet.war"
+2023-09-14 17:47:54,773 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-7) WFLYJCA0019: Stopped Driver service with driver-name = projet.war_org.postgresql.Driver_42_6
+2023-09-14 17:47:54,773 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 117) WFLYUT0022: Unregistered web context: '/projet' from server 'default-server'
+2023-09-14 17:47:54,778 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0028: Stopped deployment projet.war (runtime-name: projet.war) in 5ms
+2023-09-14 17:47:54,779 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0027: Starting deployment of "projet.war" (runtime-name: "projet.war")
+2023-09-14 17:47:54,855 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-5) WFLYJCA0005: Deploying non-JDBC-compliant driver class org.postgresql.Driver (version 42.6)
+2023-09-14 17:47:54,858 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-5) WFLYJCA0018: Started Driver service with driver-name = projet.war_org.postgresql.Driver_42_6
+2023-09-14 17:47:54,862 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 110) WFLYUT0021: Registered web context: '/projet' for server 'default-server'
+2023-09-14 17:47:54,867 INFO  [org.jboss.as.server] (management-handler-thread - 2) WFLYSRV0013: Redeployed "projet.war"
+2023-09-14 17:48:31,969 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-2) WFLYJCA0019: Stopped Driver service with driver-name = projet.war_org.postgresql.Driver_42_6
+2023-09-14 17:48:31,969 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 110) WFLYUT0022: Unregistered web context: '/projet' from server 'default-server'
+2023-09-14 17:48:31,973 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0028: Stopped deployment projet.war (runtime-name: projet.war) in 4ms
+2023-09-14 17:48:31,974 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0027: Starting deployment of "projet.war" (runtime-name: "projet.war")
+2023-09-14 17:48:32,063 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-4) WFLYJCA0005: Deploying non-JDBC-compliant driver class org.postgresql.Driver (version 42.6)
+2023-09-14 17:48:32,069 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-6) WFLYJCA0018: Started Driver service with driver-name = projet.war_org.postgresql.Driver_42_6
+2023-09-14 17:48:32,073 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 123) WFLYUT0021: Registered web context: '/projet' for server 'default-server'
+2023-09-14 17:48:32,086 INFO  [org.jboss.as.server] (management-handler-thread - 2) WFLYSRV0013: Redeployed "projet.war"
+2023-09-14 17:48:32,151 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-1) WFLYJCA0019: Stopped Driver service with driver-name = projet.war_org.postgresql.Driver_42_6
+2023-09-14 17:48:32,151 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 123) WFLYUT0022: Unregistered web context: '/projet' from server 'default-server'
+2023-09-14 17:48:32,155 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0028: Stopped deployment projet.war (runtime-name: projet.war) in 5ms
+2023-09-14 17:48:32,156 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0027: Starting deployment of "projet.war" (runtime-name: "projet.war")
+2023-09-14 17:48:32,243 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-4) WFLYJCA0005: Deploying non-JDBC-compliant driver class org.postgresql.Driver (version 42.6)
+2023-09-14 17:48:32,249 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-5) WFLYJCA0018: Started Driver service with driver-name = projet.war_org.postgresql.Driver_42_6
+2023-09-14 17:48:32,254 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 118) WFLYUT0021: Registered web context: '/projet' for server 'default-server'
+2023-09-14 17:48:32,272 INFO  [org.jboss.as.server] (management-handler-thread - 2) WFLYSRV0013: Redeployed "projet.war"
+2023-09-14 17:48:59,283 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-8) WFLYJCA0019: Stopped Driver service with driver-name = projet.war_org.postgresql.Driver_42_6
+2023-09-14 17:48:59,283 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 118) WFLYUT0022: Unregistered web context: '/projet' from server 'default-server'
+2023-09-14 17:48:59,289 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0028: Stopped deployment projet.war (runtime-name: projet.war) in 6ms
+2023-09-14 17:48:59,290 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0027: Starting deployment of "projet.war" (runtime-name: "projet.war")
+2023-09-14 17:48:59,365 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-4) WFLYJCA0005: Deploying non-JDBC-compliant driver class org.postgresql.Driver (version 42.6)
+2023-09-14 17:48:59,368 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-6) WFLYJCA0018: Started Driver service with driver-name = projet.war_org.postgresql.Driver_42_6
+2023-09-14 17:48:59,371 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 132) WFLYUT0021: Registered web context: '/projet' for server 'default-server'
+2023-09-14 17:48:59,379 INFO  [org.jboss.as.server] (management-handler-thread - 2) WFLYSRV0013: Redeployed "projet.war"
+2023-09-14 17:48:59,424 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 132) WFLYUT0022: Unregistered web context: '/projet' from server 'default-server'
+2023-09-14 17:48:59,424 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-2) WFLYJCA0019: Stopped Driver service with driver-name = projet.war_org.postgresql.Driver_42_6
+2023-09-14 17:48:59,429 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0028: Stopped deployment projet.war (runtime-name: projet.war) in 4ms
+2023-09-14 17:48:59,429 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0027: Starting deployment of "projet.war" (runtime-name: "projet.war")
+2023-09-14 17:48:59,517 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-4) WFLYJCA0005: Deploying non-JDBC-compliant driver class org.postgresql.Driver (version 42.6)
+2023-09-14 17:48:59,520 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-5) WFLYJCA0018: Started Driver service with driver-name = projet.war_org.postgresql.Driver_42_6
+2023-09-14 17:48:59,525 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 130) WFLYUT0021: Registered web context: '/projet' for server 'default-server'
+2023-09-14 17:48:59,531 INFO  [org.jboss.as.server] (management-handler-thread - 2) WFLYSRV0013: Redeployed "projet.war"
+2023-09-14 17:49:18,958 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-5) WFLYJCA0019: Stopped Driver service with driver-name = projet.war_org.postgresql.Driver_42_6
+2023-09-14 17:49:18,958 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 130) WFLYUT0022: Unregistered web context: '/projet' from server 'default-server'
+2023-09-14 17:49:18,963 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0028: Stopped deployment projet.war (runtime-name: projet.war) in 5ms
+2023-09-14 17:49:18,964 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0027: Starting deployment of "projet.war" (runtime-name: "projet.war")
+2023-09-14 17:49:19,053 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-6) WFLYJCA0005: Deploying non-JDBC-compliant driver class org.postgresql.Driver (version 42.6)
+2023-09-14 17:49:19,057 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-7) WFLYJCA0018: Started Driver service with driver-name = projet.war_org.postgresql.Driver_42_6
+2023-09-14 17:49:19,061 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 126) WFLYUT0021: Registered web context: '/projet' for server 'default-server'
+2023-09-14 17:49:19,066 INFO  [org.jboss.as.server] (management-handler-thread - 2) WFLYSRV0013: Redeployed "projet.war"
+2023-09-14 17:49:19,108 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-3) WFLYJCA0019: Stopped Driver service with driver-name = projet.war_org.postgresql.Driver_42_6
+2023-09-14 17:49:19,108 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 126) WFLYUT0022: Unregistered web context: '/projet' from server 'default-server'
+2023-09-14 17:49:19,112 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0028: Stopped deployment projet.war (runtime-name: projet.war) in 4ms
+2023-09-14 17:49:19,113 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0027: Starting deployment of "projet.war" (runtime-name: "projet.war")
+2023-09-14 17:49:19,197 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-7) WFLYJCA0005: Deploying non-JDBC-compliant driver class org.postgresql.Driver (version 42.6)
+2023-09-14 17:49:19,201 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-2) WFLYJCA0018: Started Driver service with driver-name = projet.war_org.postgresql.Driver_42_6
+2023-09-14 17:49:19,206 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 118) WFLYUT0021: Registered web context: '/projet' for server 'default-server'
+2023-09-14 17:49:19,214 INFO  [org.jboss.as.server] (management-handler-thread - 2) WFLYSRV0013: Redeployed "projet.war"
+2023-09-14 17:49:55,973 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-8) WFLYJCA0019: Stopped Driver service with driver-name = projet.war_org.postgresql.Driver_42_6
+2023-09-14 17:49:55,973 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 118) WFLYUT0022: Unregistered web context: '/projet' from server 'default-server'
+2023-09-14 17:49:55,977 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0028: Stopped deployment projet.war (runtime-name: projet.war) in 4ms
+2023-09-14 17:49:55,978 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0027: Starting deployment of "projet.war" (runtime-name: "projet.war")
+2023-09-14 17:49:56,047 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-6) WFLYJCA0005: Deploying non-JDBC-compliant driver class org.postgresql.Driver (version 42.6)
+2023-09-14 17:49:56,053 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-8) WFLYJCA0018: Started Driver service with driver-name = projet.war_org.postgresql.Driver_42_6
+2023-09-14 17:49:56,058 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 139) WFLYUT0021: Registered web context: '/projet' for server 'default-server'
+2023-09-14 17:49:56,069 INFO  [org.jboss.as.server] (management-handler-thread - 2) WFLYSRV0013: Redeployed "projet.war"
+2023-09-14 17:49:56,110 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-3) WFLYJCA0019: Stopped Driver service with driver-name = projet.war_org.postgresql.Driver_42_6
+2023-09-14 17:49:56,110 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 139) WFLYUT0022: Unregistered web context: '/projet' from server 'default-server'
+2023-09-14 17:49:56,115 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0028: Stopped deployment projet.war (runtime-name: projet.war) in 4ms
+2023-09-14 17:49:56,115 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0027: Starting deployment of "projet.war" (runtime-name: "projet.war")
+2023-09-14 17:49:56,179 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-2) WFLYJCA0005: Deploying non-JDBC-compliant driver class org.postgresql.Driver (version 42.6)
+2023-09-14 17:49:56,184 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-6) WFLYJCA0018: Started Driver service with driver-name = projet.war_org.postgresql.Driver_42_6
+2023-09-14 17:49:56,189 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 139) WFLYUT0021: Registered web context: '/projet' for server 'default-server'
+2023-09-14 17:49:56,198 INFO  [org.jboss.as.server] (management-handler-thread - 2) WFLYSRV0013: Redeployed "projet.war"
+2023-09-14 17:53:01,259 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-2) WFLYJCA0019: Stopped Driver service with driver-name = projet.war_org.postgresql.Driver_42_6
+2023-09-14 17:53:01,260 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 139) WFLYUT0022: Unregistered web context: '/projet' from server 'default-server'
+2023-09-14 17:53:01,267 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0028: Stopped deployment projet.war (runtime-name: projet.war) in 8ms
+2023-09-14 17:53:01,268 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0027: Starting deployment of "projet.war" (runtime-name: "projet.war")
+2023-09-14 17:53:01,362 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-1) WFLYJCA0005: Deploying non-JDBC-compliant driver class org.postgresql.Driver (version 42.6)
+2023-09-14 17:53:01,367 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-2) WFLYJCA0018: Started Driver service with driver-name = projet.war_org.postgresql.Driver_42_6
+2023-09-14 17:53:01,370 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 147) WFLYUT0021: Registered web context: '/projet' for server 'default-server'
+2023-09-14 17:53:01,375 INFO  [org.jboss.as.server] (management-handler-thread - 2) WFLYSRV0013: Redeployed "projet.war"
+2023-09-14 17:53:01,407 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-1) WFLYJCA0019: Stopped Driver service with driver-name = projet.war_org.postgresql.Driver_42_6
+2023-09-14 17:53:01,407 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 147) WFLYUT0022: Unregistered web context: '/projet' from server 'default-server'
+2023-09-14 17:53:01,411 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0028: Stopped deployment projet.war (runtime-name: projet.war) in 4ms
+2023-09-14 17:53:01,411 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0027: Starting deployment of "projet.war" (runtime-name: "projet.war")
+2023-09-14 17:53:01,494 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-5) WFLYJCA0005: Deploying non-JDBC-compliant driver class org.postgresql.Driver (version 42.6)
+2023-09-14 17:53:01,498 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-2) WFLYJCA0018: Started Driver service with driver-name = projet.war_org.postgresql.Driver_42_6
+2023-09-14 17:53:01,502 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 139) WFLYUT0021: Registered web context: '/projet' for server 'default-server'
+2023-09-14 17:53:01,510 INFO  [org.jboss.as.server] (management-handler-thread - 2) WFLYSRV0013: Redeployed "projet.war"
+2023-09-14 18:01:17,197 INFO  [org.jboss.as.server] (Thread-1) WFLYSRV0272: Suspending server
+2023-09-14 18:01:17,199 INFO  [org.jboss.as.ejb3] (Thread-1) WFLYEJB0493: Jakarta Enterprise Beans subsystem suspension complete
+2023-09-14 18:01:17,200 INFO  [org.jboss.as.server] (Thread-1) WFLYSRV0220: Server shutdown has been requested via an OS signal
+2023-09-14 18:01:17,211 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-3) WFLYJCA0019: Stopped Driver service with driver-name = projet.war_org.postgresql.Driver_42_6
+2023-09-14 18:01:17,214 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-3) WFLYMAIL0002: Unbound mail session [java:jboss/mail/Default]
+2023-09-14 18:01:17,216 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 139) WFLYUT0022: Unregistered web context: '/projet' from server 'default-server'
+2023-09-14 18:01:17,221 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0019: Host default-host stopping
+2023-09-14 18:01:17,223 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2023-09-14 18:01:17,228 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-7) WFLYJCA0019: Stopped Driver service with driver-name = h2
+2023-09-14 18:01:17,234 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0008: Undertow HTTPS listener https suspending
+2023-09-14 18:01:17,234 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0008: Undertow HTTP listener default suspending
+2023-09-14 18:01:17,237 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0007: Undertow HTTPS listener https stopped, was bound to 127.0.0.1:8443
+2023-09-14 18:01:17,237 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0007: Undertow HTTP listener default stopped, was bound to 127.0.0.1:8080
+2023-09-14 18:01:17,238 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0028: Stopped deployment projet.war (runtime-name: projet.war) in 36ms
+2023-09-14 18:01:17,239 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0004: Undertow 2.3.7.Final stopping
+2023-09-14 18:01:17,250 INFO  [org.jboss.as] (MSC service thread 1-5) WFLYSRV0050: WildFly Full 29.0.1.Final (WildFly Core 21.1.1.Final) stopped in 48ms

@@ -10,7 +10,7 @@ public class ConnectionManager {
     private static final String DB_HOST = "localhost";
     private static final int DB_PORT = 5432;
     private static final String DB_NAME = "dbmotm";
-    private static final String DB_USER = "takima";
+    private static final String DB_USER = "postgres";
     private static final String DB_PASSWORD = "takima";
 
     private static DataSource dataSource = null;

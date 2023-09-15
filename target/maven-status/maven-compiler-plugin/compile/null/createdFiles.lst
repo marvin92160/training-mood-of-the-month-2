@@ -1,6 +1,10 @@
 modele/Member.class
-dao/MoodDao.class
 dao/MembreDao.class
-servlet/NewsletterTemplateServlet.class
-servlet/StatsServlet.class
+services/MemberService.class
+Exception/DaoException.class
 modele/Mood.class
+dao/MoodDao.class
+com/epf/rentmanager/persistence/FillDatabase.class
+servlet/NewsletterTemplateServlet.class
+services/MoodService.class
+servlet/StatsServlet.class
