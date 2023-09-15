@@ -8,6 +8,7 @@ import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import modele.Mood;
 import modele.Member;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -27,10 +28,10 @@ public class HomeServlet extends HttpServlet {
     MemberDao memberDao = new MemberDao();
     MemberService memberService = new MemberService(memberDao);
 
-   /* @Override
+    @Override
     public void init() {
-        moodService = new MoodService(moodDao);
-    }*/
+        moodService = new MoodService(new MoodDao());
+    }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws IOException {
@@ -46,6 +47,22 @@ public class HomeServlet extends HttpServlet {
             request.setAttribute("membres", this.memberService.findAll());
 
           //  request.setAttribute("nbrMood", moodService.count());
+        } catch (ServiceException e) {
+            logger.error("An error occurred while processing the request.", e);
+        }
+
+        try {
+            List<Mood> moods = moodService.findAll();
+            float average;
+            float sum = 0;
+            int i = 0;
+            for (Mood mood:moods) {
+                i++;
+                sum += mood.getGrade();
+            }
+            average = sum/i;
+            request.setAttribute("moods", moods);
+            request.setAttribute("average", average);
         } catch (ServiceException e) {
             logger.error("An error occurred while processing the request.", e);
         }

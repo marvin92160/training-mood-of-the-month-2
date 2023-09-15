@@ -1,6 +1,7 @@
 package modele;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 public class Mood {
 
@@ -10,10 +11,10 @@ public class Mood {
 
     private boolean isPublic;
     private long memberId;
-    private LocalDate date;
+    private LocalDateTime date;
 
 
-    public Mood(long id, int grade, String comment, boolean isPublic, long memberId, LocalDate date) {
+    public Mood(long id, int grade, String comment, boolean isPublic, long memberId, LocalDateTime date) {
         this.id = id;
         this.grade = grade;
         this.comment = comment;
@@ -53,7 +54,7 @@ public class Mood {
         return grade;
     }
 
-    public LocalDate getDate() {
+    public LocalDateTime getDate() {
         return date;
     }
 
@@ -73,7 +74,7 @@ public class Mood {
         this.comment = comment;
     }
 
-    public void setDate(LocalDate date) {
+    public void setDate(LocalDateTime date) {
         this.date = date;
     }
 

@@ -1,13 +1,13 @@
 servlet/MotmServlet.class
-servlet/AddMemberServlet.class
 modele/Member.class
-services/MemberService.class
+servlet/AddMemberServlet.class
 Exception/ServiceException.class
-servlet/HomeServlet.class
+services/MemberService.class
 servlet/DashboardServlet.class
+servlet/HomeServlet.class
 Exception/DaoException.class
-persistence/FillDatabase.class
 modele/Mood.class
+persistence/FillDatabase.class
 dao/MemberDao.class
 dao/MoodDao.class
 servlet/editMotmServlet.class
