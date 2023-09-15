@@ -5,6 +5,10 @@ import Exception.DaoException;
 import persistence.ConnectionManager;
 
 import java.sql.*;
+import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.List;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 public class MemberDao {
@@ -12,6 +16,8 @@ public class MemberDao {
     public MemberDao(){}
 
     private static final String CREATE_MEMBER_QUERY = "INSERT INTO member(firstname, lastname, email, birthdate) VALUES(?, ?, ?, ?);";
+
+    private static final String FIND_MEMBERS_QUERY = "SELECT id, firstname, lastname, email, birthdate FROM member;";
     private static final Logger logger = LoggerFactory.getLogger(MemberDao.class);
 
     public long create(Member membre) throws DaoException{
@@ -35,17 +41,30 @@ public class MemberDao {
         }
     }
 
-}            /*Connection connection = ConnectionManager.getConnection();
-            PreparedStatement ps = connection.prepareStatement(CREATE_MEMBER_QUERY, Statement.RETURN_GENERATED_KEYS);
-            ps.setString(1, membre.getLastName());
-            ps.setString(2, membre.getFirstName());
-            ps.setString(3, membre.getEmail());
-            ps.setDate(4, Date.valueOf(membre.getBirthdate()));
-            ps.execute();
-            ResultSet resultSet = ps.getGeneratedKeys();
+    public List<Member> findAll() throws DaoException {
+        List<Member> members = new ArrayList<Member>();
+        try {
+            LocalDate birthdate = LocalDate.now();
+            Connection connection = ConnectionManager.getConnection();
+            Statement statement = connection.createStatement();
+            ResultSet rs = statement.executeQuery(FIND_MEMBERS_QUERY);
+            while(rs.next()){
+                int id = rs.getInt("id");
+                String lastName = rs.getString("lastname");
+                String firstName= rs.getString("firstname");
+                String email = rs.getString("email");
+                birthdate = rs.getDate("birthdate").toLocalDate();
 
-            ps.close();
-            connection.close();*/
+                members.add( new Member( id,lastName,firstName,email,birthdate ));
+            }
+        }catch(SQLException e){
+            e.printStackTrace();
+        }
+        return members;
 
+    }
+
+
+}
 
 
