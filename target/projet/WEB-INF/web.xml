@@ -3,7 +3,7 @@
 <!--        <servlet-name>HomeServlet</servlet-name>-->
 <!--        <servlet-class>servlet.HomeServlet</servlet-class>-->
 <!--    </servlet>-->
-<!--    <servlet-mapping>-->
+<!--    <serv   let-mapping>-->
 <!--        <servlet-name>HomeServlet</servlet-name>-->
 <!--        <url-pattern>/</url-pattern>-->
 <!--    </servlet-mapping>-->
