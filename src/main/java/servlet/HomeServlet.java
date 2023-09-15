@@ -35,22 +35,17 @@ public class HomeServlet extends HttpServlet {
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws IOException {
-      /*  try {
+        try {
             System.out.println(moodService.count());
             request.setAttribute("nbrMood", moodService.count());
         } catch (ServiceException e) {
             logger.error("An error occurred while processing the request.", e);
-        }*/
-
+        }
         try {
-
             request.setAttribute("membres", this.memberService.findAll());
-
-          //  request.setAttribute("nbrMood", moodService.count());
         } catch (ServiceException e) {
             logger.error("An error occurred while processing the request.", e);
         }
-
         try {
             List<Mood> moods = moodService.findAll();
             float average;
@@ -66,7 +61,6 @@ public class HomeServlet extends HttpServlet {
         } catch (ServiceException e) {
             logger.error("An error occurred while processing the request.", e);
         }
-
         try {
             // ici on mettra le code pour définir "nbrMembre"
              request.setAttribute("nbrMembre", 20);
