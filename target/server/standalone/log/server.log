@@ -1799,3 +1799,614 @@
 2023-09-15 11:17:08,990 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-5) WFLYJCA0018: Started Driver service with driver-name = projet.war_org.postgresql.Driver_42_6
 2023-09-15 11:17:08,997 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 94) WFLYUT0021: Registered web context: '/projet' for server 'default-server'
 2023-09-15 11:17:09,009 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0013: Redeployed "projet.war"
+2023-09-15 11:18:40,273 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-7) WFLYJCA0019: Stopped Driver service with driver-name = projet.war_org.postgresql.Driver_42_6
+2023-09-15 11:18:40,273 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 94) WFLYUT0022: Unregistered web context: '/projet' from server 'default-server'
+2023-09-15 11:18:40,277 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0028: Stopped deployment projet.war (runtime-name: projet.war) in 4ms
+2023-09-15 11:18:40,287 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0009: Undeployed "projet.war" (runtime-name: "projet.war")
+2023-09-15 11:18:40,390 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0027: Starting deployment of "projet.war" (runtime-name: "projet.war")
+2023-09-15 11:18:40,541 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-3) WFLYJCA0005: Deploying non-JDBC-compliant driver class org.postgresql.Driver (version 42.6)
+2023-09-15 11:18:40,549 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-4) WFLYJCA0018: Started Driver service with driver-name = projet.war_org.postgresql.Driver_42_6
+2023-09-15 11:18:40,554 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 101) WFLYUT0021: Registered web context: '/projet' for server 'default-server'
+2023-09-15 11:18:40,564 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0010: Deployed "projet.war" (runtime-name : "projet.war")
+2023-09-15 11:18:40,581 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-3) WFLYJCA0019: Stopped Driver service with driver-name = projet.war_org.postgresql.Driver_42_6
+2023-09-15 11:18:40,581 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 101) WFLYUT0022: Unregistered web context: '/projet' from server 'default-server'
+2023-09-15 11:18:40,584 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0028: Stopped deployment projet.war (runtime-name: projet.war) in 3ms
+2023-09-15 11:18:40,585 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0027: Starting deployment of "projet.war" (runtime-name: "projet.war")
+2023-09-15 11:18:40,692 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-4) WFLYJCA0005: Deploying non-JDBC-compliant driver class org.postgresql.Driver (version 42.6)
+2023-09-15 11:18:40,698 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-1) WFLYJCA0018: Started Driver service with driver-name = projet.war_org.postgresql.Driver_42_6
+2023-09-15 11:18:40,702 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 96) WFLYUT0021: Registered web context: '/projet' for server 'default-server'
+2023-09-15 11:18:40,713 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0013: Redeployed "projet.war"
+2023-09-15 11:18:40,734 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-6) WFLYJCA0019: Stopped Driver service with driver-name = projet.war_org.postgresql.Driver_42_6
+2023-09-15 11:18:40,734 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 96) WFLYUT0022: Unregistered web context: '/projet' from server 'default-server'
+2023-09-15 11:18:40,736 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0028: Stopped deployment projet.war (runtime-name: projet.war) in 2ms
+2023-09-15 11:18:40,737 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0027: Starting deployment of "projet.war" (runtime-name: "projet.war")
+2023-09-15 11:18:40,846 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-3) WFLYJCA0005: Deploying non-JDBC-compliant driver class org.postgresql.Driver (version 42.6)
+2023-09-15 11:18:40,851 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-7) WFLYJCA0018: Started Driver service with driver-name = projet.war_org.postgresql.Driver_42_6
+2023-09-15 11:18:40,855 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 97) WFLYUT0021: Registered web context: '/projet' for server 'default-server'
+2023-09-15 11:18:40,864 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0013: Redeployed "projet.war"
+2023-09-15 11:18:40,868 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-6) WFLYJCA0019: Stopped Driver service with driver-name = projet.war_org.postgresql.Driver_42_6
+2023-09-15 11:18:40,869 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 97) WFLYUT0022: Unregistered web context: '/projet' from server 'default-server'
+2023-09-15 11:18:40,871 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0028: Stopped deployment projet.war (runtime-name: projet.war) in 3ms
+2023-09-15 11:18:40,877 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0009: Undeployed "projet.war" (runtime-name: "projet.war")
+2023-09-15 11:18:40,899 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0027: Starting deployment of "projet.war" (runtime-name: "projet.war")
+2023-09-15 11:18:40,989 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-1) WFLYJCA0005: Deploying non-JDBC-compliant driver class org.postgresql.Driver (version 42.6)
+2023-09-15 11:18:40,993 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-6) WFLYJCA0018: Started Driver service with driver-name = projet.war_org.postgresql.Driver_42_6
+2023-09-15 11:18:40,996 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 99) WFLYUT0021: Registered web context: '/projet' for server 'default-server'
+2023-09-15 11:18:41,004 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0010: Deployed "projet.war" (runtime-name : "projet.war")
+2023-09-15 11:18:41,018 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-5) WFLYJCA0019: Stopped Driver service with driver-name = projet.war_org.postgresql.Driver_42_6
+2023-09-15 11:18:41,019 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 99) WFLYUT0022: Unregistered web context: '/projet' from server 'default-server'
+2023-09-15 11:18:41,021 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0028: Stopped deployment projet.war (runtime-name: projet.war) in 3ms
+2023-09-15 11:18:41,022 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0027: Starting deployment of "projet.war" (runtime-name: "projet.war")
+2023-09-15 11:18:41,135 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-7) WFLYJCA0005: Deploying non-JDBC-compliant driver class org.postgresql.Driver (version 42.6)
+2023-09-15 11:18:41,138 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-7) WFLYJCA0018: Started Driver service with driver-name = projet.war_org.postgresql.Driver_42_6
+2023-09-15 11:18:41,142 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 97) WFLYUT0021: Registered web context: '/projet' for server 'default-server'
+2023-09-15 11:18:41,150 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0013: Redeployed "projet.war"
+2023-09-15 11:18:41,160 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-5) WFLYJCA0019: Stopped Driver service with driver-name = projet.war_org.postgresql.Driver_42_6
+2023-09-15 11:18:41,160 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 97) WFLYUT0022: Unregistered web context: '/projet' from server 'default-server'
+2023-09-15 11:18:41,163 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0028: Stopped deployment projet.war (runtime-name: projet.war) in 2ms
+2023-09-15 11:18:41,164 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0027: Starting deployment of "projet.war" (runtime-name: "projet.war")
+2023-09-15 11:18:41,261 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-1) WFLYJCA0005: Deploying non-JDBC-compliant driver class org.postgresql.Driver (version 42.6)
+2023-09-15 11:18:41,264 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-7) WFLYJCA0018: Started Driver service with driver-name = projet.war_org.postgresql.Driver_42_6
+2023-09-15 11:18:41,269 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 98) WFLYUT0021: Registered web context: '/projet' for server 'default-server'
+2023-09-15 11:18:41,274 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0013: Redeployed "projet.war"
+2023-09-15 11:18:41,278 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-5) WFLYJCA0019: Stopped Driver service with driver-name = projet.war_org.postgresql.Driver_42_6
+2023-09-15 11:18:41,278 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 98) WFLYUT0022: Unregistered web context: '/projet' from server 'default-server'
+2023-09-15 11:18:41,280 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0028: Stopped deployment projet.war (runtime-name: projet.war) in 3ms
+2023-09-15 11:18:41,287 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0009: Undeployed "projet.war" (runtime-name: "projet.war")
+2023-09-15 11:18:41,304 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0027: Starting deployment of "projet.war" (runtime-name: "projet.war")
+2023-09-15 11:18:41,436 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-6) WFLYJCA0005: Deploying non-JDBC-compliant driver class org.postgresql.Driver (version 42.6)
+2023-09-15 11:18:41,439 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-2) WFLYJCA0018: Started Driver service with driver-name = projet.war_org.postgresql.Driver_42_6
+2023-09-15 11:18:41,442 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 102) WFLYUT0021: Registered web context: '/projet' for server 'default-server'
+2023-09-15 11:18:41,450 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0010: Deployed "projet.war" (runtime-name : "projet.war")
+2023-09-15 11:18:41,463 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-1) WFLYJCA0019: Stopped Driver service with driver-name = projet.war_org.postgresql.Driver_42_6
+2023-09-15 11:18:41,463 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 102) WFLYUT0022: Unregistered web context: '/projet' from server 'default-server'
+2023-09-15 11:18:41,466 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0028: Stopped deployment projet.war (runtime-name: projet.war) in 3ms
+2023-09-15 11:18:41,466 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0027: Starting deployment of "projet.war" (runtime-name: "projet.war")
+2023-09-15 11:18:41,557 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-3) WFLYJCA0005: Deploying non-JDBC-compliant driver class org.postgresql.Driver (version 42.6)
+2023-09-15 11:18:41,562 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-5) WFLYJCA0018: Started Driver service with driver-name = projet.war_org.postgresql.Driver_42_6
+2023-09-15 11:18:41,565 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 97) WFLYUT0021: Registered web context: '/projet' for server 'default-server'
+2023-09-15 11:18:41,572 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0013: Redeployed "projet.war"
+2023-09-15 11:18:41,579 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-4) WFLYJCA0019: Stopped Driver service with driver-name = projet.war_org.postgresql.Driver_42_6
+2023-09-15 11:18:41,580 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 97) WFLYUT0022: Unregistered web context: '/projet' from server 'default-server'
+2023-09-15 11:18:41,582 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0028: Stopped deployment projet.war (runtime-name: projet.war) in 3ms
+2023-09-15 11:18:41,583 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0027: Starting deployment of "projet.war" (runtime-name: "projet.war")
+2023-09-15 11:18:41,683 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-2) WFLYJCA0005: Deploying non-JDBC-compliant driver class org.postgresql.Driver (version 42.6)
+2023-09-15 11:18:41,686 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-3) WFLYJCA0018: Started Driver service with driver-name = projet.war_org.postgresql.Driver_42_6
+2023-09-15 11:18:41,690 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 101) WFLYUT0021: Registered web context: '/projet' for server 'default-server'
+2023-09-15 11:18:41,699 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0013: Redeployed "projet.war"
+2023-09-15 11:24:16,804 ERROR [dao.MemberDao] (default task-1) prenomchineaud
+2023-09-15 11:24:16,804 ERROR [dao.MemberDao] (default task-1) nommarion
+2023-09-15 11:24:16,804 ERROR [dao.MemberDao] (default task-1) emailm.c@gmail.com
+2023-09-15 11:24:16,805 ERROR [dao.MemberDao] (default task-1) membre ID : 0 | Nom : chineaud | Prénom : marion | Email : m.c@gmail.com | Naissance : 2023-09-15
+
+2023-09-15 11:24:16,885 ERROR [io.undertow.request] (default task-1) UT005023: Exception handling request to /projet/home: java.lang.NullPointerException: Cannot invoke "dao.MoodDao.findALl()" because "this.moodDao" is null
+	at deployment.projet.war//services.MoodService.findAll(MoodService.java:20)
+	at deployment.projet.war//services.MoodService.count(MoodService.java:27)
+	at deployment.projet.war//servlet.HomeServlet.doGet(HomeServlet.java:31)
+	at jakarta.servlet.api@6.0.0//jakarta.servlet.http.HttpServlet.service(HttpServlet.java:527)
+	at jakarta.servlet.api@6.0.0//jakarta.servlet.http.HttpServlet.service(HttpServlet.java:614)
+	at io.undertow.servlet@2.3.7.Final//io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:74)
+	at io.undertow.servlet@2.3.7.Final//io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:62)
+	at io.undertow.servlet@2.3.7.Final//io.undertow.servlet.handlers.ServletChain$1.handleRequest(ServletChain.java:68)
+	at io.undertow.servlet@2.3.7.Final//io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36)
+	at org.wildfly.security.elytron-web.undertow-server@4.0.0.Final//org.wildfly.elytron.web.undertow.server.ElytronRunAsHandler.lambda$handleRequest$1(ElytronRunAsHandler.java:68)
+	at org.wildfly.security.elytron-base@2.2.1.Final//org.wildfly.security.auth.server.FlexibleIdentityAssociation.runAsFunctionEx(FlexibleIdentityAssociation.java:103)
+	at org.wildfly.security.elytron-base@2.2.1.Final//org.wildfly.security.auth.server.Scoped.runAsFunctionEx(Scoped.java:161)
+	at org.wildfly.security.elytron-base@2.2.1.Final//org.wildfly.security.auth.server.Scoped.runAs(Scoped.java:73)
+	at org.wildfly.security.elytron-web.undertow-server@4.0.0.Final//org.wildfly.elytron.web.undertow.server.ElytronRunAsHandler.handleRequest(ElytronRunAsHandler.java:67)
+	at io.undertow.servlet@2.3.7.Final//io.undertow.servlet.handlers.RedirectDirHandler.handleRequest(RedirectDirHandler.java:68)
+	at io.undertow.servlet@2.3.7.Final//io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:117)
+	at io.undertow.servlet@2.3.7.Final//io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:57)
+	at io.undertow.core@2.3.7.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.core@2.3.7.Final//io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:46)
+	at io.undertow.servlet@2.3.7.Final//io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:64)
+	at io.undertow.core@2.3.7.Final//io.undertow.security.handlers.AbstractSecurityContextAssociationHandler.handleRequest(AbstractSecurityContextAssociationHandler.java:43)
+	at org.wildfly.security.elytron-web.undertow-server-servlet@4.0.0.Final//org.wildfly.elytron.web.undertow.server.servlet.CleanUpHandler.handleRequest(CleanUpHandler.java:38)
+	at io.undertow.core@2.3.7.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at org.wildfly.extension.undertow@29.0.1.Final//org.wildfly.extension.undertow.security.jacc.JACCContextIdHandler.handleRequest(JACCContextIdHandler.java:61)
+	at io.undertow.core@2.3.7.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at org.wildfly.extension.undertow@29.0.1.Final//org.wildfly.extension.undertow.deployment.GlobalRequestControllerHandler.handleRequest(GlobalRequestControllerHandler.java:68)
+	at io.undertow.servlet@2.3.7.Final//io.undertow.servlet.handlers.SendErrorPageHandler.handleRequest(SendErrorPageHandler.java:52)
+	at io.undertow.core@2.3.7.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.servlet@2.3.7.Final//io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:276)
+	at io.undertow.servlet@2.3.7.Final//io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:135)
+	at io.undertow.servlet@2.3.7.Final//io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:132)
+	at io.undertow.servlet@2.3.7.Final//io.undertow.servlet.core.ServletRequestContextThreadSetupAction$1.call(ServletRequestContextThreadSetupAction.java:48)
+	at io.undertow.servlet@2.3.7.Final//io.undertow.servlet.core.ContextClassLoaderSetupAction$1.call(ContextClassLoaderSetupAction.java:43)
+	at org.wildfly.extension.undertow@29.0.1.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1430)
+	at org.wildfly.extension.undertow@29.0.1.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1430)
+	at org.wildfly.extension.undertow@29.0.1.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1430)
+	at org.wildfly.extension.undertow@29.0.1.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1430)
+	at io.undertow.servlet@2.3.7.Final//io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:256)
+	at io.undertow.servlet@2.3.7.Final//io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:101)
+	at io.undertow.core@2.3.7.Final//io.undertow.server.Connectors.executeRootHandler(Connectors.java:393)
+	at io.undertow.core@2.3.7.Final//io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:859)
+	at org.jboss.threads@2.4.0.Final//org.jboss.threads.ContextClassLoaderSavingRunnable.run(ContextClassLoaderSavingRunnable.java:35)
+	at org.jboss.threads@2.4.0.Final//org.jboss.threads.EnhancedQueueExecutor.safeRun(EnhancedQueueExecutor.java:1990)
+	at org.jboss.threads@2.4.0.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.doRunTask(EnhancedQueueExecutor.java:1486)
+	at org.jboss.threads@2.4.0.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1377)
+	at org.jboss.xnio@3.8.9.Final//org.xnio.XnioWorker$WorkerThreadFactory$1$1.run(XnioWorker.java:1282)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+2023-09-15 11:25:13,330 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-6) WFLYJCA0019: Stopped Driver service with driver-name = projet.war_org.postgresql.Driver_42_6
+2023-09-15 11:25:13,330 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 101) WFLYUT0022: Unregistered web context: '/projet' from server 'default-server'
+2023-09-15 11:25:13,355 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0028: Stopped deployment projet.war (runtime-name: projet.war) in 25ms
+2023-09-15 11:25:13,356 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0027: Starting deployment of "projet.war" (runtime-name: "projet.war")
+2023-09-15 11:25:13,444 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-1) WFLYJCA0005: Deploying non-JDBC-compliant driver class org.postgresql.Driver (version 42.6)
+2023-09-15 11:25:13,448 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-2) WFLYJCA0018: Started Driver service with driver-name = projet.war_org.postgresql.Driver_42_6
+2023-09-15 11:25:13,451 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 101) WFLYUT0021: Registered web context: '/projet' for server 'default-server'
+2023-09-15 11:25:13,459 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0013: Redeployed "projet.war"
+2023-09-15 11:25:13,472 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-2) WFLYJCA0019: Stopped Driver service with driver-name = projet.war_org.postgresql.Driver_42_6
+2023-09-15 11:25:13,472 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 101) WFLYUT0022: Unregistered web context: '/projet' from server 'default-server'
+2023-09-15 11:25:13,475 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0028: Stopped deployment projet.war (runtime-name: projet.war) in 2ms
+2023-09-15 11:25:13,475 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0027: Starting deployment of "projet.war" (runtime-name: "projet.war")
+2023-09-15 11:25:13,584 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-3) WFLYJCA0005: Deploying non-JDBC-compliant driver class org.postgresql.Driver (version 42.6)
+2023-09-15 11:25:13,586 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-8) WFLYJCA0018: Started Driver service with driver-name = projet.war_org.postgresql.Driver_42_6
+2023-09-15 11:25:13,590 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 104) WFLYUT0021: Registered web context: '/projet' for server 'default-server'
+2023-09-15 11:25:13,597 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0013: Redeployed "projet.war"
+2023-09-15 11:25:32,495 ERROR [dao.MemberDao] (default task-1) prenomchineaud
+2023-09-15 11:25:32,495 ERROR [dao.MemberDao] (default task-1) nommarion
+2023-09-15 11:25:32,495 ERROR [dao.MemberDao] (default task-1) emailm.c@gmail.com
+2023-09-15 11:25:32,496 ERROR [dao.MemberDao] (default task-1) membre ID : 0 | Nom : chineaud | Prénom : marion | Email : m.c@gmail.com | Naissance : 2023-09-15
+
+2023-09-15 11:27:16,970 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-4) WFLYJCA0019: Stopped Driver service with driver-name = projet.war_org.postgresql.Driver_42_6
+2023-09-15 11:27:16,970 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 104) WFLYUT0022: Unregistered web context: '/projet' from server 'default-server'
+2023-09-15 11:27:16,986 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0028: Stopped deployment projet.war (runtime-name: projet.war) in 16ms
+2023-09-15 11:27:16,987 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0027: Starting deployment of "projet.war" (runtime-name: "projet.war")
+2023-09-15 11:27:17,075 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-6) WFLYJCA0005: Deploying non-JDBC-compliant driver class org.postgresql.Driver (version 42.6)
+2023-09-15 11:27:17,078 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-4) WFLYJCA0018: Started Driver service with driver-name = projet.war_org.postgresql.Driver_42_6
+2023-09-15 11:27:17,081 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 113) WFLYUT0021: Registered web context: '/projet' for server 'default-server'
+2023-09-15 11:27:17,087 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0013: Redeployed "projet.war"
+2023-09-15 11:27:17,094 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-6) WFLYJCA0019: Stopped Driver service with driver-name = projet.war_org.postgresql.Driver_42_6
+2023-09-15 11:27:17,094 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 113) WFLYUT0022: Unregistered web context: '/projet' from server 'default-server'
+2023-09-15 11:27:17,096 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0028: Stopped deployment projet.war (runtime-name: projet.war) in 2ms
+2023-09-15 11:27:17,097 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0027: Starting deployment of "projet.war" (runtime-name: "projet.war")
+2023-09-15 11:27:17,195 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-3) WFLYJCA0005: Deploying non-JDBC-compliant driver class org.postgresql.Driver (version 42.6)
+2023-09-15 11:27:17,198 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-7) WFLYJCA0018: Started Driver service with driver-name = projet.war_org.postgresql.Driver_42_6
+2023-09-15 11:27:17,201 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 113) WFLYUT0021: Registered web context: '/projet' for server 'default-server'
+2023-09-15 11:27:17,207 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0013: Redeployed "projet.war"
+2023-09-15 11:27:21,513 INFO  [org.jboss.as.server] (Thread-1) WFLYSRV0272: Suspending server
+2023-09-15 11:27:21,514 INFO  [org.jboss.as.ejb3] (Thread-1) WFLYEJB0493: Jakarta Enterprise Beans subsystem suspension complete
+2023-09-15 11:27:21,515 INFO  [org.jboss.as.server] (Thread-1) WFLYSRV0220: Server shutdown has been requested via an OS signal
+2023-09-15 11:27:21,520 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-6) WFLYJCA0019: Stopped Driver service with driver-name = projet.war_org.postgresql.Driver_42_6
+2023-09-15 11:27:21,521 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-7) WFLYMAIL0002: Unbound mail session [java:jboss/mail/Default]
+2023-09-15 11:27:21,522 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 113) WFLYUT0022: Unregistered web context: '/projet' from server 'default-server'
+2023-09-15 11:27:21,524 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0019: Host default-host stopping
+2023-09-15 11:27:21,524 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2023-09-15 11:27:21,525 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-5) WFLYJCA0019: Stopped Driver service with driver-name = h2
+2023-09-15 11:27:21,528 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0008: Undertow HTTPS listener https suspending
+2023-09-15 11:27:21,528 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0008: Undertow HTTP listener default suspending
+2023-09-15 11:27:21,529 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0007: Undertow HTTP listener default stopped, was bound to 127.0.0.1:8080
+2023-09-15 11:27:21,529 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0007: Undertow HTTPS listener https stopped, was bound to 127.0.0.1:8443
+2023-09-15 11:27:21,529 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0028: Stopped deployment projet.war (runtime-name: projet.war) in 13ms
+2023-09-15 11:27:21,530 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0004: Undertow 2.3.7.Final stopping
+2023-09-15 11:27:21,537 INFO  [org.jboss.as] (MSC service thread 1-6) WFLYSRV0050: WildFly Full 29.0.1.Final (WildFly Core 21.1.1.Final) stopped in 20ms
+2023-09-15 11:27:23,631 INFO  [org.jboss.modules] (main) JBoss Modules version 2.1.0.Final
+2023-09-15 11:27:23,828 INFO  [org.jboss.msc] (main) JBoss MSC version 1.5.1.Final
+2023-09-15 11:27:23,831 INFO  [org.jboss.threads] (main) JBoss Threads version 2.4.0.Final
+2023-09-15 11:27:23,868 INFO  [org.jboss.as] (MSC service thread 1-1) WFLYSRV0049: WildFly Full 29.0.1.Final (WildFly Core 21.1.1.Final) starting
+2023-09-15 11:27:23,869 DEBUG [org.jboss.as.config] (MSC service thread 1-1) Configured system properties:
+	[Standalone] = 
+	file.encoding = UTF-8
+	file.separator = /
+	java.awt.headless = true
+	java.class.path = /home/takima/Documents/wellcomePool/training-mood-of-the-month-2/target/server/jboss-modules.jar
+	java.class.version = 61.0
+	java.home = /usr/lib/jvm/java-17-openjdk-amd64
+	java.io.tmpdir = /tmp
+	java.library.path = /usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib
+	java.net.preferIPv4Stack = true
+	java.runtime.name = OpenJDK Runtime Environment
+	java.runtime.version = 17.0.8.1+1-Ubuntu-0ubuntu122.04
+	java.security.manager = allow
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 17
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Private Build
+	java.vendor.url = Unknown
+	java.vendor.url.bug = Unknown
+	java.version = 17.0.8.1
+	java.version.date = 2023-08-24
+	java.vm.compressedOopsMode = 32-bit
+	java.vm.info = mixed mode, sharing
+	java.vm.name = OpenJDK 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 17
+	java.vm.vendor = Private Build
+	java.vm.version = 17.0.8.1+1-Ubuntu-0ubuntu122.04
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	jboss.home.dir = /home/takima/Documents/wellcomePool/training-mood-of-the-month-2/target/server
+	jboss.host.name = laptop-3101
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = laptop-3101
+	jboss.qualified.host.name = laptop-3101
+	jboss.server.base.dir = /home/takima/Documents/wellcomePool/training-mood-of-the-month-2/target/server/standalone
+	jboss.server.config.dir = /home/takima/Documents/wellcomePool/training-mood-of-the-month-2/target/server/standalone/configuration
+	jboss.server.data.dir = /home/takima/Documents/wellcomePool/training-mood-of-the-month-2/target/server/standalone/data
+	jboss.server.log.dir = /home/takima/Documents/wellcomePool/training-mood-of-the-month-2/target/server/standalone/log
+	jboss.server.name = laptop-3101
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = /home/takima/Documents/wellcomePool/training-mood-of-the-month-2/target/server/standalone/tmp
+	jdk.debug = release
+	line.separator = 
+
+	logging.configuration = file:/home/takima/Documents/wellcomePool/training-mood-of-the-month-2/target/server/standalone/configuration/logging.properties
+	module.path = /home/takima/Documents/wellcomePool/training-mood-of-the-month-2/target/server/modules
+	native.encoding = UTF-8
+	org.jboss.boot.log.file = /home/takima/Documents/wellcomePool/training-mood-of-the-month-2/target/server/standalone/log/server.log
+	org.jboss.resolver.warning = true
+	os.arch = amd64
+	os.name = Linux
+	os.version = 6.2.0-32-generic
+	path.separator = :
+	sun.arch.data.model = 64
+	sun.boot.library.path = /usr/lib/jvm/java-17-openjdk-amd64/lib
+	sun.cpu.endian = little
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = /home/takima/Documents/wellcomePool/training-mood-of-the-month-2/target/server/jboss-modules.jar -mp /home/takima/Documents/wellcomePool/training-mood-of-the-month-2/target/server/modules org.jboss.as.standalone
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = UTF-8
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	user.country = FR
+	user.dir = /home/takima/Documents/wellcomePool/training-mood-of-the-month-2
+	user.home = /home/takima
+	user.language = fr
+	user.name = takima
+	user.timezone = Europe/Paris
+2023-09-15 11:27:23,873 DEBUG [org.jboss.as.config] (MSC service thread 1-1) VM Arguments: -D[Standalone] -Xms64m -Xmx512m -Djava.net.preferIPv4Stack=true -Djava.awt.headless=true -Djboss.modules.system.pkgs=org.jboss.byteman --add-exports=java.base/sun.nio.ch=ALL-UNNAMED --add-exports=jdk.unsupported/sun.reflect=ALL-UNNAMED --add-exports=jdk.unsupported/sun.misc=ALL-UNNAMED --add-modules=java.se --add-exports=java.desktop/sun.awt=ALL-UNNAMED --add-exports=java.naming/com.sun.jndi.ldap=ALL-UNNAMED --add-exports=java.naming/com.sun.jndi.url.ldap=ALL-UNNAMED --add-exports=java.naming/com.sun.jndi.url.ldaps=ALL-UNNAMED --add-exports=jdk.naming.dns/com.sun.jndi.dns=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.invoke=ALL-UNNAMED --add-opens=java.base/java.lang.reflect=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED --add-opens=java.base/java.security=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.management/javax.management=ALL-UNNAMED --add-opens=java.naming/javax.naming=ALL-UNNAMED --add-modules=java.se -Djava.security.manager=allow -Djboss.home.dir=/home/takima/Documents/wellcomePool/training-mood-of-the-month-2/target/server -Djboss.server.base.dir=/home/takima/Documents/wellcomePool/training-mood-of-the-month-2/target/server/standalone -Djboss.server.log.dir=/home/takima/Documents/wellcomePool/training-mood-of-the-month-2/target/server/standalone/log -Djboss.server.config.dir=/home/takima/Documents/wellcomePool/training-mood-of-the-month-2/target/server/standalone/configuration -Dorg.jboss.boot.log.file=/home/takima/Documents/wellcomePool/training-mood-of-the-month-2/target/server/standalone/log/server.log -Dlogging.configuration=file:/home/takima/Documents/wellcomePool/training-mood-of-the-month-2/target/server/standalone/configuration/logging.properties 
+2023-09-15 11:27:24,144 INFO  [org.wildfly.security] (ServerService Thread Pool -- 26) ELY00001: WildFly Elytron version 2.2.1.Final
+2023-09-15 11:27:24,334 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 32) WFLYCTL0028: Attribute 'cluster' in the resource at address '/subsystem=ejb3/service=remote' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2023-09-15 11:27:24,379 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2023-09-15 11:27:24,386 INFO  [org.xnio] (MSC service thread 1-8) XNIO version 3.8.9.Final
+2023-09-15 11:27:24,391 INFO  [org.xnio.nio] (MSC service thread 1-8) XNIO NIO Implementation Version 3.8.9.Final
+2023-09-15 11:27:24,399 INFO  [org.jboss.as.jaxrs] (ServerService Thread Pool -- 57) WFLYRS0016: RESTEasy version 6.2.5.Final
+2023-09-15 11:27:24,399 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 55) WFLYCLINF0001: Activating Infinispan subsystem.
+2023-09-15 11:27:24,400 INFO  [org.wildfly.extension.elytron.oidc._private] (ServerService Thread Pool -- 53) WFLYOIDC0001: Activating WildFly Elytron OIDC Subsystem
+2023-09-15 11:27:24,402 INFO  [org.wildfly.extension.health] (ServerService Thread Pool -- 54) WFLYHEALTH0001: Activating Base Health Subsystem
+2023-09-15 11:27:24,405 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 56) WFLYIO001: Worker 'default' has auto-configured to 32 IO threads with 256 max task threads based on your 16 available processors
+2023-09-15 11:27:24,405 INFO  [org.wildfly.extension.microprofile.config.smallrye] (ServerService Thread Pool -- 65) WFLYCONF0001: Activating MicroProfile Config Subsystem
+2023-09-15 11:27:24,406 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 62) WFLYJSF0007: Activated the following Jakarta Server Faces Implementations: [main]
+2023-09-15 11:27:24,406 INFO  [org.wildfly.extension.microprofile.jwt.smallrye] (ServerService Thread Pool -- 66) WFLYJWT0001: Activating MicroProfile JWT Subsystem
+2023-09-15 11:27:24,413 INFO  [org.wildfly.extension.metrics] (ServerService Thread Pool -- 64) WFLYMETRICS0001: Activating Base Metrics Subsystem
+2023-09-15 11:27:24,413 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 74) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+2023-09-15 11:27:24,413 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 67) WFLYNAM0001: Activating Naming Subsystem
+2023-09-15 11:27:24,420 INFO  [org.jboss.as.connector] (MSC service thread 1-3) WFLYJCA0009: Starting Jakarta Connectors Subsystem (WildFly/IronJacamar 3.0.3.Final)
+2023-09-15 11:27:24,427 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 76) WFLYWS0002: Activating WebServices Extension
+2023-09-15 11:27:24,436 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 44) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 2.1)
+2023-09-15 11:27:24,447 INFO  [org.jboss.as.naming] (MSC service thread 1-2) WFLYNAM0003: Starting Naming Service
+2023-09-15 11:27:24,449 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-6) WFLYJCA0018: Started Driver service with driver-name = h2
+2023-09-15 11:27:24,451 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-6) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2023-09-15 11:27:24,460 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0003: Undertow 2.3.7.Final starting
+2023-09-15 11:27:24,469 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-1) WFLYELY00023: KeyStore file '/home/takima/Documents/wellcomePool/training-mood-of-the-month-2/target/server/standalone/configuration/application.keystore' does not exist. Used blank.
+2023-09-15 11:27:24,486 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-4) WFLYELY01084: KeyStore /home/takima/Documents/wellcomePool/training-mood-of-the-month-2/target/server/standalone/configuration/application.keystore not found, it will be auto-generated on first use with a self-signed certificate for host localhost
+2023-09-15 11:27:24,503 INFO  [org.jboss.remoting] (MSC service thread 1-1) JBoss Remoting version 5.0.27.Final
+2023-09-15 11:27:24,505 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 75) WFLYUT0014: Creating file handler for path '/home/takima/Documents/wellcomePool/training-mood-of-the-month-2/target/server/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2023-09-15 11:27:24,509 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0012: Started server default-server.
+2023-09-15 11:27:24,511 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) Queuing requests.
+2023-09-15 11:27:24,511 INFO  [org.jboss.as.ejb3] (MSC service thread 1-6) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 256 (per class), which is derived from thread worker pool sizing.
+2023-09-15 11:27:24,512 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0018: Host default-host starting
+2023-09-15 11:27:24,539 INFO  [org.jboss.as.ejb3] (MSC service thread 1-3) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 64 (per class), which is derived from the number of CPUs on this host.
+2023-09-15 11:27:24,598 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0006: Undertow HTTP listener default listening on 127.0.0.1:8080
+2023-09-15 11:27:24,621 INFO  [org.jboss.as.ejb3] (MSC service thread 1-2) WFLYEJB0493: Jakarta Enterprise Beans subsystem suspension complete
+2023-09-15 11:27:24,646 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0006: Undertow HTTPS listener https listening on 127.0.0.1:8443
+2023-09-15 11:27:24,651 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-1) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2023-09-15 11:27:24,721 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0027: Starting deployment of "projet.war" (runtime-name: "projet.war")
+2023-09-15 11:27:24,724 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-5) WFLYDS0013: Started FileSystemDeploymentService for directory /home/takima/Documents/wellcomePool/training-mood-of-the-month-2/target/server/standalone/deployments
+2023-09-15 11:27:24,768 INFO  [org.jboss.ws.common.management] (MSC service thread 1-8) JBWS022052: Starting JBossWS 6.2.0.Final (Apache CXF 4.0.0) 
+2023-09-15 11:27:25,206 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-7) WFLYJCA0005: Deploying non-JDBC-compliant driver class org.postgresql.Driver (version 42.6)
+2023-09-15 11:27:25,227 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-1) WFLYJCA0018: Started Driver service with driver-name = projet.war_org.postgresql.Driver_42_6
+2023-09-15 11:27:25,267 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 82) WFLYUT0021: Registered web context: '/projet' for server 'default-server'
+2023-09-15 11:27:25,306 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0010: Deployed "projet.war" (runtime-name : "projet.war")
+2023-09-15 11:27:25,333 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2023-09-15 11:27:25,336 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
+2023-09-15 11:27:25,337 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:9990
+2023-09-15 11:27:25,338 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Full 29.0.1.Final (WildFly Core 21.1.1.Final) started in 1826ms - Started 394 of 616 services (322 services are lazy, passive or on-demand) - Server configuration file in use: standalone.xml
+2023-09-15 11:27:25,647 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-1) WFLYJCA0019: Stopped Driver service with driver-name = projet.war_org.postgresql.Driver_42_6
+2023-09-15 11:27:25,648 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 82) WFLYUT0022: Unregistered web context: '/projet' from server 'default-server'
+2023-09-15 11:27:25,665 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0028: Stopped deployment projet.war (runtime-name: projet.war) in 18ms
+2023-09-15 11:27:25,668 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0027: Starting deployment of "projet.war" (runtime-name: "projet.war")
+2023-09-15 11:27:25,882 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-7) WFLYJCA0005: Deploying non-JDBC-compliant driver class org.postgresql.Driver (version 42.6)
+2023-09-15 11:27:25,899 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-2) WFLYJCA0018: Started Driver service with driver-name = projet.war_org.postgresql.Driver_42_6
+2023-09-15 11:27:25,904 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 32) WFLYUT0021: Registered web context: '/projet' for server 'default-server'
+2023-09-15 11:27:25,937 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0016: Replaced deployment "projet.war" with deployment "projet.war"
+2023-09-15 11:27:57,273 ERROR [io.undertow.request] (default task-1) UT005023: Exception handling request to /projet/add_member: java.time.format.DateTimeParseException: Text '2001-08-08' could not be parsed at index 2
+	at java.base/java.time.format.DateTimeFormatter.parseResolved0(DateTimeFormatter.java:2052)
+	at java.base/java.time.format.DateTimeFormatter.parse(DateTimeFormatter.java:1954)
+	at java.base/java.time.LocalDate.parse(LocalDate.java:430)
+	at deployment.projet.war//servlet.AddMemberServlet.doPost(AddMemberServlet.java:48)
+	at jakarta.servlet.api@6.0.0//jakarta.servlet.http.HttpServlet.service(HttpServlet.java:547)
+	at jakarta.servlet.api@6.0.0//jakarta.servlet.http.HttpServlet.service(HttpServlet.java:614)
+	at io.undertow.servlet@2.3.7.Final//io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:74)
+	at io.undertow.servlet@2.3.7.Final//io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:62)
+	at io.undertow.servlet@2.3.7.Final//io.undertow.servlet.handlers.ServletChain$1.handleRequest(ServletChain.java:68)
+	at io.undertow.servlet@2.3.7.Final//io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36)
+	at org.wildfly.security.elytron-web.undertow-server@4.0.0.Final//org.wildfly.elytron.web.undertow.server.ElytronRunAsHandler.lambda$handleRequest$1(ElytronRunAsHandler.java:68)
+	at org.wildfly.security.elytron-base@2.2.1.Final//org.wildfly.security.auth.server.FlexibleIdentityAssociation.runAsFunctionEx(FlexibleIdentityAssociation.java:103)
+	at org.wildfly.security.elytron-base@2.2.1.Final//org.wildfly.security.auth.server.Scoped.runAsFunctionEx(Scoped.java:161)
+	at org.wildfly.security.elytron-base@2.2.1.Final//org.wildfly.security.auth.server.Scoped.runAs(Scoped.java:73)
+	at org.wildfly.security.elytron-web.undertow-server@4.0.0.Final//org.wildfly.elytron.web.undertow.server.ElytronRunAsHandler.handleRequest(ElytronRunAsHandler.java:67)
+	at io.undertow.servlet@2.3.7.Final//io.undertow.servlet.handlers.RedirectDirHandler.handleRequest(RedirectDirHandler.java:68)
+	at io.undertow.servlet@2.3.7.Final//io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:117)
+	at io.undertow.servlet@2.3.7.Final//io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:57)
+	at io.undertow.core@2.3.7.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.core@2.3.7.Final//io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:46)
+	at io.undertow.servlet@2.3.7.Final//io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:64)
+	at io.undertow.core@2.3.7.Final//io.undertow.security.handlers.AbstractSecurityContextAssociationHandler.handleRequest(AbstractSecurityContextAssociationHandler.java:43)
+	at org.wildfly.security.elytron-web.undertow-server-servlet@4.0.0.Final//org.wildfly.elytron.web.undertow.server.servlet.CleanUpHandler.handleRequest(CleanUpHandler.java:38)
+	at io.undertow.core@2.3.7.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at org.wildfly.extension.undertow@29.0.1.Final//org.wildfly.extension.undertow.security.jacc.JACCContextIdHandler.handleRequest(JACCContextIdHandler.java:61)
+	at io.undertow.core@2.3.7.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at org.wildfly.extension.undertow@29.0.1.Final//org.wildfly.extension.undertow.deployment.GlobalRequestControllerHandler.handleRequest(GlobalRequestControllerHandler.java:68)
+	at io.undertow.servlet@2.3.7.Final//io.undertow.servlet.handlers.SendErrorPageHandler.handleRequest(SendErrorPageHandler.java:52)
+	at io.undertow.core@2.3.7.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.servlet@2.3.7.Final//io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:276)
+	at io.undertow.servlet@2.3.7.Final//io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:135)
+	at io.undertow.servlet@2.3.7.Final//io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:132)
+	at io.undertow.servlet@2.3.7.Final//io.undertow.servlet.core.ServletRequestContextThreadSetupAction$1.call(ServletRequestContextThreadSetupAction.java:48)
+	at io.undertow.servlet@2.3.7.Final//io.undertow.servlet.core.ContextClassLoaderSetupAction$1.call(ContextClassLoaderSetupAction.java:43)
+	at org.wildfly.extension.undertow@29.0.1.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1430)
+	at org.wildfly.extension.undertow@29.0.1.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1430)
+	at org.wildfly.extension.undertow@29.0.1.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1430)
+	at org.wildfly.extension.undertow@29.0.1.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1430)
+	at io.undertow.servlet@2.3.7.Final//io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:256)
+	at io.undertow.servlet@2.3.7.Final//io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:101)
+	at io.undertow.core@2.3.7.Final//io.undertow.server.Connectors.executeRootHandler(Connectors.java:393)
+	at io.undertow.core@2.3.7.Final//io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:859)
+	at org.jboss.threads@2.4.0.Final//org.jboss.threads.ContextClassLoaderSavingRunnable.run(ContextClassLoaderSavingRunnable.java:35)
+	at org.jboss.threads@2.4.0.Final//org.jboss.threads.EnhancedQueueExecutor.safeRun(EnhancedQueueExecutor.java:1990)
+	at org.jboss.threads@2.4.0.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.doRunTask(EnhancedQueueExecutor.java:1486)
+	at org.jboss.threads@2.4.0.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1377)
+	at org.jboss.xnio@3.8.9.Final//org.xnio.XnioWorker$WorkerThreadFactory$1$1.run(XnioWorker.java:1282)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+2023-09-15 11:28:49,109 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-8) WFLYJCA0019: Stopped Driver service with driver-name = projet.war_org.postgresql.Driver_42_6
+2023-09-15 11:28:49,109 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 32) WFLYUT0022: Unregistered web context: '/projet' from server 'default-server'
+2023-09-15 11:28:49,127 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0028: Stopped deployment projet.war (runtime-name: projet.war) in 18ms
+2023-09-15 11:28:49,128 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0027: Starting deployment of "projet.war" (runtime-name: "projet.war")
+2023-09-15 11:28:49,310 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-2) WFLYJCA0005: Deploying non-JDBC-compliant driver class org.postgresql.Driver (version 42.6)
+2023-09-15 11:28:49,321 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-6) WFLYJCA0018: Started Driver service with driver-name = projet.war_org.postgresql.Driver_42_6
+2023-09-15 11:28:49,327 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 91) WFLYUT0021: Registered web context: '/projet' for server 'default-server'
+2023-09-15 11:28:49,343 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0013: Redeployed "projet.war"
+2023-09-15 11:28:49,361 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-6) WFLYJCA0019: Stopped Driver service with driver-name = projet.war_org.postgresql.Driver_42_6
+2023-09-15 11:28:49,361 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 91) WFLYUT0022: Unregistered web context: '/projet' from server 'default-server'
+2023-09-15 11:28:49,365 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0028: Stopped deployment projet.war (runtime-name: projet.war) in 4ms
+2023-09-15 11:28:49,366 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0027: Starting deployment of "projet.war" (runtime-name: "projet.war")
+2023-09-15 11:28:49,562 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-4) WFLYJCA0005: Deploying non-JDBC-compliant driver class org.postgresql.Driver (version 42.6)
+2023-09-15 11:28:49,570 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-1) WFLYJCA0018: Started Driver service with driver-name = projet.war_org.postgresql.Driver_42_6
+2023-09-15 11:28:49,582 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 90) WFLYUT0021: Registered web context: '/projet' for server 'default-server'
+2023-09-15 11:28:49,594 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0013: Redeployed "projet.war"
+2023-09-15 11:28:52,792 INFO  [org.jboss.as.server] (Thread-1) WFLYSRV0272: Suspending server
+2023-09-15 11:28:52,793 INFO  [org.jboss.as.ejb3] (Thread-1) WFLYEJB0493: Jakarta Enterprise Beans subsystem suspension complete
+2023-09-15 11:28:52,795 INFO  [org.jboss.as.server] (Thread-1) WFLYSRV0220: Server shutdown has been requested via an OS signal
+2023-09-15 11:28:52,799 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-1) WFLYJCA0019: Stopped Driver service with driver-name = projet.war_org.postgresql.Driver_42_6
+2023-09-15 11:28:52,800 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-6) WFLYMAIL0002: Unbound mail session [java:jboss/mail/Default]
+2023-09-15 11:28:52,801 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 94) WFLYUT0022: Unregistered web context: '/projet' from server 'default-server'
+2023-09-15 11:28:52,803 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-8) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2023-09-15 11:28:52,803 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0019: Host default-host stopping
+2023-09-15 11:28:52,803 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-5) WFLYJCA0019: Stopped Driver service with driver-name = h2
+2023-09-15 11:28:52,805 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0008: Undertow HTTPS listener https suspending
+2023-09-15 11:28:52,805 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0008: Undertow HTTP listener default suspending
+2023-09-15 11:28:52,805 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0007: Undertow HTTPS listener https stopped, was bound to 127.0.0.1:8443
+2023-09-15 11:28:52,805 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0007: Undertow HTTP listener default stopped, was bound to 127.0.0.1:8080
+2023-09-15 11:28:52,806 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0004: Undertow 2.3.7.Final stopping
+2023-09-15 11:28:52,806 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0028: Stopped deployment projet.war (runtime-name: projet.war) in 10ms
+2023-09-15 11:28:52,808 INFO  [org.jboss.as] (MSC service thread 1-5) WFLYSRV0050: WildFly Full 29.0.1.Final (WildFly Core 21.1.1.Final) stopped in 11ms
+2023-09-15 11:28:54,896 INFO  [org.jboss.modules] (main) JBoss Modules version 2.1.0.Final
+2023-09-15 11:28:55,085 INFO  [org.jboss.msc] (main) JBoss MSC version 1.5.1.Final
+2023-09-15 11:28:55,087 INFO  [org.jboss.threads] (main) JBoss Threads version 2.4.0.Final
+2023-09-15 11:28:55,124 INFO  [org.jboss.as] (MSC service thread 1-2) WFLYSRV0049: WildFly Full 29.0.1.Final (WildFly Core 21.1.1.Final) starting
+2023-09-15 11:28:55,125 DEBUG [org.jboss.as.config] (MSC service thread 1-2) Configured system properties:
+	[Standalone] = 
+	file.encoding = UTF-8
+	file.separator = /
+	java.awt.headless = true
+	java.class.path = /home/takima/Documents/wellcomePool/training-mood-of-the-month-2/target/server/jboss-modules.jar
+	java.class.version = 61.0
+	java.home = /usr/lib/jvm/java-17-openjdk-amd64
+	java.io.tmpdir = /tmp
+	java.library.path = /usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib
+	java.net.preferIPv4Stack = true
+	java.runtime.name = OpenJDK Runtime Environment
+	java.runtime.version = 17.0.8.1+1-Ubuntu-0ubuntu122.04
+	java.security.manager = allow
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 17
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Private Build
+	java.vendor.url = Unknown
+	java.vendor.url.bug = Unknown
+	java.version = 17.0.8.1
+	java.version.date = 2023-08-24
+	java.vm.compressedOopsMode = 32-bit
+	java.vm.info = mixed mode, sharing
+	java.vm.name = OpenJDK 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 17
+	java.vm.vendor = Private Build
+	java.vm.version = 17.0.8.1+1-Ubuntu-0ubuntu122.04
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	jboss.home.dir = /home/takima/Documents/wellcomePool/training-mood-of-the-month-2/target/server
+	jboss.host.name = laptop-3101
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = laptop-3101
+	jboss.qualified.host.name = laptop-3101
+	jboss.server.base.dir = /home/takima/Documents/wellcomePool/training-mood-of-the-month-2/target/server/standalone
+	jboss.server.config.dir = /home/takima/Documents/wellcomePool/training-mood-of-the-month-2/target/server/standalone/configuration
+	jboss.server.data.dir = /home/takima/Documents/wellcomePool/training-mood-of-the-month-2/target/server/standalone/data
+	jboss.server.log.dir = /home/takima/Documents/wellcomePool/training-mood-of-the-month-2/target/server/standalone/log
+	jboss.server.name = laptop-3101
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = /home/takima/Documents/wellcomePool/training-mood-of-the-month-2/target/server/standalone/tmp
+	jdk.debug = release
+	line.separator = 
+
+	logging.configuration = file:/home/takima/Documents/wellcomePool/training-mood-of-the-month-2/target/server/standalone/configuration/logging.properties
+	module.path = /home/takima/Documents/wellcomePool/training-mood-of-the-month-2/target/server/modules
+	native.encoding = UTF-8
+	org.jboss.boot.log.file = /home/takima/Documents/wellcomePool/training-mood-of-the-month-2/target/server/standalone/log/server.log
+	org.jboss.resolver.warning = true
+	os.arch = amd64
+	os.name = Linux
+	os.version = 6.2.0-32-generic
+	path.separator = :
+	sun.arch.data.model = 64
+	sun.boot.library.path = /usr/lib/jvm/java-17-openjdk-amd64/lib
+	sun.cpu.endian = little
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = /home/takima/Documents/wellcomePool/training-mood-of-the-month-2/target/server/jboss-modules.jar -mp /home/takima/Documents/wellcomePool/training-mood-of-the-month-2/target/server/modules org.jboss.as.standalone
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = UTF-8
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	user.country = FR
+	user.dir = /home/takima/Documents/wellcomePool/training-mood-of-the-month-2
+	user.home = /home/takima
+	user.language = fr
+	user.name = takima
+	user.timezone = Europe/Paris
+2023-09-15 11:28:55,126 DEBUG [org.jboss.as.config] (MSC service thread 1-2) VM Arguments: -D[Standalone] -Xms64m -Xmx512m -Djava.net.preferIPv4Stack=true -Djava.awt.headless=true -Djboss.modules.system.pkgs=org.jboss.byteman --add-exports=java.base/sun.nio.ch=ALL-UNNAMED --add-exports=jdk.unsupported/sun.reflect=ALL-UNNAMED --add-exports=jdk.unsupported/sun.misc=ALL-UNNAMED --add-modules=java.se --add-exports=java.desktop/sun.awt=ALL-UNNAMED --add-exports=java.naming/com.sun.jndi.ldap=ALL-UNNAMED --add-exports=java.naming/com.sun.jndi.url.ldap=ALL-UNNAMED --add-exports=java.naming/com.sun.jndi.url.ldaps=ALL-UNNAMED --add-exports=jdk.naming.dns/com.sun.jndi.dns=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.invoke=ALL-UNNAMED --add-opens=java.base/java.lang.reflect=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED --add-opens=java.base/java.security=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.management/javax.management=ALL-UNNAMED --add-opens=java.naming/javax.naming=ALL-UNNAMED --add-modules=java.se -Djava.security.manager=allow -Djboss.home.dir=/home/takima/Documents/wellcomePool/training-mood-of-the-month-2/target/server -Djboss.server.base.dir=/home/takima/Documents/wellcomePool/training-mood-of-the-month-2/target/server/standalone -Djboss.server.log.dir=/home/takima/Documents/wellcomePool/training-mood-of-the-month-2/target/server/standalone/log -Djboss.server.config.dir=/home/takima/Documents/wellcomePool/training-mood-of-the-month-2/target/server/standalone/configuration -Dorg.jboss.boot.log.file=/home/takima/Documents/wellcomePool/training-mood-of-the-month-2/target/server/standalone/log/server.log -Dlogging.configuration=file:/home/takima/Documents/wellcomePool/training-mood-of-the-month-2/target/server/standalone/configuration/logging.properties 
+2023-09-15 11:28:55,389 INFO  [org.wildfly.security] (ServerService Thread Pool -- 26) ELY00001: WildFly Elytron version 2.2.1.Final
+2023-09-15 11:28:55,586 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 12) WFLYCTL0028: Attribute 'cluster' in the resource at address '/subsystem=ejb3/service=remote' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2023-09-15 11:28:55,639 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2023-09-15 11:28:55,644 INFO  [org.xnio] (MSC service thread 1-6) XNIO version 3.8.9.Final
+2023-09-15 11:28:55,647 INFO  [org.xnio.nio] (MSC service thread 1-6) XNIO NIO Implementation Version 3.8.9.Final
+2023-09-15 11:28:55,661 INFO  [org.wildfly.extension.elytron.oidc._private] (ServerService Thread Pool -- 53) WFLYOIDC0001: Activating WildFly Elytron OIDC Subsystem
+2023-09-15 11:28:55,661 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 55) WFLYCLINF0001: Activating Infinispan subsystem.
+2023-09-15 11:28:55,662 INFO  [org.jboss.as.jaxrs] (ServerService Thread Pool -- 57) WFLYRS0016: RESTEasy version 6.2.5.Final
+2023-09-15 11:28:55,661 INFO  [org.wildfly.extension.health] (ServerService Thread Pool -- 54) WFLYHEALTH0001: Activating Base Health Subsystem
+2023-09-15 11:28:55,662 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 56) WFLYIO001: Worker 'default' has auto-configured to 32 IO threads with 256 max task threads based on your 16 available processors
+2023-09-15 11:28:55,667 INFO  [org.wildfly.extension.microprofile.config.smallrye] (ServerService Thread Pool -- 65) WFLYCONF0001: Activating MicroProfile Config Subsystem
+2023-09-15 11:28:55,668 INFO  [org.wildfly.extension.microprofile.jwt.smallrye] (ServerService Thread Pool -- 66) WFLYJWT0001: Activating MicroProfile JWT Subsystem
+2023-09-15 11:28:55,670 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 62) WFLYJSF0007: Activated the following Jakarta Server Faces Implementations: [main]
+2023-09-15 11:28:55,672 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 67) WFLYNAM0001: Activating Naming Subsystem
+2023-09-15 11:28:55,672 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 74) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+2023-09-15 11:28:55,685 INFO  [org.wildfly.extension.metrics] (ServerService Thread Pool -- 64) WFLYMETRICS0001: Activating Base Metrics Subsystem
+2023-09-15 11:28:55,688 INFO  [org.jboss.remoting] (MSC service thread 1-3) JBoss Remoting version 5.0.27.Final
+2023-09-15 11:28:55,693 INFO  [org.jboss.as.connector] (MSC service thread 1-7) WFLYJCA0009: Starting Jakarta Connectors Subsystem (WildFly/IronJacamar 3.0.3.Final)
+2023-09-15 11:28:55,693 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 44) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 2.1)
+2023-09-15 11:28:55,700 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 76) WFLYWS0002: Activating WebServices Extension
+2023-09-15 11:28:55,721 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-5) WFLYJCA0018: Started Driver service with driver-name = h2
+2023-09-15 11:28:55,722 INFO  [org.jboss.as.naming] (MSC service thread 1-5) WFLYNAM0003: Starting Naming Service
+2023-09-15 11:28:55,723 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-3) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2023-09-15 11:28:55,731 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-1) WFLYELY00023: KeyStore file '/home/takima/Documents/wellcomePool/training-mood-of-the-month-2/target/server/standalone/configuration/application.keystore' does not exist. Used blank.
+2023-09-15 11:28:55,737 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0003: Undertow 2.3.7.Final starting
+2023-09-15 11:28:55,738 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-1) WFLYELY01084: KeyStore /home/takima/Documents/wellcomePool/training-mood-of-the-month-2/target/server/standalone/configuration/application.keystore not found, it will be auto-generated on first use with a self-signed certificate for host localhost
+2023-09-15 11:28:55,763 INFO  [org.jboss.as.ejb3] (MSC service thread 1-4) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 64 (per class), which is derived from the number of CPUs on this host.
+2023-09-15 11:28:55,763 INFO  [org.jboss.as.ejb3] (MSC service thread 1-8) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 256 (per class), which is derived from thread worker pool sizing.
+2023-09-15 11:28:55,766 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 75) WFLYUT0014: Creating file handler for path '/home/takima/Documents/wellcomePool/training-mood-of-the-month-2/target/server/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2023-09-15 11:28:55,768 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0012: Started server default-server.
+2023-09-15 11:28:55,768 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) Queuing requests.
+2023-09-15 11:28:55,769 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0018: Host default-host starting
+2023-09-15 11:28:55,903 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0006: Undertow HTTP listener default listening on 127.0.0.1:8080
+2023-09-15 11:28:55,950 INFO  [org.jboss.as.ejb3] (MSC service thread 1-3) WFLYEJB0493: Jakarta Enterprise Beans subsystem suspension complete
+2023-09-15 11:28:55,957 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0006: Undertow HTTPS listener https listening on 127.0.0.1:8443
+2023-09-15 11:28:55,977 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2023-09-15 11:28:56,026 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0027: Starting deployment of "projet.war" (runtime-name: "projet.war")
+2023-09-15 11:28:56,030 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-1) WFLYDS0013: Started FileSystemDeploymentService for directory /home/takima/Documents/wellcomePool/training-mood-of-the-month-2/target/server/standalone/deployments
+2023-09-15 11:28:56,074 INFO  [org.jboss.ws.common.management] (MSC service thread 1-3) JBWS022052: Starting JBossWS 6.2.0.Final (Apache CXF 4.0.0) 
+2023-09-15 11:28:56,526 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-6) WFLYJCA0005: Deploying non-JDBC-compliant driver class org.postgresql.Driver (version 42.6)
+2023-09-15 11:28:56,547 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-4) WFLYJCA0018: Started Driver service with driver-name = projet.war_org.postgresql.Driver_42_6
+2023-09-15 11:28:56,581 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 86) WFLYUT0021: Registered web context: '/projet' for server 'default-server'
+2023-09-15 11:28:56,605 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0010: Deployed "projet.war" (runtime-name : "projet.war")
+2023-09-15 11:28:56,617 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2023-09-15 11:28:56,619 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
+2023-09-15 11:28:56,619 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:9990
+2023-09-15 11:28:56,620 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Full 29.0.1.Final (WildFly Core 21.1.1.Final) started in 1845ms - Started 394 of 616 services (322 services are lazy, passive or on-demand) - Server configuration file in use: standalone.xml
+2023-09-15 11:28:56,930 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-2) WFLYJCA0019: Stopped Driver service with driver-name = projet.war_org.postgresql.Driver_42_6
+2023-09-15 11:28:56,931 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 86) WFLYUT0022: Unregistered web context: '/projet' from server 'default-server'
+2023-09-15 11:28:56,946 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0028: Stopped deployment projet.war (runtime-name: projet.war) in 16ms
+2023-09-15 11:28:56,948 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0027: Starting deployment of "projet.war" (runtime-name: "projet.war")
+2023-09-15 11:28:57,178 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-3) WFLYJCA0005: Deploying non-JDBC-compliant driver class org.postgresql.Driver (version 42.6)
+2023-09-15 11:28:57,194 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-3) WFLYJCA0018: Started Driver service with driver-name = projet.war_org.postgresql.Driver_42_6
+2023-09-15 11:28:57,200 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 3) WFLYUT0021: Registered web context: '/projet' for server 'default-server'
+2023-09-15 11:28:57,229 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0016: Replaced deployment "projet.war" with deployment "projet.war"
+2023-09-15 11:32:22,579 ERROR [dao.MemberDao] (default task-1) date avant 2001-08-08
+2023-09-15 11:32:22,582 ERROR [io.undertow.request] (default task-1) UT005023: Exception handling request to /projet/add_member: java.time.format.DateTimeParseException: Text '2001-08-08' could not be parsed at index 2
+	at java.base/java.time.format.DateTimeFormatter.parseResolved0(DateTimeFormatter.java:2052)
+	at java.base/java.time.format.DateTimeFormatter.parse(DateTimeFormatter.java:1954)
+	at java.base/java.time.LocalDate.parse(LocalDate.java:430)
+	at deployment.projet.war//servlet.AddMemberServlet.doPost(AddMemberServlet.java:49)
+	at jakarta.servlet.api@6.0.0//jakarta.servlet.http.HttpServlet.service(HttpServlet.java:547)
+	at jakarta.servlet.api@6.0.0//jakarta.servlet.http.HttpServlet.service(HttpServlet.java:614)
+	at io.undertow.servlet@2.3.7.Final//io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:74)
+	at io.undertow.servlet@2.3.7.Final//io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:62)
+	at io.undertow.servlet@2.3.7.Final//io.undertow.servlet.handlers.ServletChain$1.handleRequest(ServletChain.java:68)
+	at io.undertow.servlet@2.3.7.Final//io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36)
+	at org.wildfly.security.elytron-web.undertow-server@4.0.0.Final//org.wildfly.elytron.web.undertow.server.ElytronRunAsHandler.lambda$handleRequest$1(ElytronRunAsHandler.java:68)
+	at org.wildfly.security.elytron-base@2.2.1.Final//org.wildfly.security.auth.server.FlexibleIdentityAssociation.runAsFunctionEx(FlexibleIdentityAssociation.java:103)
+	at org.wildfly.security.elytron-base@2.2.1.Final//org.wildfly.security.auth.server.Scoped.runAsFunctionEx(Scoped.java:161)
+	at org.wildfly.security.elytron-base@2.2.1.Final//org.wildfly.security.auth.server.Scoped.runAs(Scoped.java:73)
+	at org.wildfly.security.elytron-web.undertow-server@4.0.0.Final//org.wildfly.elytron.web.undertow.server.ElytronRunAsHandler.handleRequest(ElytronRunAsHandler.java:67)
+	at io.undertow.servlet@2.3.7.Final//io.undertow.servlet.handlers.RedirectDirHandler.handleRequest(RedirectDirHandler.java:68)
+	at io.undertow.servlet@2.3.7.Final//io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:117)
+	at io.undertow.servlet@2.3.7.Final//io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:57)
+	at io.undertow.core@2.3.7.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.core@2.3.7.Final//io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:46)
+	at io.undertow.servlet@2.3.7.Final//io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:64)
+	at io.undertow.core@2.3.7.Final//io.undertow.security.handlers.AbstractSecurityContextAssociationHandler.handleRequest(AbstractSecurityContextAssociationHandler.java:43)
+	at org.wildfly.security.elytron-web.undertow-server-servlet@4.0.0.Final//org.wildfly.elytron.web.undertow.server.servlet.CleanUpHandler.handleRequest(CleanUpHandler.java:38)
+	at io.undertow.core@2.3.7.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at org.wildfly.extension.undertow@29.0.1.Final//org.wildfly.extension.undertow.security.jacc.JACCContextIdHandler.handleRequest(JACCContextIdHandler.java:61)
+	at io.undertow.core@2.3.7.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at org.wildfly.extension.undertow@29.0.1.Final//org.wildfly.extension.undertow.deployment.GlobalRequestControllerHandler.handleRequest(GlobalRequestControllerHandler.java:68)
+	at io.undertow.servlet@2.3.7.Final//io.undertow.servlet.handlers.SendErrorPageHandler.handleRequest(SendErrorPageHandler.java:52)
+	at io.undertow.core@2.3.7.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.servlet@2.3.7.Final//io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:276)
+	at io.undertow.servlet@2.3.7.Final//io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:135)
+	at io.undertow.servlet@2.3.7.Final//io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:132)
+	at io.undertow.servlet@2.3.7.Final//io.undertow.servlet.core.ServletRequestContextThreadSetupAction$1.call(ServletRequestContextThreadSetupAction.java:48)
+	at io.undertow.servlet@2.3.7.Final//io.undertow.servlet.core.ContextClassLoaderSetupAction$1.call(ContextClassLoaderSetupAction.java:43)
+	at org.wildfly.extension.undertow@29.0.1.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1430)
+	at org.wildfly.extension.undertow@29.0.1.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1430)
+	at org.wildfly.extension.undertow@29.0.1.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1430)
+	at org.wildfly.extension.undertow@29.0.1.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1430)
+	at io.undertow.servlet@2.3.7.Final//io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:256)
+	at io.undertow.servlet@2.3.7.Final//io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:101)
+	at io.undertow.core@2.3.7.Final//io.undertow.server.Connectors.executeRootHandler(Connectors.java:393)
+	at io.undertow.core@2.3.7.Final//io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:859)
+	at org.jboss.threads@2.4.0.Final//org.jboss.threads.ContextClassLoaderSavingRunnable.run(ContextClassLoaderSavingRunnable.java:35)
+	at org.jboss.threads@2.4.0.Final//org.jboss.threads.EnhancedQueueExecutor.safeRun(EnhancedQueueExecutor.java:1990)
+	at org.jboss.threads@2.4.0.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.doRunTask(EnhancedQueueExecutor.java:1486)
+	at org.jboss.threads@2.4.0.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1377)
+	at org.jboss.xnio@3.8.9.Final//org.xnio.XnioWorker$WorkerThreadFactory$1$1.run(XnioWorker.java:1282)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+2023-09-15 11:32:54,250 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-7) WFLYJCA0019: Stopped Driver service with driver-name = projet.war_org.postgresql.Driver_42_6
+2023-09-15 11:32:54,250 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 3) WFLYUT0022: Unregistered web context: '/projet' from server 'default-server'
+2023-09-15 11:32:54,271 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0028: Stopped deployment projet.war (runtime-name: projet.war) in 21ms
+2023-09-15 11:32:54,272 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0027: Starting deployment of "projet.war" (runtime-name: "projet.war")
+2023-09-15 11:32:54,406 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-3) WFLYJCA0005: Deploying non-JDBC-compliant driver class org.postgresql.Driver (version 42.6)
+2023-09-15 11:32:54,411 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-5) WFLYJCA0018: Started Driver service with driver-name = projet.war_org.postgresql.Driver_42_6
+2023-09-15 11:32:54,415 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 94) WFLYUT0021: Registered web context: '/projet' for server 'default-server'
+2023-09-15 11:32:54,423 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0013: Redeployed "projet.war"
+2023-09-15 11:32:54,439 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-8) WFLYJCA0019: Stopped Driver service with driver-name = projet.war_org.postgresql.Driver_42_6
+2023-09-15 11:32:54,439 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 94) WFLYUT0022: Unregistered web context: '/projet' from server 'default-server'
+2023-09-15 11:32:54,443 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0028: Stopped deployment projet.war (runtime-name: projet.war) in 4ms
+2023-09-15 11:32:54,444 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0027: Starting deployment of "projet.war" (runtime-name: "projet.war")
+2023-09-15 11:32:54,584 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-4) WFLYJCA0005: Deploying non-JDBC-compliant driver class org.postgresql.Driver (version 42.6)
+2023-09-15 11:32:54,592 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-1) WFLYJCA0018: Started Driver service with driver-name = projet.war_org.postgresql.Driver_42_6
+2023-09-15 11:32:54,598 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 95) WFLYUT0021: Registered web context: '/projet' for server 'default-server'
+2023-09-15 11:32:54,609 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0013: Redeployed "projet.war"
+2023-09-15 11:32:59,101 ERROR [dao.MemberDao] (default task-1) date avant 2001-08-08
+2023-09-15 11:32:59,101 ERROR [dao.MemberDao] (default task-1) date 2001-08-08
+2023-09-15 11:32:59,107 ERROR [dao.MemberDao] (default task-1) membre ID : 0 | Nom : jules | Prénom : jules | Email : j.a@gmail.com | Naissance : 2001-08-08
+
+2023-09-15 11:33:28,178 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-1) WFLYJCA0019: Stopped Driver service with driver-name = projet.war_org.postgresql.Driver_42_6
+2023-09-15 11:33:28,178 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 95) WFLYUT0022: Unregistered web context: '/projet' from server 'default-server'
+2023-09-15 11:33:28,195 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0028: Stopped deployment projet.war (runtime-name: projet.war) in 17ms
+2023-09-15 11:33:28,196 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0027: Starting deployment of "projet.war" (runtime-name: "projet.war")
+2023-09-15 11:33:28,313 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-6) WFLYJCA0005: Deploying non-JDBC-compliant driver class org.postgresql.Driver (version 42.6)
+2023-09-15 11:33:28,320 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-7) WFLYJCA0018: Started Driver service with driver-name = projet.war_org.postgresql.Driver_42_6
+2023-09-15 11:33:28,325 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 100) WFLYUT0021: Registered web context: '/projet' for server 'default-server'
+2023-09-15 11:33:28,338 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0013: Redeployed "projet.war"
+2023-09-15 11:33:28,352 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-5) WFLYJCA0019: Stopped Driver service with driver-name = projet.war_org.postgresql.Driver_42_6
+2023-09-15 11:33:28,352 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 100) WFLYUT0022: Unregistered web context: '/projet' from server 'default-server'
+2023-09-15 11:33:28,355 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0028: Stopped deployment projet.war (runtime-name: projet.war) in 3ms
+2023-09-15 11:33:28,356 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0027: Starting deployment of "projet.war" (runtime-name: "projet.war")
+2023-09-15 11:33:28,516 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-8) WFLYJCA0005: Deploying non-JDBC-compliant driver class org.postgresql.Driver (version 42.6)
+2023-09-15 11:33:28,520 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-5) WFLYJCA0018: Started Driver service with driver-name = projet.war_org.postgresql.Driver_42_6
+2023-09-15 11:33:28,531 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 97) WFLYUT0021: Registered web context: '/projet' for server 'default-server'
+2023-09-15 11:33:28,539 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0013: Redeployed "projet.war"

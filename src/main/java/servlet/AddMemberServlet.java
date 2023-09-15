@@ -45,17 +45,9 @@ public class AddMemberServlet extends HttpServlet{
             String lastName = request.getParameter("last_name");
             String firstName = request.getParameter("first_name");
             String email = request.getParameter("email");
-            //LocalDate birthdate = LocalDate.parse((request.getParameter("birthdate")), DateTimeFormatter.ofPattern("dd/mm/yyyy"));
-            LocalDate birthdate = LocalDate.now();
-            logger.error("prenom" + lastName);
-            logger.error("nom" + firstName);
-            logger.error("email" + email);
-
-            //Member m = new Member("marion","chineaud","m.c@gmail.com",birthdate );
+            LocalDate birthdate = LocalDate.parse((request.getParameter("birthdate")));
             Member m = new Member( lastName,firstName,email,birthdate );
-            logger.error("membre " + m.toString());
             this.memberService.create(m);
-
         } catch (ServiceException e) {
            e.printStackTrace();
         }

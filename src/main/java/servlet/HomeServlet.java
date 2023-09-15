@@ -27,12 +27,12 @@ public class HomeServlet extends HttpServlet {
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws IOException {
-        try {
+      /*  try {
             System.out.println(moodService.count());
             request.setAttribute("nbrMood", moodService.count());
         } catch (ServiceException e) {
             logger.error("An error occurred while processing the request.", e);
-        }
+        }*/
 
         try {
             // ici on mettra le code pour définir "nbrMembre"
