@@ -268,7 +268,7 @@
                         <div class="panel-body" id="stats">
 
                             <div class="note">
-                                4.2<small>/5</small>
+                                ${average}<small>/5</small>
                                 <p>Avg Mood</p>
                             </div>
 

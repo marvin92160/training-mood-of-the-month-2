@@ -6,11 +6,13 @@ import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import modele.Mood;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import services.MoodService;
 
 import java.io.IOException;
+import java.util.List;
 
 @WebServlet("/home")
 public class HomeServlet extends HttpServlet {
@@ -18,11 +20,10 @@ public class HomeServlet extends HttpServlet {
     private static final Logger logger = LoggerFactory.getLogger(HomeServlet.class);
 
     private MoodService moodService;
-    private MoodDao moodDao;
 
     @Override
     public void init() {
-        moodService = new MoodService(moodDao);
+        moodService = new MoodService(new MoodDao());
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
@@ -30,6 +31,22 @@ public class HomeServlet extends HttpServlet {
         try {
             System.out.println(moodService.count());
             request.setAttribute("nbrMood", moodService.count());
+        } catch (ServiceException e) {
+            logger.error("An error occurred while processing the request.", e);
+        }
+
+        try {
+            List<Mood> moods = moodService.findAll();
+            float average;
+            float sum = 0;
+            int i = 0;
+            for (Mood mood:moods) {
+                i++;
+                sum += mood.getGrade();
+            }
+            average = sum/i;
+            request.setAttribute("moods", moods);
+            request.setAttribute("average", average);
         } catch (ServiceException e) {
             logger.error("An error occurred while processing the request.", e);
         }

@@ -8,11 +8,12 @@ import org.slf4j.LoggerFactory;
 
 import java.sql.*;
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
 public class MoodDao {
-    private MoodDao(){}
+    public MoodDao(){}
     private static final Logger logger = LoggerFactory.getLogger(MoodDao.class);
 
     private static final String CREATE_MOOD_QUERY = "INSERT INTO mood(grade, comment, is_public, memberid, date) VALUES(?,?,?,?,?);";
@@ -30,7 +31,7 @@ public class MoodDao {
             int grade = resultSet.getInt("grade");
             boolean is_public = resultSet.getBoolean("is_public");
             int memberid = resultSet.getInt("memberid");
-            LocalDate date = resultSet.getDate("date").toLocalDate();
+            LocalDateTime date = resultSet.getTimestamp("date").toLocalDateTime();
             return new Mood(id,grade,comment,is_public,memberid,date);
         }catch (SQLException e) {
             logger.error("An SQL error occurred while executing the query.", e);
@@ -46,7 +47,7 @@ public class MoodDao {
             preparedStatement.setString(2, mood.getComment());
             preparedStatement.setBoolean(3, mood.isPublic());
             preparedStatement.setLong(4,mood.getMemberId());
-            preparedStatement.setDate(5, Date.valueOf(mood.getDate()));
+            preparedStatement.setTimestamp(5, Timestamp.valueOf(mood.getDate()));
             preparedStatement.execute();
             ResultSet resultSet = preparedStatement.getGeneratedKeys();
             resultSet.next();
@@ -71,7 +72,7 @@ public class MoodDao {
                int grade = resultSet.getInt("grade");
                boolean is_public = resultSet.getBoolean("is_public");
                int memberid = resultSet.getInt("memberid");
-               LocalDate date = resultSet.getDate("date").toLocalDate();
+               LocalDateTime date = resultSet.getTimestamp("date").toLocalDateTime();
                moods.add(new Mood(id,grade,comment,is_public,memberid,date));
            }
             return moods;

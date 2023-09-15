@@ -33,8 +33,8 @@
                 <configuration>
                     <hostname>localhost</hostname> <!-- Change this to your WildFly server hostname -->
                     <port>9990</port> <!-- Change this to your WildFly management port -->
-                    <username>marion</username> <!-- Change this to your WildFly admin username -->
-                    <password>M@081108*</password> <!-- Change this to your WildFly admin password -->
+                    <username>lzablit</username> <!-- Change this to your WildFly admin username -->
+                    <password>Lauranou7!</password> <!-- Change this to your WildFly admin password -->
                 </configuration>
             </plugin>
         </plugins>
