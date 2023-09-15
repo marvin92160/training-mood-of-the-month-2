@@ -1,3 +1,4 @@
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -143,31 +144,26 @@
                                         <table class="table table-hover table-striped">
                                             <thead>
                                                 <tr>
-                                                    <th>Name</th>
+                                                    <th>FirstName</th>
+                                                    <th>LastName</th>
                                                     <th>Email</th>
                                                     <th>Birthdate</th>
                                                     <th class="text-right">Action</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                               <tr>
-                                                   <td>FP Chalopin</td>
-                                                   <td>fpchalopin@e-biz.fr</td>
-                                                   <td>13/04/1992</td>
-                                                   <td class="text-right">
-                                                       <a href="#" class="btn btn-sm btn-warning"><i class="fa fa-pencil"></i> Edit</a>
-                                                       <a href="#" class="btn btn-sm btn-danger"><i class="fa fa-trash"></i> Remove</a>
-                                                   </td>
-                                               </tr>
-                                               <tr>
-                                                   <td>Jones Magloire</td>
-                                                   <td>jmagloire@e-biz.fr</td>
-                                                   <td>13/04/1992</td>
-                                                   <td class="text-right">
-                                                       <a href="#" class="btn btn-sm btn-warning"><i class="fa fa-pencil"></i> Edit</a>
-                                                       <a href="#" class="btn btn-sm btn-danger"><i class="fa fa-trash"></i> Remove</a>
-                                                   </td>
-                                               </tr>
+                                                <c:forEach items="${membres}" var="member">
+                                                    <tr>
+                                                       <td>${member.firstName}</td>
+                                                       <td>${member.lastName}</td>
+                                                       <td>${member.email}</td>
+                                                       <td>${member.birthdate}</td>
+                                                       <td  class="text-right">
+                                                           <a href="#" class="btn btn-sm btn-warning"><i class="fa fa-pencil"></i> Edit</a>
+                                                           <a href="#" class="btn btn-sm btn-danger"><i class="fa fa-trash"></i> Remove</a>
+                                                       </td>
+                                                    </tr>
+                                               </c:forEach>
                                             </tbody>
                                         </table>
                                         <div class="text-center">
