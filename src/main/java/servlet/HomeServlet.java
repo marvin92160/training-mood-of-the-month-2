@@ -17,6 +17,8 @@ import services.MoodService;
 
 import java.io.IOException;
 import java.time.LocalDate;
+import java.time.YearMonth;
+import java.time.format.DateTimeFormatter;
 import java.util.Arrays;
 import java.util.List;
 
@@ -49,10 +51,12 @@ public class HomeServlet extends HttpServlet {
             logger.error("An error occurred while processing the request.", e);
         }
         try {
-            LocalDate today = LocalDate.now();
-            String thisMonth = today.getMonth().toString();
-            int month = today.getMonth().getValue();
-            int year = today.getYear();
+            DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM");
+            List<String> months = moodService.extractMonths();
+            String lastMonthYear = months.get(0);
+            String thisMonth = YearMonth.parse(lastMonthYear, formatter).getMonth().toString();
+            int month = YearMonth.parse(lastMonthYear, formatter).getMonth().getValue();
+            int year = YearMonth.parse(lastMonthYear, formatter).getYear();
             List<Mood> moods = moodService.findAllByMonth(month, year);
             float average;
             float sum = 0;
@@ -83,6 +87,7 @@ public class HomeServlet extends HttpServlet {
             request.setAttribute("month", thisMonth);
             request.setAttribute("year", year);
             request.setAttribute("moods", moods);
+            request.setAttribute("lastMonthYear", lastMonthYear);
         } catch (ServiceException e) {
             logger.error("An error occurred while processing the request.", e);
         }

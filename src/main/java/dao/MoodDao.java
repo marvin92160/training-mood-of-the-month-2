@@ -21,7 +21,7 @@ public class MoodDao {
     private static final String FIND_MOOD_QUERY = "SELECT grade, comment, is_public, memberid, date FROM mood WHERE id=?;";
     private static final String FIND_MOODS_QUERY = "SELECT id, grade, comment, is_public, memberid, date FROM mood;";
     private static final String FIND_MOODS_BY_MONTH = "SELECT * FROM mood WHERE EXTRACT(MONTH FROM date) = ? AND EXTRACT(YEAR FROM date) = ?;";
-
+    private static final String EXTRACT_MONTHS = "SELECT DISTINCT TO_CHAR(date, 'YYYY-MM') AS month_year FROM mood ORDER BY month_year;";
     public Mood findById(long id) throws DaoException {
         try {
             Connection connection = ConnectionManager.getConnection();
@@ -119,6 +119,24 @@ public class MoodDao {
                 moods.add(new Mood(id,grade,comment,is_public,memberid,date));
             }
             return moods;
+        }catch (SQLException e) {
+            logger.error("An SQL error occurred while executing the query.", e);
+            throw new DaoException("An SQL error occurred.", e);
+        }
+    }
+
+    public List<String> extractMonths() throws DaoException{
+        List<String> months = new ArrayList<String>();
+        try {
+            Connection connection = ConnectionManager.getConnection();
+            Statement statement = connection.createStatement();
+            ResultSet resultSet = statement.executeQuery(EXTRACT_MONTHS);
+
+            while (resultSet.next()){
+                String monthYear = resultSet.getString("month_year");
+                months.add(monthYear);
+            }
+            return months;
         }catch (SQLException e) {
             logger.error("An SQL error occurred while executing the query.", e);
             throw new DaoException("An SQL error occurred.", e);
