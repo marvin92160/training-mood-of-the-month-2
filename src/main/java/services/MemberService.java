@@ -32,4 +32,16 @@ public class MemberService {
             throw new ServiceException();
         }
     }
+
+    public Member findById(int id) throws ServiceException {
+        try{
+            return this.memberDao.findById(id);
+        }catch (DaoException e){
+            e.printStackTrace();
+            throw new ServiceException();
+        }
+    }
+    public int count() throws ServiceException {
+        return findAll().size();
+    }
 }

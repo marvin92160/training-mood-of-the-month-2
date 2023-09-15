@@ -62,8 +62,7 @@ public class HomeServlet extends HttpServlet {
             logger.error("An error occurred while processing the request.", e);
         }
         try {
-            // ici on mettra le code pour définir "nbrMembre"
-             request.setAttribute("nbrMembre", 20);
+             request.setAttribute("nbrMembre", memberService.count());
         } catch (Exception e) {
             logger.error("An error occurred while setting nbrMembre.", e);
         }

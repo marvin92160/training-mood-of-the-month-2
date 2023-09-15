@@ -2,10 +2,12 @@ package dao;
 
 import modele.Member;
 import Exception.DaoException;
+import modele.Mood;
 import persistence.ConnectionManager;
 
 import java.sql.*;
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -17,6 +19,7 @@ public class MemberDao {
 
     private static final String CREATE_MEMBER_QUERY = "INSERT INTO member(firstname, lastname, email, birthdate) VALUES(?, ?, ?, ?);";
 
+    private static final String FIND_MEMBER_QUERY = "SELECT firstname, lastname, email, birthdate FROM member WHERE id=?;";
     private static final String FIND_MEMBERS_QUERY = "SELECT id, firstname, lastname, email, birthdate FROM member;";
     private static final Logger logger = LoggerFactory.getLogger(MemberDao.class);
 
@@ -38,6 +41,29 @@ public class MemberDao {
 
         } catch (SQLException e) {
            throw new DaoException();
+        }
+    }
+
+    public Member findById(int id) throws DaoException {
+        try {
+            String lastName ="";
+            String firstName = "";
+            String email = "";
+            LocalDate birthdate  = LocalDate.now();
+            Connection connexion = ConnectionManager.getConnection();
+            PreparedStatement ps = connexion.prepareStatement(FIND_MEMBER_QUERY);
+            ps.setLong(1, id);
+            ResultSet resultSet = ps.executeQuery();
+            if (resultSet.next()) {
+                lastName= resultSet.getString("lastname");
+                firstName = resultSet.getString("firstname");
+                email = resultSet.getString("email");
+                birthdate = resultSet.getDate("birthdate").toLocalDate();
+            }
+            return new Member(id, lastName, firstName, email, birthdate);
+        } catch (SQLException e) {
+            e.printStackTrace();
+            throw new DaoException();
         }
     }
 
