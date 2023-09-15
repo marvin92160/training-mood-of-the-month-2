@@ -36,6 +36,15 @@ public class MemberService {
             throw new ServiceException();
         }
     }
+    public List<Member> findAll(int page) throws ServiceException {
+        try{
+            return this.memberDao.findAll(page);
+        }catch (DaoException e){
+            e.printStackTrace();
+            throw new ServiceException();
+        }
+    }
+
     public List<Member> findAll() throws ServiceException {
         try{
             return this.memberDao.findAll();
