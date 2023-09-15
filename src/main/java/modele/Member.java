@@ -19,6 +19,13 @@ public class Member {
         this.birthdate = birthdate;
     }
 
+    public Member(String lastName, String firstName, String email, LocalDate birthdate) {
+        this.lastName = lastName;
+        this.firstName = firstName;
+        this.email = email;
+        this.birthdate = birthdate;
+    }
+
     public Member(Member member) {
         setId(member.getId());
         setLastName(member.getLastName());
