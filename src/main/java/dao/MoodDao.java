@@ -17,6 +17,7 @@ public class MoodDao {
     private static final Logger logger = LoggerFactory.getLogger(MoodDao.class);
 
     private static final String CREATE_MOOD_QUERY = "INSERT INTO mood(grade, comment, is_public, memberid, date) VALUES(?,?,?,?,?);";
+    private static final String DELETE_MOOD_QUERY = "DELETE FROM mood WHERE id=?;";
     private static final String FIND_MOOD_QUERY = "SELECT grade, comment, is_public, memberid, date FROM mood WHERE id=?;";
     private static final String FIND_MOODS_QUERY = "SELECT id, grade, comment, is_public, memberid, date FROM mood;";
     private static final String FIND_MOODS_BY_MONTH = "SELECT * FROM mood WHERE EXTRACT(MONTH FROM date) = ? AND EXTRACT(YEAR FROM date) = ?;";
@@ -57,6 +58,22 @@ public class MoodDao {
             connection.close();
             return id;
         } catch (SQLException e) {
+            throw new DaoException();
+        }
+    }
+
+    public long delete(long id_member) throws DaoException {
+        try(Connection connection = ConnectionManager.getConnection()){
+            PreparedStatement ps = connection.prepareStatement(DELETE_MOOD_QUERY);
+            ps.setLong(1, id_member);
+            if(ps.executeUpdate()!=0){
+                return 1;
+            }
+            else{
+                return 0;
+            }
+        }
+        catch(SQLException e){
             throw new DaoException();
         }
     }

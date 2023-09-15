@@ -1,14 +1,18 @@
 package servlet;
 
 import Exception.ServiceException;
+import com.sun.source.tree.MemberReferenceTree;
+import dao.MemberDao;
 import dao.MoodDao;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import modele.Mood;
+import modele.Member;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import services.MemberService;
 import services.MoodService;
 
 import java.io.IOException;
@@ -20,6 +24,9 @@ public class HomeServlet extends HttpServlet {
     private static final Logger logger = LoggerFactory.getLogger(HomeServlet.class);
 
     private MoodService moodService;
+   // private MoodDao moodDao;
+    MemberDao memberDao = new MemberDao();
+    MemberService memberService = new MemberService(memberDao);
 
     @Override
     public void init() {
@@ -28,13 +35,17 @@ public class HomeServlet extends HttpServlet {
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws IOException {
-      /*  try {
+        try {
             System.out.println(moodService.count());
             request.setAttribute("nbrMood", moodService.count());
         } catch (ServiceException e) {
             logger.error("An error occurred while processing the request.", e);
-        }*/
-
+        }
+        try {
+            request.setAttribute("membres", this.memberService.findAll());
+        } catch (ServiceException e) {
+            logger.error("An error occurred while processing the request.", e);
+        }
         try {
             List<Mood> moods = moodService.findAll();
             float average;
@@ -50,10 +61,8 @@ public class HomeServlet extends HttpServlet {
         } catch (ServiceException e) {
             logger.error("An error occurred while processing the request.", e);
         }
-
         try {
-            // ici on mettra le code pour définir "nbrMembre"
-             request.setAttribute("nbrMembre", 20);
+             request.setAttribute("nbrMembre", memberService.count());
         } catch (Exception e) {
             logger.error("An error occurred while setting nbrMembre.", e);
         }

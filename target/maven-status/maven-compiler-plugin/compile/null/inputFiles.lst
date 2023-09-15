@@ -1,4 +1,5 @@
 /home/takima/Documents/wellcomePool/training-mood-of-the-month-2/src/main/java/servlet/DashboardServlet.java
+/home/takima/Documents/wellcomePool/training-mood-of-the-month-2/src/main/java/servlet/DeleteMemberServlet.java
 /home/takima/Documents/wellcomePool/training-mood-of-the-month-2/src/main/java/servlet/HomeServlet.java
 /home/takima/Documents/wellcomePool/training-mood-of-the-month-2/src/main/java/services/MoodService.java
 /home/takima/Documents/wellcomePool/training-mood-of-the-month-2/src/main/java/servlet/editMotmServlet.java
@@ -15,3 +16,4 @@
 /home/takima/Documents/wellcomePool/training-mood-of-the-month-2/src/main/java/dao/MoodDao.java
 /home/takima/Documents/wellcomePool/training-mood-of-the-month-2/src/main/java/modele/Member.java
 /home/takima/Documents/wellcomePool/training-mood-of-the-month-2/src/main/java/persistence/ConnectionManager.java
+/home/takima/Documents/wellcomePool/training-mood-of-the-month-2/src/main/java/servlet/UpdateMemberServlet.java

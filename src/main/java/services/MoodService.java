@@ -22,6 +22,14 @@ public class MoodService {
             throw new ServiceException();
         }
     }
+    public long delete(long id_member) throws ServiceException {
+        try{
+            return this.moodDao.delete(id_member);
+        }catch(DaoException e){
+            e.printStackTrace();
+            throw new ServiceException();
+        }
+    }
 
     public List<Mood> findAllByMonth(int month, int year) throws ServiceException {
         try {
