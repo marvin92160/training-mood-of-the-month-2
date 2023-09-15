@@ -66,22 +66,22 @@
                         <div class="panel-body">
                             <div class="row">
                                 <div class="col-xs-12">
-                                    <form action="" method="post" class="">
+                                    <form action="/projet/add_member" method="post" class="">
                                         <div class="form-group">
                                             <label for="first_name">First Name</label>
-                                            <input type="text" class="input-lg form-control" id="first_name" placeholder="First Name">
+                                            <input type="text" class="input-lg form-control" id="first_name" name="first_name" placeholder="First Name">
                                         </div>
                                         <div class="form-group">
                                              <label for="last_name">Last Name </label>
-                                             <input type="text" class="input-lg form-control" id="last_name" placeholder="Last Name">
+                                             <input type="text" class="input-lg form-control" id="last_name" name="last_name"  placeholder="Last Name">
                                         </div>
                                         <div class="form-group">
                                             <label for="email">Email</label>
-                                            <input type="email" class="input-lg form-control" id="email" placeholder="Email Address">
+                                            <input type="email" class="input-lg form-control" id="email" name="email" placeholder="Email Address">
                                         </div>
                                         <div class="form-group">
                                             <label for="date">Birthdate</label>
-                                            <input type="text" class="input-lg form-control" id="birthdate" placeholder="DD/MM/YYYY">
+                                            <input type="date" class="input-lg form-control" id="birthdate" name="birthdate" placeholder="DD/MM/YYYY">
                                         </div>
 
                                         <div class="text-right">
