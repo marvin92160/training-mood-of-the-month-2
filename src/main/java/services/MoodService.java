@@ -23,6 +23,14 @@ public class MoodService {
         }
     }
 
+    public List<Mood> findAllByMonth(int month, int year) throws ServiceException {
+        try {
+            return moodDao.findALlByMonth(month, year);
+        }catch (DaoException e){
+            throw new ServiceException();
+        }
+    }
+
     public int count() throws ServiceException {
         return findAll().size();
     }
