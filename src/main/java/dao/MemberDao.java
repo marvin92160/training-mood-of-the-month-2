@@ -103,6 +103,40 @@ public class MemberDao {
         return member.getId();
     }
 
+    public List<Member> findAll( int page) throws DaoException {
+        List<Member> members = new ArrayList<Member>();
+        try {
+            LocalDate birthdate = LocalDate.now();
+            Connection connection = ConnectionManager.getConnection();
+            Statement statement = connection.createStatement();
+            ResultSet rs = statement.executeQuery(FIND_MEMBERS_QUERY);
+            int compteur = 0;
+            int min = 0;
+            int max = 10;
+            if(page==2){
+                min = 10;
+                max = 20;
+            }if(page==3){
+                min = 20;
+            }
+            while(rs.next()){
+                int id = rs.getInt("id");
+                String lastName = rs.getString("lastname");
+                String firstName= rs.getString("firstname");
+                String email = rs.getString("email");
+                birthdate = rs.getDate("birthdate").toLocalDate();
+                compteur++;
+                if(max>=compteur &&compteur>min){
+                    members.add( new Member( id,lastName,firstName,email,birthdate ));
+                }
+            }
+        }catch(SQLException e){
+            e.printStackTrace();
+        }
+        return members;
+
+    }
+
     public List<Member> findAll() throws DaoException {
         List<Member> members = new ArrayList<Member>();
         try {

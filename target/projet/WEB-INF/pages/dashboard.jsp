@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="jakarta.tags.core" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,7 +27,7 @@
 
     <div class="half">
         <div class="month">
-            <p class="title">MARCH 2017</p>
+            <p class="title">${month} ${year}</p>
             <p class="subtitle">MOOD OF THE MONTH</p>
         </div>
 
@@ -36,11 +37,11 @@
                     <img src="resources/img/1.png" alt="super"/>
                 </div>
                 <div class="progress-bar-container">
-                    <span class="desc">Vote count: 10</span>
+                    <span class="desc">Vote count: ${repartition[0]}</span>
                     <div class="progress">
                         <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="10"
-                             aria-valuemin="0" aria-valuemax="100" style="width:10%">
-                            <span class="">10%</span>
+                             aria-valuemin="0" aria-valuemax="100" style="width:${repartition[0]/count * 100}%">
+                            <span class="">${repartition[0]/count * 100}%</span>
                         </div>
                     </div>
                 </div>
@@ -50,11 +51,11 @@
                     <img src="resources/img/2.png" alt="super"/>
                 </div>
                 <div class="progress-bar-container">
-                    <span class="desc">Vote count: 5</span>
+                    <span class="desc">Vote count: ${repartition[1]}</span>
                     <div class="progress">
                         <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="5"
-                             aria-valuemin="0" aria-valuemax="100" style="width:5%">
-                            <span class="">5%</span>
+                             aria-valuemin="0" aria-valuemax="100" style="width:${repartition[1]/count * 100}%">
+                            <span class="">${repartition[1]/count * 100}%</span>
                         </div>
                     </div>
                 </div>
@@ -64,11 +65,11 @@
                     <img src="resources/img/3.png" alt="super"/>
                 </div>
                 <div class="progress-bar-container">
-                    <span class="desc">Vote count: 15</span>
+                    <span class="desc">Vote count: ${repartition[2]}</span>
                     <div class="progress">
                         <div class="progress-bar progress-bar-neutral" role="progressbar" aria-valuenow="15"
-                             aria-valuemin="0" aria-valuemax="100" style="width:15%">
-                            <span class="">15%</span>
+                             aria-valuemin="0" aria-valuemax="100" style="width:${repartition[2]/count * 100}%">
+                            <span class="">${repartition[2]/count * 100}%</span>
                         </div>
                     </div>
                 </div>
@@ -78,11 +79,11 @@
                     <img src="resources/img/4.png" alt="super"/>
                 </div>
                 <div class="progress-bar-container">
-                    <span class="desc">Vote count: 45</span>
+                    <span class="desc">Vote count: ${repartition[3]}</span>
                     <div class="progress">
                         <div class="progress-bar progress-bar-midsuccess" role="progressbar" aria-valuenow="45"
-                             aria-valuemin="0" aria-valuemax="100" style="width:45%">
-                            <span class="">45%</span>
+                             aria-valuemin="0" aria-valuemax="100" style="width:${repartition[3]/count * 100}%">
+                            <span class="">${repartition[3]/count * 100}%</span>
                         </div>
                     </div>
                 </div>
@@ -92,11 +93,11 @@
                     <img src="resources/img/5.png" alt="super"/>
                 </div>
                 <div class="progress-bar-container">
-                    <span class="desc">Vote count: 25</span>
+                    <span class="desc">Vote count: ${repartition[4]}</span>
                     <div class="progress">
                         <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="25"
-                             aria-valuemin="0" aria-valuemax="100" style="width:25%">
-                            <span class="">25%</span>
+                             aria-valuemin="0" aria-valuemax="100" style="width:${repartition[4]/count * 100}%">
+                            <span class="">${repartition[4]/count * 100}%</span>
                         </div>
                     </div>
                 </div>
@@ -110,11 +111,11 @@
         <div class="global">
             <div class="global-mood">
               <div class="img-container">
-                <img class="mood" src="resources/img/4.png" alt=""/>
+                <img class="mood" src="resources/img/${round}.png" alt=""/>
               </div>
               <div class="notation">
                   <p class="title">GLOBAL MOOD</p>
-                  <span class="note">4.2</span>
+                  <span class="note">${average}</span>
                   <span class="note-on">/5</span>
               </div>
             </div>
@@ -122,42 +123,20 @@
 
         <div class="comments">
             <h2 class="title">Comments</h2>
-            <div class="comment-container">
-                <div class="note">
-                    <img class="mood" src="resources/img/3.png" alt=""/>
-                </div>
-                <div class="comment">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec nulla quam. Integer nisi ligula,
-                    molestie id diam ac, sagittis efficitur justo. Etiam aliquam aliquam dolor sed fringilla. Nullam at.
-                </div>
-            </div>
-            <div class="comment-container">
-                <div class="note">
-                    <img class="mood" src="resources/img/4.png" alt=""/>
-                </div>
-                <div class="comment">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec nulla quam. Integer nisi ligula,
-                    molestie id diam ac, sagittis efficitur justo. Etiam aliquam aliquam dolor sed fringilla. Nullam at.
-                </div>
-            </div>
-            <div class="comment-container">
-                <div class="note">
-                    <img class="mood" src="resources/img/3.png" alt=""/>
-                </div>
-                <div class="comment">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec nulla quam. Integer nisi ligula,
-                    molestie id diam ac, sagittis efficitur justo. Etiam aliquam aliquam dolor sed fringilla. Nullam at.
-                </div>
-            </div>
-            <div class="comment-container">
-                <div class="note">
-                    <img class="mood" src="resources/img/5.png" alt=""/>
-                </div>
-                <div class="comment">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec nulla quam. Integer nisi ligula,
-                    molestie id diam ac, sagittis efficitur justo. Etiam aliquam aliquam dolor sed fringilla. Nullam at.
-                </div>
-            </div>
+            <c:forEach items="${moods}" var="mood" varStatus="loop">
+                <c:if test="${mood.comment != null}">
+
+                    <div class="comment-container">
+                        <div class="note">
+                            <img class="mood" src="resources/img/${mood.grade}.png" alt=""/>
+                        </div>
+                        <div class="comment">
+                            ${mood.comment}
+                        </div>
+                    </div>
+
+                    </c:if>
+                    </c:forEach>
         </div>
     </div>
 </div>

@@ -46,7 +46,8 @@ public class HomeServlet extends HttpServlet {
             logger.error("An error occurred while processing the request.", e);
         }
         try {
-            request.setAttribute("membres", this.memberService.findAll());
+            int page = Integer.parseInt(request.getParameter("page"));
+            request.setAttribute("membres", this.memberService.findAll(page));
         } catch (ServiceException e) {
             logger.error("An error occurred while processing the request.", e);
         }
