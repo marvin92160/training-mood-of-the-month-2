@@ -154,13 +154,16 @@
                                             <tbody>
                                                 <c:forEach items="${membres}" var="member">
                                                     <tr>
+                                                        <td>${member.id}</td>
                                                        <td>${member.firstName}</td>
                                                        <td>${member.lastName}</td>
                                                        <td>${member.email}</td>
                                                        <td>${member.birthdate}</td>
                                                        <td  class="text-right">
                                                            <a href="#" class="btn btn-sm btn-warning"><i class="fa fa-pencil"></i> Edit</a>
-                                                           <a href="#" class="btn btn-sm btn-danger"><i class="fa fa-trash"></i> Remove</a>
+                                                            <a class="btn btn-sm btn-danger" href="/projet/delete_member?id=${member.id}">
+                                                                                                       <i class="fa fa-trash"> Remove</i>
+                                                                                                   </a>
                                                        </td>
                                                     </tr>
                                                </c:forEach>
