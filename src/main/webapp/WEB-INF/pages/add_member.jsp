@@ -68,8 +68,12 @@
                                 <div class="col-xs-12">
                                     <form action="" method="post" class="">
                                         <div class="form-group">
-                                            <label for="name">Name</label>
-                                            <input type="text" class="input-lg form-control" id="name" placeholder="Nom">
+                                            <label for="first_name">First Name</label>
+                                            <input type="text" class="input-lg form-control" id="first_name" placeholder="First Name">
+                                        </div>
+                                        <div class="form-group">
+                                             <label for="last_name">Last Name</label>
+                                             <input type="text" class="input-lg form-control" id="last_name" placeholder="Last Name">
                                         </div>
                                         <div class="form-group">
                                             <label for="email">Email</label>
@@ -77,7 +81,7 @@
                                         </div>
                                         <div class="form-group">
                                             <label for="date">Birthdate</label>
-                                            <input type="text" class="input-lg form-control" id="date" placeholder="DD/MM/YYYY">
+                                            <input type="text" class="input-lg form-control" id="birthdate" placeholder="DD/MM/YYYY">
                                         </div>
 
                                         <div class="text-right">
