@@ -9,6 +9,7 @@
 /home/takima/Documents/wellcomePool/training-mood-of-the-month-2/src/main/java/servlet/AddMemberServlet.java
 /home/takima/Documents/wellcomePool/training-mood-of-the-month-2/src/main/java/modele/Mood.java
 /home/takima/Documents/wellcomePool/training-mood-of-the-month-2/src/main/java/Exception/DaoException.java
+/home/takima/Documents/wellcomePool/training-mood-of-the-month-2/src/main/java/persistence/FillDatabase.java
 /home/takima/Documents/wellcomePool/training-mood-of-the-month-2/src/main/java/servlet/NewsletterTemplateServlet.java
 /home/takima/Documents/wellcomePool/training-mood-of-the-month-2/src/main/java/servlet/StatsServlet.java
 /home/takima/Documents/wellcomePool/training-mood-of-the-month-2/src/main/java/dao/MoodDao.java
