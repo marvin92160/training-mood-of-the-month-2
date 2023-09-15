@@ -5,15 +5,18 @@ import Exception.DaoException;
 import persistence.ConnectionManager;
 
 import java.sql.*;
-
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 public class MemberDao {
 
     public MemberDao(){}
 
     private static final String CREATE_MEMBER_QUERY = "INSERT INTO member(firstname, lastname, email, birthdate) VALUES(?, ?, ?, ?);";
+    private static final Logger logger = LoggerFactory.getLogger(MemberDao.class);
 
     public long create(Member membre) throws DaoException{
        try (Connection connection = ConnectionManager.getConnection()){
+
            PreparedStatement ps = connection.prepareStatement(CREATE_MEMBER_QUERY, Statement.RETURN_GENERATED_KEYS);
            ps.setString(1, membre.getFirstName());
            ps.setString(2, membre.getLastName());
@@ -26,7 +29,13 @@ public class MemberDao {
                id = resultSet.getInt(1);
            }
            return id;
-            /*Connection connection = ConnectionManager.getConnection();
+
+        } catch (SQLException e) {
+           throw new DaoException();
+        }
+    }
+
+}            /*Connection connection = ConnectionManager.getConnection();
             PreparedStatement ps = connection.prepareStatement(CREATE_MEMBER_QUERY, Statement.RETURN_GENERATED_KEYS);
             ps.setString(1, membre.getLastName());
             ps.setString(2, membre.getFirstName());
@@ -38,11 +47,5 @@ public class MemberDao {
             ps.close();
             connection.close();*/
 
-        } catch (SQLException e) {
-            throw new DaoException();
-        }
-    }
-
-}
 
 

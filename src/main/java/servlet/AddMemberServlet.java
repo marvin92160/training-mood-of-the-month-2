@@ -12,13 +12,17 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import modele.Member;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import services.MemberService;
 import Exception.ServiceException;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 @WebServlet("/add_member")
 public class AddMemberServlet extends HttpServlet{
     private static final long serialVersionUID = 1L;
-
+    private static final Logger logger = LoggerFactory.getLogger(MemberDao.class);
     MemberDao memberDao = new MemberDao();
     MemberService memberService = new MemberService(memberDao);
 
@@ -30,7 +34,7 @@ public class AddMemberServlet extends HttpServlet{
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
-//        request.setAttribute("nbrMembre", 20);
+//       request.setAttribute("nbrMembre", 20);
 //        request.setAttribute("nbrMood", 15);
 
         this.getServletContext().getRequestDispatcher("/WEB-INF/pages/add_member.jsp").forward(request, response);
@@ -43,7 +47,13 @@ public class AddMemberServlet extends HttpServlet{
             String email = request.getParameter("email");
             //LocalDate birthdate = LocalDate.parse((request.getParameter("birthdate")), DateTimeFormatter.ofPattern("dd/mm/yyyy"));
             LocalDate birthdate = LocalDate.now();
-            Member m = new Member(lastName,firstName,email,birthdate );
+            logger.error("prenom" + lastName);
+            logger.error("nom" + firstName);
+            logger.error("email" + email);
+
+            //Member m = new Member("marion","chineaud","m.c@gmail.com",birthdate );
+            Member m = new Member( lastName,firstName,email,birthdate );
+            logger.error("membre " + m.toString());
             this.memberService.create(m);
 
         } catch (ServiceException e) {
