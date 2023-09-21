@@ -47,8 +47,6 @@ public class HomeServlet extends HttpServlet {
         }
         try {
             ArrayList listePage= memberService.countPage();
-            logger.error("nbr page  v 2 " + listePage );
-
             request.setAttribute("nbrPage", listePage  );
         } catch (ServiceException e) {
             logger.error("An error occurred while processing the request.", e);
