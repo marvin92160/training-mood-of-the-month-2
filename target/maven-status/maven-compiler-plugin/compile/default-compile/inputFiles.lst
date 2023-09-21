@@ -12,6 +12,10 @@
 /home/takima/Téléchargements/training-mood-of-the-month-2/src/main/java/servlet/NewsletterTemplateServlet.java
 /home/takima/Téléchargements/training-mood-of-the-month-2/src/main/java/dao/MemberDao.java
 /home/takima/Téléchargements/training-mood-of-the-month-2/src/main/java/servlet/DashboardServlet.java
+/home/takima/Téléchargements/training-mood-of-the-month-2/src/main/java/dao/MemberPreferencesDao.java
+/home/takima/Téléchargements/training-mood-of-the-month-2/src/main/java/services/MailingService/EmailScheduler.java
 /home/takima/Téléchargements/training-mood-of-the-month-2/src/main/java/modele/Member.java
+/home/takima/Téléchargements/training-mood-of-the-month-2/src/main/java/services/MailingService/EmailSendingJob.java
 /home/takima/Téléchargements/training-mood-of-the-month-2/src/main/java/servlet/StatsServlet.java
 /home/takima/Téléchargements/training-mood-of-the-month-2/src/main/java/servlet/MotmServlet.java
+/home/takima/Téléchargements/training-mood-of-the-month-2/src/main/java/modele/MemberPreferences.java

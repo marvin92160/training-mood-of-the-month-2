@@ -1,13 +1,15 @@
 package servlet;
 
 import Exception.ServiceException;
-import com.sun.source.tree.MemberReferenceTree;
+import Exception.DaoException;
 import dao.MemberDao;
+import dao.MemberPreferencesDao;
 import dao.MoodDao;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import modele.MemberPreferences;
 import modele.Mood;
 import modele.Member;
 import org.slf4j.Logger;
@@ -27,14 +29,14 @@ public class HomeServlet extends HttpServlet {
    // private MoodDao moodDao;
     MemberDao memberDao = new MemberDao();
     MemberService memberService = new MemberService(memberDao);
+    MemberPreferencesDao memberPreferencesDao = new MemberPreferencesDao();
 
     @Override
     public void init() {
         moodService = new MoodService(new MoodDao());
     }
 
-    protected void doGet(HttpServletRequest request, HttpServletResponse response)
-            throws IOException {
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) {
         try {
             System.out.println(moodService.count());
             request.setAttribute("nbrMood", moodService.count());
@@ -73,4 +75,43 @@ public class HomeServlet extends HttpServlet {
             logger.error("An error occurred while forwarding the request.", e);
         }
     }
+
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
+        // Récupérez la valeur sélectionnée dans la liste déroulante
+        String mailingDateOption = request.getParameter("date");
+
+
+        // Récupérer la valeur du champ "date" du formulaire
+        String date = request.getParameter("date");
+        // Récupérer la valeur du champ "time" du formulaire
+        String time = request.getParameter("time");
+
+        // Assurez-vous que la valeur n'est pas nulle
+        if (mailingDateOption != null) {
+            try {
+                // Récupérez la liste des membres depuis la base de données (vous devez avoir un DAO pour cela)
+                MemberDao memberDao = new MemberDao(); // Supposons que vous instanciez votre DAO ici
+                List<Member> members = memberDao.findAll(); // Utilisez le DAO pour obtenir tous les membres
+
+                // Parcourez la liste des membres
+                for (Member member : members) {
+                    // Enregistrez la préférence de d'envoi de mail pour chaque membre dans la table member_preferences
+                    MemberPreferences preferences = new MemberPreferences();
+                    preferences.setMemberId(member.getId());
+                    preferences.setMailingDateOption(Integer.parseInt(mailingDateOption)); // Afin de convertir la valeur en entier
+                    memberPreferencesDao.save(preferences);
+                }
+
+                // Redirigez ensuite l'utilisateur vers la page d'accueil ou une autre page appropriée
+                response.sendRedirect(request.getContextPath() + "/home");
+            } catch (DaoException e) {
+                logger.error("An error occurred while forwarding the request.", e);
+                // Redirigez l'utilisateur vers une page d'erreur
+                response.sendRedirect(request.getContextPath() + "/error");
+            }
+        } else {
+            response.sendRedirect(request.getContextPath() + "/error");
+        }
+    }
+
 }
