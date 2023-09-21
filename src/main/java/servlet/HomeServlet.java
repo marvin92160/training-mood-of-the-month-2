@@ -61,7 +61,6 @@ public class HomeServlet extends HttpServlet {
             int[] repartition = {0, 0, 0, 0, 0};
             for (Mood mood:moods) {
                 int grade = mood.getGrade();
-                logger.error("Grade: " + grade);
                 i++;
                 switch (grade) {
                     case 1 : repartition[0]++;
@@ -74,7 +73,6 @@ public class HomeServlet extends HttpServlet {
                         break;
                     case 5 : repartition[4]++;
                 }
-                logger.error("Repartition: " + Arrays.toString(repartition));
                 sum += grade;
             }
             average = sum/i;
