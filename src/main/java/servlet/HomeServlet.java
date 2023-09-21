@@ -62,7 +62,7 @@ public class HomeServlet extends HttpServlet {
         try {
             DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM");
             List<String> months = moodService.extractMonths();
-            String lastMonthYear = months.get(0);
+            String lastMonthYear = months.get(months.size()-1);
             String thisMonth = YearMonth.parse(lastMonthYear, formatter).getMonth().toString();
             int month = YearMonth.parse(lastMonthYear, formatter).getMonth().getValue();
             int year = YearMonth.parse(lastMonthYear, formatter).getYear();
