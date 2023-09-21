@@ -59,4 +59,5 @@ fabric.properties
 *.css.map
 
 pom.xml
+target
 # End of https://www.gitignore.io/api/sass,intellij
