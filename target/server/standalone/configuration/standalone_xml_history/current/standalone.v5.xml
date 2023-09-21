@@ -520,7 +520,7 @@
     </socket-binding-group>
     <deployments>
         <deployment name="projet.war" runtime-name="projet.war">
-            <fs-exploded path="/home/takima/Documents/wellcomePool/training-mood-of-the-month-2/target/projet"/>
+            <fs-exploded path="/home/takima/Téléchargements/pool/training-mood-of-the-month-2/target/projet"/>
         </deployment>
     </deployments>
 </server>
