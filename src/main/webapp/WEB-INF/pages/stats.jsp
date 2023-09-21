@@ -1,4 +1,7 @@
 <%@ taglib prefix="c" uri="jakarta.tags.core" %>
+<%@ taglib prefix="ft" uri="jakarta.tags.fmt" %>
+<%@ page import = "java.io.*,java.util.*" %>
+<%@ page import = "javax.servlet.*,java.text.*" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -60,7 +63,13 @@
                                             </a>
                                             <ul class="dropdown-menu dropdown-user">
                                             <c:forEach items="${months}" var="eachMonth" varStatus="loop">
-                                                <li><a href="${pageContext.request.contextPath}/stats?month=${eachMonth}">${eachMonth}</a></li>
+                                                <%
+                                                     SimpleDateFormat ft =
+                                                     new SimpleDateFormat ("MMMM yyyy", Locale.US);
+                                                     DateFormat inputFormat = new SimpleDateFormat("yyyy-MM");
+                                                     Date date = inputFormat.parse((String) pageContext.getAttribute("eachMonth"));
+                                                  %>
+                                                  <li><a href="${pageContext.request.contextPath}/stats?month=${eachMonth}"><%=ft.format(date)%></a></li>
                                             </c:forEach>
                                             </ul>
                                         </div>
@@ -169,18 +178,16 @@
                                                 <h2 class="title">Comments</h2>
                                                 <c:forEach items="${moods}" var="mood" varStatus="loop">
                                                     <c:if test="${mood.comment != null}">
-
                                                         <div class="comment-container">
                                                             <div class="note">
                                                                 <img class="mood" src="resources/img/${mood.grade}.png" alt=""/>
                                                             </div>
                                                             <div class="comment">
-                                                                ${mood.comment}
+                                                                 ${mood.comment}
                                                             </div>
                                                         </div>
-
-                                                        </c:if>
-                                                        </c:forEach>
+                                                    </c:if>
+                                                </c:forEach>
                                             </div>
                                         </div>
                                     </div>
