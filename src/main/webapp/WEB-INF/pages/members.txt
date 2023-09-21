@@ -1,0 +1,256 @@
+<tr>
+                                                   <td>Loïc Ortola</td>
+                                                   <td>lortola@e-biz.fr</td>
+                                                   <td>10/02/1988</td>
+                                                   <td  class="text-right">
+                                                       <a href="#" class="btn btn-sm btn-warning"><i class="fa fa-pencil"></i> Edit</a>
+                                                       <a href="#" class="btn btn-sm btn-danger"><i class="fa fa-trash"></i> Remove</a>
+                                                   </td>
+                                               </tr>
+                                               <tr>
+                                                   <td>Antoine Lebel</td>
+                                                   <td>alebel@e-biz.fr</td>
+                                                   <td>11/07/1991</td>
+                                                   <td class="text-right">
+                                                       <a href="#" class="btn btn-sm btn-warning"><i class="fa fa-pencil"></i> Edit</a>
+                                                       <a href="#" class="btn btn-sm btn-danger"><i class="fa fa-trash"></i> Remove</a>
+                                                   </td>
+                                               </tr>
+                                               <tr>
+                                                   <td>Kévin Bottero</td>
+                                                   <td>kbottero@e-biz.fr</td>
+                                                   <td>20/12/1978</td>
+                                                   <td class="text-right">
+                                                       <a href="#" class="btn btn-sm btn-warning"><i class="fa fa-pencil"></i> Edit</a>
+                                                       <a href="#" class="btn btn-sm btn-danger"><i class="fa fa-trash"></i> Remove</a>
+                                                   </td>
+                                               </tr>
+                                               <tr>
+                                                   <td>Romain Larroque</td>
+                                                   <td>rlarroque@e-biz.fr</td>
+                                                   <td>18/03/1992</td>
+                                                   <td class="text-right">
+                                                       <a href="#" class="btn btn-sm btn-warning"><i class="fa fa-pencil"></i> Edit</a>
+                                                       <a href="#" class="btn btn-sm btn-danger"><i class="fa fa-trash"></i> Remove</a>
+                                                   </td>
+                                               </tr>
+                                               <tr>
+                                                   <td>Hubert B. Delabatte</td>
+                                                   <td>hdelabatte@e-biz.fr</td>
+                                                   <td>10/02/1916</td>
+                                                   <td class="text-right">
+                                                       <a href="#" class="btn btn-sm btn-warning"><i class="fa fa-pencil"></i> Edit</a>
+                                                       <a href="#" class="btn btn-sm btn-danger"><i class="fa fa-trash"></i> Remove</a>
+                                                   </td>
+                                               </tr>
+                                               <tr>
+                                                   <td>Guillaume Nostrenoff</td>
+                                                   <td>gnostrenoff@e-biz.fr</td>
+                                                   <td>04/10/1991</td>
+                                                   <td class="text-right">
+                                                       <a href="#" class="btn btn-sm btn-warning"><i class="fa fa-pencil"></i> Edit</a>
+                                                       <a href="#" class="btn btn-sm btn-danger"><i class="fa fa-trash"></i> Remove</a>
+                                                   </td>
+                                               </tr>
+                                               <tr>
+                                                   <td>Hugo Bernardi</td>
+                                                   <td>hbernardi@e-biz.fr</td>
+                                                   <td>13/04/1992</td>
+                                                   <td class="text-right">
+                                                       <a href="#" class="btn btn-sm btn-warning"><i class="fa fa-pencil"></i> Edit</a>
+                                                       <a href="#" class="btn btn-sm btn-danger"><i class="fa fa-trash"></i> Remove</a>
+                                                   </td>
+                                               </tr>
+                                               <tr>
+                                                   <td>Olivier Duvoid</td>
+                                                   <td>oduvoid@e-biz.fr</td>
+                                                   <td>13/04/1992</td>
+                                                   <td class="text-right">
+                                                       <a href="#" class="btn btn-sm btn-warning"><i class="fa fa-pencil"></i> Edit</a>
+                                                       <a href="#" class="btn btn-sm btn-danger"><i class="fa fa-trash"></i> Remove</a>
+                                                   </td>
+                                               </tr>
+                                               <tr>
+                                                   <td>FP Chalopin</td>
+                                                   <td>fpchalopin@e-biz.fr</td>
+                                                   <td>13/04/1992</td>
+                                                   <td class="text-right">
+                                                       <a href="#" class="btn btn-sm btn-warning"><i class="fa fa-pencil"></i> Edit</a>
+                                                       <a href="#" class="btn btn-sm btn-danger"><i class="fa fa-trash"></i> Remove</a>
+                                                   </td>
+                                               </tr>
+                                               <tr>
+                                                   <td>Jones Magloire</td>
+                                                   <td>jmagloire@e-biz.fr</td>
+                                                   <td>13/04/1992</td>
+                                                   <td class="text-right">
+                                                       <a href="#" class="btn btn-sm btn-warning"><i class="fa fa-pencil"></i> Edit</a>
+                                                       <a href="#" class="btn btn-sm btn-danger"><i class="fa fa-trash"></i> Remove</a>
+                                                   </td>
+                                               </tr>
+
+
+
+                                                          <div class="comment-container">
+                                                               <div class="note">
+                                                                   <img class="mood" src="resources/img/4.png" alt=""/>
+                                                               </div>
+                                                               <div class="comment">
+                                                                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec nulla quam. Integer nisi ligula,
+                                                                   molestie id diam ac, sagittis efficitur justo. Etiam aliquam aliquam dolor sed fringilla. Nullam at.
+                                                               </div>
+                                                           </div>
+                                                           <div class="comment-container">
+                                                               <div class="note">
+                                                                   <img class="mood" src="resources/img/3.png" alt=""/>
+                                                               </div>
+                                                               <div class="comment">
+                                                                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec nulla quam. Integer nisi ligula,
+                                                                   molestie id diam ac, sagittis efficitur justo. Etiam aliquam aliquam dolor sed fringilla. Nullam at.
+                                                               </div>
+                                                           </div>
+                                                           <div class="comment-container">
+                                                               <div class="note">
+                                                                   <img class="mood" src="resources/img/5.png" alt=""/>
+                                                               </div>
+                                                               <div class="comment">
+                                                                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec nulla quam. Integer nisi ligula,
+                                                                   molestie id diam ac, sagittis efficitur justo. Etiam aliquam aliquam dolor sed fringilla. Nullam at.
+                                                               </div>
+                                                           </div>
+
+                                                           <div class="container-fluid" id="dashboard">
+                                                                                                   <div class="half">
+                                                                                                       <div class="month">
+                                                                                                           <p class="title">MARCH 2017</p>
+                                                                                                           <p class="subtitle">MOOD OF THE MONTH</p>
+                                                                                                       </div>
+
+                                                                                                       <div class="details">
+                                                                                                           <div class="mood">
+                                                                                                               <div class="img-container">
+                                                                                                                   <img src="resources/img/1.png" alt="super"/>
+                                                                                                               </div>
+                                                                                                               <div class="progress-bar-container">
+                                                                                                                   <span class="desc">Vote count: 10</span>
+                                                                                                                   <div class="progress">
+                                                                                                                       <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="10"
+                                                                                                                            aria-valuemin="0" aria-valuemax="100" style="width:10%">
+                                                                                                                           <span class="">10%</span>
+                                                                                                                       </div>
+                                                                                                                   </div>
+                                                                                                               </div>
+                                                                                                           </div>
+                                                                                                           <div class="mood">
+                                                                                                               <div class="img-container">
+                                                                                                                   <img src="resources/img/2.png" alt="super"/>
+                                                                                                               </div>
+                                                                                                               <div class="progress-bar-container">
+                                                                                                                   <span class="desc">Vote count: 5</span>
+                                                                                                                   <div class="progress">
+                                                                                                                       <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="5"
+                                                                                                                            aria-valuemin="0" aria-valuemax="100" style="width:5%">
+                                                                                                                           <span class="">5%</span>
+                                                                                                                       </div>
+                                                                                                                   </div>
+                                                                                                               </div>
+                                                                                                           </div>
+                                                                                                           <div class="mood">
+                                                                                                               <div class="img-container">
+                                                                                                                   <img src="resources/img/3.png" alt="super"/>
+                                                                                                               </div>
+                                                                                                               <div class="progress-bar-container">
+                                                                                                                   <span class="desc">Vote count: 15</span>
+                                                                                                                   <div class="progress">
+                                                                                                                       <div class="progress-bar progress-bar-neutral" role="progressbar" aria-valuenow="15"
+                                                                                                                            aria-valuemin="0" aria-valuemax="100" style="width:15%">
+                                                                                                                           <span class="">15%</span>
+                                                                                                                       </div>
+                                                                                                                   </div>
+                                                                                                               </div>
+                                                                                                           </div>
+                                                                                                           <div class="mood">
+                                                                                                               <div class="img-container">
+                                                                                                                   <img src="resources/img/4.png" alt="super"/>
+                                                                                                               </div>
+                                                                                                               <div class="progress-bar-container">
+                                                                                                                   <span class="desc">Vote count: 45</span>
+                                                                                                                   <div class="progress">
+                                                                                                                       <div class="progress-bar progress-bar-midsuccess" role="progressbar" aria-valuenow="45"
+                                                                                                                            aria-valuemin="0" aria-valuemax="100" style="width:45%">
+                                                                                                                           <span class="">45%</span>
+                                                                                                                       </div>
+                                                                                                                   </div>
+                                                                                                               </div>
+                                                                                                           </div>
+                                                                                                           <div class="mood">
+                                                                                                               <div class="img-container">
+                                                                                                                   <img src="resources/img/5.png" alt="super"/>
+                                                                                                               </div>
+                                                                                                               <div class="progress-bar-container">
+                                                                                                                   <span class="desc">Vote count: 25</span>
+                                                                                                                   <div class="progress">
+                                                                                                                       <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="25"
+                                                                                                                            aria-valuemin="0" aria-valuemax="100" style="width:25%">
+                                                                                                                           <span class="">25%</span>
+                                                                                                                       </div>
+                                                                                                                   </div>
+                                                                                                               </div>
+                                                                                                           </div>
+                                                                                                       </div>
+                                                                                                   </div>
+                                                                                                   <div class="half-2">
+                                                                                                       <div class="global">
+                                                                                                           <div class="global-mood">
+                                                                                                               <div class="img-container">
+                                                                                                                   <img class="mood" src="resources/img/4.png" alt=""/>
+                                                                                                               </div>
+                                                                                                               <div class="notation">
+                                                                                                                   <p class="title">GLOBAL MOOD</p>
+                                                                                                                   <span class="note">4.2</span>
+                                                                                                                   <span class="note-on">/5</span>
+                                                                                                               </div>
+                                                                                                           </div>
+                                                                                                       </div>
+
+                                                                                                       <div class="comments">
+                                                                                                           <h2 class="title">Comments</h2>
+                                                                                                           <div class="comment-container">
+                                                                                                               <div class="note">
+                                                                                                                   <img class="mood" src="resources/img/3.png" alt=""/>
+                                                                                                               </div>
+                                                                                                               <div class="comment">
+                                                                                                                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec nulla quam. Integer nisi ligula,
+                                                                                                                   molestie id diam ac, sagittis efficitur justo. Etiam aliquam aliquam dolor sed fringilla. Nullam at.
+                                                                                                               </div>
+                                                                                                           </div>
+                                                                                                           <div class="comment-container">
+                                                                                                               <div class="note">
+                                                                                                                   <img class="mood" src="resources/img/4.png" alt=""/>
+                                                                                                               </div>
+                                                                                                               <div class="comment">
+                                                                                                                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec nulla quam. Integer nisi ligula,
+                                                                                                                   molestie id diam ac, sagittis efficitur justo. Etiam aliquam aliquam dolor sed fringilla. Nullam at.
+                                                                                                               </div>
+                                                                                                           </div>
+                                                                                                           <div class="comment-container">
+                                                                                                               <div class="note">
+                                                                                                                   <img class="mood" src="resources/img/3.png" alt=""/>
+                                                                                                               </div>
+                                                                                                               <div class="comment">
+                                                                                                                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec nulla quam. Integer nisi ligula,
+                                                                                                                   molestie id diam ac, sagittis efficitur justo. Etiam aliquam aliquam dolor sed fringilla. Nullam at.
+                                                                                                               </div>
+                                                                                                           </div>
+                                                                                                           <div class="comment-container">
+                                                                                                               <div class="note">
+                                                                                                                   <img class="mood" src="resources/img/5.png" alt=""/>
+                                                                                                               </div>
+                                                                                                               <div class="comment">
+                                                                                                                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec nulla quam. Integer nisi ligula,
+                                                                                                                   molestie id diam ac, sagittis efficitur justo. Etiam aliquam aliquam dolor sed fringilla. Nullam at.
+                                                                                                               </div>
+                                                                                                           </div>
+                                                                                                       </div>
+                                                                                                   </div>
+                                                                                               </div>

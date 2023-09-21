@@ -1,4 +1,4 @@
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib prefix="c" uri="jakarta.tags.core" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -129,7 +129,7 @@
                 </div>
             </div>
             <!-- /.row -->
-            <div class="row">
+<div class="row">
                 <div class="col-lg-8">
                     <!-- /.panel -->
                     <div class="panel panel-default">
@@ -159,8 +159,8 @@
                                                        <td>${member.email}</td>
                                                        <td>${member.birthdate}</td>
                                                        <td  class="text-right">
-                                                           <a href="#" class="btn btn-sm btn-warning"><i class="fa fa-pencil"></i> Edit</a>
-                                                           <a href="#" class="btn btn-sm btn-danger"><i class="fa fa-trash"></i> Remove</a>
+                                                           <a href="${pageContext.request.contextPath}/update_member?id=${member.id}" class="btn btn-sm btn-warning"><i class="fa fa-pencil"></i> Edit</a>
+                                                           <a href="/projet/delete_member?id=${member.id}" class="btn btn-sm btn-danger"><i class="fa fa-trash"></i> Remove</a>
                                                        </td>
                                                     </tr>
                                                </c:forEach>
@@ -168,9 +168,9 @@
                                         </table>
                                         <div class="text-center">
                                             <ul class="pagination">
-                                                <li><a href="#">1</a></li>
-                                                <li><a href="#">2</a></li>
-                                                <li><a href="#">3</a></li>
+                                                <li><a href="/projet/home?page=1">1</a></li>
+                                                <li><a href="/projet/home?page=2">2</a></li>
+                                                <li><a href="/projet/home?page=2">3</a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -202,11 +202,11 @@
                                         <img src="resources/img/1.png" alt="super"/>
                                     </div>
                                     <div class="progress-bar-container">
-                                        <span class="desc">Vote count: 10</span>
+                                        <span class="desc">Vote count: ${repartition[0]}</span>
                                         <div class="progress">
-                                            <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="10"
-                                                 aria-valuemin="0" aria-valuemax="100" style="width:10%">
-                                                <span class="">10%</span>
+                                            <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="${repartition[0]/count * 100}"
+                                                 aria-valuemin="0" aria-valuemax="100" style="width:${repartition[0]/count * 100}%">
+                                                <span class="">${repartition[0]/count * 100}%</span>
                                             </div>
                                         </div>
                                     </div>
@@ -216,11 +216,11 @@
                                         <img src="resources/img/2.png" alt="super"/>
                                     </div>
                                     <div class="progress-bar-container">
-                                        <span class="desc">Vote count: 5</span>
+                                        <span class="desc">Vote count: ${repartition[1]}</span>
                                         <div class="progress">
-                                            <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="5"
-                                                 aria-valuemin="0" aria-valuemax="100" style="width:5%">
-                                                <span class="">5%</span>
+                                            <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="${repartition[1]/count * 100}"
+                                                 aria-valuemin="0" aria-valuemax="100" style="width:${repartition[1]/count * 100}%">
+                                                <span class="">${repartition[1]/count * 100}%</span>
                                             </div>
                                         </div>
                                     </div>
@@ -230,11 +230,11 @@
                                         <img src="resources/img/3.png" alt="super"/>
                                     </div>
                                     <div class="progress-bar-container">
-                                        <span class="desc">Vote count: 15</span>
+                                        <span class="desc">Vote count: ${repartition[2]}</span>
                                         <div class="progress">
-                                            <div class="progress-bar progress-bar-neutral" role="progressbar" aria-valuenow="15"
-                                                 aria-valuemin="0" aria-valuemax="100" style="width:15%">
-                                                <span class="">15%</span>
+                                            <div class="progress-bar progress-bar-neutral" role="progressbar" aria-valuenow="${repartition[2]/count * 100}"
+                                                 aria-valuemin="0" aria-valuemax="100" style="width:${repartition[2]/count * 100}%">
+                                                <span class="">${repartition[2]/count * 100}%</span>
                                             </div>
                                         </div>
                                     </div>
@@ -244,11 +244,11 @@
                                         <img src="resources/img/4.png" alt="super"/>
                                     </div>
                                     <div class="progress-bar-container">
-                                        <span class="desc">Vote count: 45</span>
+                                        <span class="desc">Vote count: ${repartition[3]}</span>
                                         <div class="progress">
-                                            <div class="progress-bar progress-bar-midsuccess" role="progressbar" aria-valuenow="45"
-                                                 aria-valuemin="0" aria-valuemax="100" style="width:45%">
-                                                <span class="">45%</span>
+                                            <div class="progress-bar progress-bar-midsuccess" role="progressbar" aria-valuenow="${repartition[3]/count * 100}"
+                                                 aria-valuemin="0" aria-valuemax="100" style="width:${repartition[3]/count * 100}%">
+                                                <span class="">${repartition[3]/count * 100}%</span>
                                             </div>
                                         </div>
                                     </div>
@@ -258,18 +258,18 @@
                                         <img src="resources/img/5.png" alt="super"/>
                                     </div>
                                     <div class="progress-bar-container">
-                                        <span class="desc">Vote count: 25</span>
+                                        <span class="desc">Vote count: ${repartition[4]}</span>
                                         <div class="progress">
-                                            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="25"
-                                                 aria-valuemin="0" aria-valuemax="100" style="width:25%">
-                                                <span class="">25%</span>
+                                            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="${repartition[4]/count * 100}"
+                                                 aria-valuemin="0" aria-valuemax="100" style="width:${repartition[4]/count * 100}%">
+                                                <span class="">${repartition[4]/count * 100}%</span>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
 
-                            <a href="${pageContext.request.contextPath}/stats" class="btn btn-default btn-block">View more reports</a>
+                            <a href="${pageContext.request.contextPath}/stats?month=${lastMonthYear}" class="btn btn-default btn-block">View more reports</a>
                         </div>
                         <!-- /.panel-body -->
                     </div>

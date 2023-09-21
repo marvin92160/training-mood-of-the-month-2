@@ -1,4 +1,4 @@
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib prefix="c" uri="jakarta.tags.core" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -129,7 +129,7 @@
                 </div>
             </div>
             <!-- /.row -->
-            <div class="row">
+<div class="row">
                 <div class="col-lg-8">
                     <!-- /.panel -->
                     <div class="panel panel-default">
@@ -159,8 +159,8 @@
                                                        <td>${member.email}</td>
                                                        <td>${member.birthdate}</td>
                                                        <td  class="text-right">
-                                                           <a href="#" class="btn btn-sm btn-warning"><i class="fa fa-pencil"></i> Edit</a>
-                                                           <a href="#" class="btn btn-sm btn-danger"><i class="fa fa-trash"></i> Remove</a>
+                                                           <a href="${pageContext.request.contextPath}/update_member?id=${member.id}" class="btn btn-sm btn-warning"><i class="fa fa-pencil"></i> Edit</a>
+                                                           <a href="/projet/delete_member?id=${member.id}" class="btn btn-sm btn-danger"><i class="fa fa-trash"></i> Remove</a>
                                                        </td>
                                                     </tr>
                                                </c:forEach>
@@ -168,9 +168,9 @@
                                         </table>
                                         <div class="text-center">
                                             <ul class="pagination">
-                                                <li><a href="#">1</a></li>
-                                                <li><a href="#">2</a></li>
-                                                <li><a href="#">3</a></li>
+                                                <li><a href="/projet/home?page=1">1</a></li>
+                                                <li><a href="/projet/home?page=2">2</a></li>
+                                                <li><a href="/projet/home?page=2">3</a></li>
                                             </ul>
                                         </div>
                                     </div>

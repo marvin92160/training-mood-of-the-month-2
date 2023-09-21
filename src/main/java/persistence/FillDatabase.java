@@ -57,10 +57,10 @@ public class FillDatabase {
             stmt.execute("INSERT INTO member(firstname, lastname, email, birthdate) VALUES('Hubert B.', 'Delabatte', 'hdelabatte@e-biz.fr', '1916-02-10');");
             //connection.commit();
 
-            stmt.execute("INSERT INTO mood(grade, comment, is_public, memberId, date) VALUES(1, 'Jaime pas', true, 4, '2017-09-03 08:30:00');");
-            stmt.execute("INSERT INTO mood(grade, comment, is_public, memberId, date) VALUES(3, null, true, 3, '2017-09-10 08:30:00');");
-            stmt.execute("INSERT INTO mood(grade, comment, is_public, memberId, date) VALUES(5, null, true, 1, '2017-09-22 08:30:00');");
-            stmt.execute("INSERT INTO mood(grade, comment, is_public, memberId, date) VALUES(5, 'Cest cool', false, 2, '2017-09-22 08:30:00');");
+            stmt.execute("INSERT INTO mood(grade, comment, is_public, memberId, date) VALUES(1, 'Jaime pas', true, 4, '2023-09-03 08:30:00');");
+            stmt.execute("INSERT INTO mood(grade, comment, is_public, memberId, date) VALUES(3, null, true, 3, '2023-09-10 08:30:00');");
+            stmt.execute("INSERT INTO mood(grade, comment, is_public, memberId, date) VALUES(5, null, true, 1, '2023-09-22 08:30:00');");
+            stmt.execute("INSERT INTO mood(grade, comment, is_public, memberId, date) VALUES(5, 'Cest cool', false, 2, '2023-09-22 08:30:00');");
 
             //connection.commit();
             System.out.println("Success!");

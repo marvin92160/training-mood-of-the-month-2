@@ -77,9 +77,9 @@
                                   </ul>
                                   Template tokens: You can use the following tokens anywhere in each content:
                                   <ul>
-                                    <li><b>${name}</b>: the user name</li>
-                                    <li><b>${link}</b>: the link to the MOTM for the current user</li>
-                                    <li><b>${currentMonth}</b>: the current month (ex: January)</li>
+                                    <li><b>$ {name}</b>: the user name</li>
+                                    <li><b>$ {link}</b>: the link to the MOTM for the current user</li>
+                                    <li><b>$ {currentMonth}</b>: the current month (ex: January)</li>
                                   </ul>
                                 </div>
                               </div>
@@ -89,7 +89,7 @@
                                     <form action="" method="post" class="">
                                         <div class="form-group">
                                             <label for="name">Subject</label>
-                                            <input type="text" class="input-lg form-control" id="name" value="Hey ${name}, let's hear it for your mood of the month!">
+                                            <input type="text" class="input-lg form-control" id="name" value="Hey $ {name}, let's hear it for your mood of the month!">
                                         </div>
                                         <div class="form-group">
                                             <label for="email-template">Email template (<a href="${pageContext.request.contextPath}/newsletter.template" target="_blank">check the email template</a>)</label>

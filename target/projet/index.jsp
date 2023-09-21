@@ -1,3 +1,3 @@
 <%
-    response.sendRedirect("/projet/home");
+    response.sendRedirect("/projet/home?page=1");
 %>
