@@ -168,9 +168,9 @@
                                         </table>
                                         <div class="text-center">
                                             <ul class="pagination">
-                                                <li><a href="/projet/home?page=1">1</a></li>
-                                                <li><a href="/projet/home?page=2">2</a></li>
-                                                <li><a href="/projet/home?page=2">3</a></li>
+                                                <c:forEach items="${nbrPage}" var="page">
+                                                    <li><a href="/projet/home?page=${page}">${page}</a></li>
+                                               </c:forEach>
                                             </ul>
                                         </div>
                                     </div>
