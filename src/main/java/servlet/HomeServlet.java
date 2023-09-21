@@ -19,6 +19,7 @@ import java.io.IOException;
 import java.time.LocalDate;
 import java.time.YearMonth;
 import java.time.format.DateTimeFormatter;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -28,20 +29,25 @@ public class HomeServlet extends HttpServlet {
     private static final Logger logger = LoggerFactory.getLogger(HomeServlet.class);
 
     private MoodService moodService;
+    private MemberService memberService;
    // private MoodDao moodDao;
-    MemberDao memberDao = new MemberDao();
-    MemberService memberService = new MemberService(memberDao);
 
     @Override
     public void init() {
         moodService = new MoodService(new MoodDao());
+        memberService = new MemberService(new MemberDao());
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws IOException {
         try {
-            System.out.println(moodService.count());
             request.setAttribute("nbrMood", moodService.count());
+        } catch (ServiceException e) {
+            logger.error("An error occurred while processing the request.", e);
+        }
+        try {
+            ArrayList listePage= memberService.countPage();
+            request.setAttribute("nbrPage", listePage  );
         } catch (ServiceException e) {
             logger.error("An error occurred while processing the request.", e);
         }
