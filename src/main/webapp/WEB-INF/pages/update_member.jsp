@@ -69,11 +69,11 @@
                                     <form action="/projet/update_member" method="post" class="">
                                         <div class="form-group">
                                             <label for="first_name">First Name</label>
-                                            <input type="text" class="input-lg form-control" id="first_name" name="first_name" placeholder="First Name" value="${last_name_old}">
+                                            <input type="text" class="input-lg form-control" id="first_name" name="first_name" placeholder="First Name" value="${first_name_old}">
                                         </div>
                                         <div class="form-group">
                                              <label for="last_name">Last Name </label>
-                                             <input type="text" class="input-lg form-control" id="last_name" name="last_name"  placeholder="Last Name" value="${first_name_old}">
+                                             <input type="text" class="input-lg form-control" id="last_name" name="last_name"  placeholder="Last Name" value="${last_name_old}">
                                         </div>
                                         <div class="form-group">
                                             <label for="email">Email</label>
