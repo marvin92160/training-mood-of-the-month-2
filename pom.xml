@@ -35,8 +35,8 @@
                 <configuration>
                     <hostname>localhost</hostname> <!-- Change this to your WildFly server hostname -->
                     <port>9990</port> <!-- Change this to your WildFly management port -->
-                    <username>marvin</username> <!-- Change this to your WildFly admin username -->
-                    <password>marvin</password> <!-- Change this to your WildFly admin password -->
+                    <username>lzablit</username> <!-- Change this to your WildFly admin username -->
+                    <password>Lauranou7%</password> <!-- Change this to your WildFly admin password -->
                 </configuration>
             </plugin>
         </plugins>
@@ -47,11 +47,6 @@
             <groupId>org.postgresql</groupId>
             <artifactId>postgresql</artifactId>
             <version>42.6.0</version>
-        </dependency>
-        <dependency>
-            <groupId>javax.servlet</groupId>
-            <artifactId>jstl</artifactId>
-            <version>1.2</version>
         </dependency>
         <dependency>
             <groupId>jakarta.servlet</groupId>

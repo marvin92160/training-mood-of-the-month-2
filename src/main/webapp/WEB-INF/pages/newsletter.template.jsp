@@ -22,7 +22,7 @@
                     </tr>
                     <tr>
                         <td style="padding: 15px;color: #222" bgcolor="#f3f3f3">
-                            ${mail_content}
+                            ${mail_template}
                         </td>
                     </tr>
                     <tr>
