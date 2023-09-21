@@ -8,6 +8,7 @@ import Exception.DaoException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class MemberService {
@@ -64,6 +65,20 @@ public class MemberService {
     }
     public int count() throws ServiceException {
         return findAll().size();
+    }
+
+    public  ArrayList countPage() throws ServiceException {
+        int nbrM = findAll().size();
+        int nbrpage =(int) nbrM / 10 ;
+        int rest = nbrM % 10;
+        if(rest > 0 ){
+            nbrpage++;
+        }
+        ArrayList listePages = new ArrayList<>();
+        for (int i = 1; i <= nbrpage; i++) {
+            listePages.add(i);
+        }
+        return listePages;
     }
 
     public long update(Member member) throws ServiceException {

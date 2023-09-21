@@ -111,14 +111,16 @@ public class MemberDao {
             Statement statement = connection.createStatement();
             ResultSet rs = statement.executeQuery(FIND_MEMBERS_QUERY);
             int compteur = 0;
-            int min = 0;
+            /*int min = 0;
             int max = 10;
             if(page==2){
                 min = 10;
                 max = 20;
             }if(page==3){
                 min = 20;
-            }
+            }*/
+            int min = (page-1)*10;
+            int max = page*10;
             while(rs.next()){
                 int id = rs.getInt("id");
                 String lastName = rs.getString("lastname");

@@ -51,7 +51,7 @@ public class AddMemberServlet extends HttpServlet{
         } catch (ServiceException e) {
            e.printStackTrace();
         }
-        response.sendRedirect("/projet/home");
+        response.sendRedirect("/projet/home?page=1");
     }
 
 }

@@ -56,7 +56,7 @@ public class DeleteMemberServlet extends HttpServlet{
 //       request.setAttribute("nbrMembre", 20);
 //        request.setAttribute("nbrMood", 15);
 
-        response.sendRedirect("/projet/home");
+        response.sendRedirect("/projet/home?page=1");
     }
 
 

@@ -5,6 +5,8 @@ import java.time.LocalDate;
 import java.time.YearMonth;
 import java.time.format.DateTimeFormatter;
 import java.util.Arrays;
+import java.util.Collection;
+import java.util.Collections;
 import java.util.List;
 
 import dao.MoodDao;
@@ -35,7 +37,8 @@ public class StatsServlet extends HttpServlet {
             throws ServletException, IOException {
         try {
             List<String> months = moodService.extractMonths();
-            String lastMonthYear = months.get(0);
+            Collections.reverse(months);
+            String lastMonthYear = months.get(months.size()-1);
             try {
                 lastMonthYear = request.getParameter("month");
             } catch (Exception e) {}
@@ -64,6 +67,7 @@ public class StatsServlet extends HttpServlet {
                     case 5 : repartition[4]++;
                 }
                 logger.error("Repartition: " + Arrays.toString(repartition));
+                logger.error("Mood: " + mood);
                 sum += grade;
             }
             average = sum/i;

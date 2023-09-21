@@ -14,6 +14,8 @@ import java.io.IOException;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.Month;
+import java.time.YearMonth;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Date;
@@ -36,10 +38,12 @@ public class DashboardServlet extends HttpServlet {
             throws ServletException, IOException {
 
         try {
-            LocalDate today = LocalDate.now();
-            String thisMonth = today.getMonth().toString();
-            int month = today.getMonth().getValue();
-            int year = today.getYear();
+            DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM");
+            List<String> months = moodService.extractMonths();
+            String lastMonthYear = months.get(months.size()-1);
+            String thisMonth = YearMonth.parse(lastMonthYear, formatter).getMonth().toString();
+            int month = YearMonth.parse(lastMonthYear, formatter).getMonth().getValue();
+            int year = YearMonth.parse(lastMonthYear, formatter).getYear();
             List<Mood> moods = moodService.findAllByMonth(month, year);
             float average;
             float sum = 0;
