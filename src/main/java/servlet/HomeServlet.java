@@ -14,6 +14,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import services.MemberService;
 import services.MoodService;
+import Exception.ServiceException;
 
 import java.io.IOException;
 import java.time.LocalDate;
@@ -46,8 +47,8 @@ public class HomeServlet extends HttpServlet {
             logger.error("An error occurred while processing the request.", e);
         }
         try {
-            ArrayList listePage= memberService.countPage();
-            request.setAttribute("nbrPage", listePage  );
+            ArrayList listePage = memberService.countPage();
+            request.setAttribute("nbrPage", listePage);
         } catch (ServiceException e) {
             logger.error("An error occurred while processing the request.", e);
         }
@@ -58,46 +59,53 @@ public class HomeServlet extends HttpServlet {
             logger.error("An error occurred while processing the request.", e);
         }
         try {
-            DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM");
-            List<String> months = moodService.extractMonths();
-            String lastMonthYear = months.get(months.size()-1);
-            String thisMonth = YearMonth.parse(lastMonthYear, formatter).getMonth().toString();
-            int month = YearMonth.parse(lastMonthYear, formatter).getMonth().getValue();
-            int year = YearMonth.parse(lastMonthYear, formatter).getYear();
-            List<Mood> moods = moodService.findAllByMonth(month, year);
-            float average;
-            float sum = 0;
-            int i = 0;
-            int[] repartition = {0, 0, 0, 0, 0};
-            for (Mood mood:moods) {
-                int grade = mood.getGrade();
-                i++;
-                switch (grade) {
-                    case 1 : repartition[0]++;
-                        break;
-                    case 2 : repartition[1]++;
-                        break;
-                    case 3 : repartition[2]++;
-                        break;
-                    case 4 : repartition[3]++;
-                        break;
-                    case 5 : repartition[4]++;
+            if (moodService.count() > 0) {
+                DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM");
+                List<String> months = moodService.extractMonths();
+                String lastMonthYear = months.get(months.size() - 1);
+                String thisMonth = YearMonth.parse(lastMonthYear, formatter).getMonth().toString();
+                int month = YearMonth.parse(lastMonthYear, formatter).getMonth().getValue();
+                int year = YearMonth.parse(lastMonthYear, formatter).getYear();
+                List<Mood> moods = moodService.findAllByMonth(month, year);
+                float average;
+                float sum = 0;
+                int i = 0;
+                int[] repartition = {0, 0, 0, 0, 0};
+                for (Mood mood : moods) {
+                    int grade = mood.getGrade();
+                    i++;
+                    switch (grade) {
+                        case 1:
+                            repartition[0]++;
+                            break;
+                        case 2:
+                            repartition[1]++;
+                            break;
+                        case 3:
+                            repartition[2]++;
+                            break;
+                        case 4:
+                            repartition[3]++;
+                            break;
+                        case 5:
+                            repartition[4]++;
+                    }
+                    sum += grade;
                 }
-                sum += grade;
+                average = sum / i;
+                request.setAttribute("average", average);
+                request.setAttribute("repartition", repartition);
+                request.setAttribute("count", i);
+                request.setAttribute("month", thisMonth);
+                request.setAttribute("year", year);
+                request.setAttribute("moods", moods);
+                request.setAttribute("lastMonthYear", lastMonthYear);
             }
-            average = sum/i;
-            request.setAttribute("average", average);
-            request.setAttribute("repartition", repartition);
-            request.setAttribute("count", i);
-            request.setAttribute("month", thisMonth);
-            request.setAttribute("year", year);
-            request.setAttribute("moods", moods);
-            request.setAttribute("lastMonthYear", lastMonthYear);
-        } catch (ServiceException e) {
+        } catch (Exception e) {
             logger.error("An error occurred while processing the request.", e);
         }
         try {
-             request.setAttribute("nbrMembre", memberService.count());
+            request.setAttribute("nbrMembre", memberService.count());
         } catch (Exception e) {
             logger.error("An error occurred while setting nbrMembre.", e);
         }
@@ -108,4 +116,4 @@ public class HomeServlet extends HttpServlet {
             logger.error("An error occurred while forwarding the request.", e);
         }
     }
-}
+    }

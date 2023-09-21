@@ -9,7 +9,7 @@
 
     <table width="100%" style="font-family: Arial, sans-serif;border-collapse:collapse;" cellspacing="0" cellpadding="0">
         <tr>
-            <td align="center" style="color: #444444;font-size: 0.9em">Read this mail in your browser by clicking <a href="">here</a></td>
+            <td align="center" style="color: #444444;font-size: 0.9em">Read this mail in your browser by clicking <a href="${pageContext.request.contextPath}/add_motm?member_id=1">here</a></td>
         </tr>
         <tr>
             <td>
@@ -17,12 +17,12 @@
                     <tr>
                         <td background="../img/dark-map-background-mail.jpg" height="150" bgcolor="#7aadff" style="text-align:center;padding: 10px 10px 8px 5px;">
                             <img src="resources/img/ebusiness.png" width="400" />
-                            <h2 style="color:white;margin:0;padding:0;">${mail.subject}</h2>
+                            <h2 style="color:white;margin:0;padding:0;">${mail_subject}</h2>
                         </td>
                     </tr>
                     <tr>
                         <td style="padding: 15px;color: #222" bgcolor="#f3f3f3">
-                            ${mail.content}
+                            ${mail_content}
                         </td>
                     </tr>
                     <tr>

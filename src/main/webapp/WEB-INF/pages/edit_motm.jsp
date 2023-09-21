@@ -32,7 +32,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="${pageContext.request.contextPath}/home">Mood of the month</a>
+                <a class="navbar-brand" href="${pageContext.request.contextPath}">Mood of the month</a>
             </div>
             <!-- /.navbar-header -->
 
@@ -86,18 +86,20 @@
                             </div>
                             <div class="row">
                                 <div class="col-xs-12">
-                                    <form action="" method="post" class="">
+                                    <form action="/projet/edit_motm" method="post" class="">
                                         <div class="form-group">
                                             <label for="name">Subject</label>
-                                            <input type="text" class="input-lg form-control" id="name" value="Hey $ {name}, let's hear it for your mood of the month!">
+                                            <input type="text" class="input-lg form-control" id="email_subject" name="email_subject" value="${email_subject}">
                                         </div>
                                         <div class="form-group">
-                                            <label for="email-template">Email template (<a href="${pageContext.request.contextPath}/newsletter.template" target="_blank">check the email template</a>)</label>
-                                            <textarea id="email-template" class="content"></textarea>
+                                            <label for="email_template">Email template (<a href="${pageContext.request.contextPath}/newsletter.template" target="_blank">check the email template</a>)</label>
+                                            </br>
+                                            <textarea id="email_template" name="email_template" class="content">${email_template}</textarea>
                                         </div>
                                         <div class="form-group">
-                                            <label for="motm-template">Vote page template</label>
-                                            <textarea id="motm-template" class="content"></textarea>
+                                            <label for="motm_template">Vote page template</label>
+                                            </br>
+                                            <textarea id="motm_template" name="motm_template" class="content">${motm_template}</textarea>
                                         </div>
                                         <div class="text-right">
                                             <button type="submit" class="btn btn-lg btn-primary">Save the MOTM</button>

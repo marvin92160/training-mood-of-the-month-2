@@ -23,6 +23,14 @@ public class Mood {
         this.date = date;
     }
 
+    public Mood(int grade, String comment, boolean isPublic, long memberId, LocalDateTime date) {
+        this.grade = grade;
+        this.comment = comment;
+        this.isPublic = isPublic;
+        this.memberId  = memberId;
+        this.date = date;
+    }
+
     public Mood(Mood mood) {
         setId(mood.getId());
         setComment(mood.getComment());

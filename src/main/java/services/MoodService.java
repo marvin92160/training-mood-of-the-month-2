@@ -15,6 +15,22 @@ public class MoodService {
         this.moodDao = moodDao;
     }
 
+    public long create(Mood mood) throws ServiceException {
+        try {
+            return moodDao.create(mood);
+        }catch (DaoException e){
+            throw new ServiceException();
+        }
+    }
+
+    public long update(Mood mood) throws ServiceException {
+        try {
+            return moodDao.update(mood);
+        }catch (DaoException e){
+            throw new ServiceException();
+        }
+    }
+
     public List<Mood> findAll() throws ServiceException {
         try {
             return moodDao.findALl();

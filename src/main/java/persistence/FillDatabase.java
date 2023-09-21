@@ -41,6 +41,15 @@ public class FillDatabase {
                 "                      date TIMESTAMP NOT NULL\n" +
                 ");");
 
+        createTablesQueries.add("CREATE TABLE IF NOT EXISTS email (\n" +
+                "                      id SERIAL PRIMARY KEY,\n" +
+                "                      subject TEXT,\n" +
+                "                      template TEXT\n" +
+                ");");
+        createTablesQueries.add("CREATE TABLE IF NOT EXISTS motm (\n" +
+                "                      id SERIAL PRIMARY KEY,\n" +
+                "                      template TEXT\n" +
+                ");");
         try {
             connection.setAutoCommit(true);
 
@@ -57,10 +66,10 @@ public class FillDatabase {
             stmt.execute("INSERT INTO member(firstname, lastname, email, birthdate) VALUES('Hubert B.', 'Delabatte', 'hdelabatte@e-biz.fr', '1916-02-10');");
             //connection.commit();
 
-            stmt.execute("INSERT INTO mood(grade, comment, is_public, memberId, date) VALUES(1, 'Jaime pas', true, 4, '2023-09-03 08:30:00');");
+            stmt.execute("INSERT INTO mood(grade, comment, is_public, memberId, date) VALUES(1, 'Génial', true, 4, '2023-09-03 08:30:00');");
             stmt.execute("INSERT INTO mood(grade, comment, is_public, memberId, date) VALUES(3, null, true, 3, '2023-09-10 08:30:00');");
             stmt.execute("INSERT INTO mood(grade, comment, is_public, memberId, date) VALUES(5, null, true, 1, '2023-09-22 08:30:00');");
-            stmt.execute("INSERT INTO mood(grade, comment, is_public, memberId, date) VALUES(5, 'Cest cool', false, 2, '2023-09-22 08:30:00');");
+            stmt.execute("INSERT INTO mood(grade, comment, is_public, memberId, date) VALUES(5, 'Cest cool', true, 2, '2023-08-22 08:30:00');");
 
             //connection.commit();
             System.out.println("Success!");

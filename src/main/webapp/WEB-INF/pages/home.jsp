@@ -33,7 +33,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="${pageContext.request.contextPath}/home">Mood of the month</a>
+                <a class="navbar-brand" href="${pageContext.request.contextPath}">Mood of the month</a>
             </div>
             <!-- /.navbar-header -->
 

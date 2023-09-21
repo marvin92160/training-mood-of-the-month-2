@@ -254,3 +254,32 @@
                                                                                                        </div>
                                                                                                    </div>
                                                                                                </div>
+                                                                                         <img src="resources/img/1.png" alt="super"/>
+                                                                                         <img src="resources/img/2.png" alt="super"/>
+                                                                                         <img src="resources/img/3.png" alt="super"/>
+                                                                                         <img src="resources/img/4.png" alt="super"/>
+                                                                                         <img src="resources/img/5.png" alt="super"/>
+                                                <div class="img-container">
+                                                    <img src="resources/img/1.png" alt="super"/>
+                                                 </div>
+                                                 <div class="img-container">
+                                                    <img src="resources/img/2.png" alt="super"/>
+                                                 </div>
+                                                 <div class="img-container">
+                                                    <img src="resources/img/3.png" alt="super"/>
+                                                 </div>
+                                                 <div class="img-container">
+                                                    <img src="resources/img/4.png" alt="super"/>
+                                                 </div>
+                                                 <div class="img-container">
+                                                    <img src="resources/img/5.png" alt="super"/>
+                                                 </div>
+                                                         body #add_motm .vote {
+                                                           width: 100%; }
+                                                       body #add_motm .vote .mood {
+                                                         display: flex; }
+                                                         body #add_motm .vote .mood .img-container {
+                                                           flex: 1 1 20%;
+                                                           }
+                                                           body #add_motm .vote .mood .img-container img {
+                                                             width: auto; }

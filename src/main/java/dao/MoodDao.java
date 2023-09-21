@@ -1,5 +1,6 @@
 package dao;
 
+import modele.Member;
 import modele.Mood;
 import Exception.DaoException;
 import persistence.ConnectionManager;
@@ -18,6 +19,7 @@ public class MoodDao {
 
     private static final String CREATE_MOOD_QUERY = "INSERT INTO mood(grade, comment, is_public, memberid, date) VALUES(?,?,?,?,?);";
     private static final String DELETE_MOOD_QUERY = "DELETE FROM mood WHERE id=?;";
+    private static final String UPDATE_MOOD_QUERY = "UPDATE mood SET grade = ?, comment = ?, is_public = ?, memberid = ?, date = ? WHERE id = ?;";
     private static final String FIND_MOOD_QUERY = "SELECT grade, comment, is_public, memberid, date FROM mood WHERE id=?;";
     private static final String FIND_MOODS_QUERY = "SELECT id, grade, comment, is_public, memberid, date FROM mood;";
     private static final String FIND_MOODS_BY_MONTH = "SELECT * FROM mood WHERE EXTRACT(MONTH FROM date) = ? AND EXTRACT(YEAR FROM date) = ?;";
@@ -76,6 +78,27 @@ public class MoodDao {
         catch(SQLException e){
             throw new DaoException();
         }
+    }
+
+    public long update(Mood mood) throws DaoException {
+        try {
+            Connection connection = ConnectionManager.getConnection();
+            PreparedStatement ps = connection.prepareStatement(UPDATE_MOOD_QUERY);
+            ps.setInt(1, mood.getGrade());
+            ps.setString(2, mood.getComment());
+            ps.setBoolean(3, mood.isPublic());
+            ps.setLong(4,mood.getMemberId());
+            ps.setTimestamp(5, Timestamp.valueOf(mood.getDate()));
+            ps.setLong(6,mood.getId());
+            ps.execute();
+            ps.close();
+            connection.close();
+            logger.error("dans le dao"+mood);
+            logger.error("dans le dao depuis bdd"+ findById((int)mood.getId()));
+        } catch (SQLException e) {
+            throw new DaoException();
+        }
+        return mood.getId();
     }
 
     public List<Mood> findALl() throws DaoException{
