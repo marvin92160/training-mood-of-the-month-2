@@ -124,7 +124,7 @@
         <div class="comments">
             <h2 class="title">Comments</h2>
             <c:forEach items="${moods}" var="mood" varStatus="loop">
-                <c:if test="${mood.comment != null}">
+                <c:if test="${mood.comment != null && mood.isPublic()}">
 
                     <div class="comment-container">
                         <div class="note">

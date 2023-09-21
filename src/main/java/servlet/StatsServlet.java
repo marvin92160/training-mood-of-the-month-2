@@ -67,6 +67,7 @@ public class StatsServlet extends HttpServlet {
                     case 5 : repartition[4]++;
                 }
                 logger.error("Repartition: " + Arrays.toString(repartition));
+                logger.error("Mood: " + mood);
                 sum += grade;
             }
             average = sum/i;
