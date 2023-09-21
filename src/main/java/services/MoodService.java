@@ -39,6 +39,14 @@ public class MoodService {
         }
     }
 
+    public List<String> extractMonths() throws ServiceException {
+        try {
+            return moodDao.extractMonths();
+        }catch (DaoException e){
+            throw new ServiceException();
+        }
+    }
+
     public int count() throws ServiceException {
         return findAll().size();
     }
